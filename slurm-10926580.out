@@ -1,0 +1,1217 @@
+12/16 02:12:20 AM: fastText library not found!
+12/16 02:12:20 AM: Loading config from config/iwslt.conf
+12/16 02:12:20 AM: Config overrides: exp_name = iwslt, run_name = iwslt, d_hid = 256, load_model = 1
+12/16 02:12:21 AM: Waiting on git info....
+12/16 02:12:21 AM: Git branch: master
+12/16 02:12:21 AM: Git SHA: 3594dae32ed113f9ffb7599bd5d583d1f307b405
+12/16 02:12:21 AM: Parsed args: 
+{
+  "allow_missing_task_map": 0,
+  "allow_reuse_of_pretraining_parameters": 0,
+  "allow_untrained_encoder_parameters": 0,
+  "batch_size": 8,
+  "bidirectional": 1,
+  "bpp_base": 1,
+  "char_embs": 0,
+  "char_filter_sizes": "2,3,4,5",
+  "classifier": "mlp",
+  "classifier_dropout": 0.2,
+  "classifier_hid_dim": 32,
+  "classifier_loss_fn": "",
+  "classifier_span_pooling": "x,y",
+  "cola": {},
+  "cola_classifier_dropout": 0.2,
+  "cola_classifier_hid_dim": 256,
+  "cola_d_proj": 256,
+  "cola_lr": 0.0003,
+  "cola_val_interval": 100,
+  "cove": 0,
+  "cove_fine_tune": 0,
+  "cuda": 0,
+  "d_char": 100,
+  "d_ff": 2048,
+  "d_hid": 256,
+  "d_hid_attn": 512,
+  "d_proj": 512,
+  "d_tproj": 64,
+  "d_word": 300,
+  "data_dir": "data",
+  "dec_val_scale": 250,
+  "do_full_eval": 1,
+  "do_pretrain": 1,
+  "do_target_task_training": 1,
+  "dropout": 0.2,
+  "dropout_embs": 0.2,
+  "edgeprobe_cnn_context": 0,
+  "edges-ccg-parse": {
+    "classifier_dropout": 0.3,
+    "classifier_hid_dim": 256,
+    "classifier_loss_fn": "sigmoid",
+    "classifier_span_pooling": "attn",
+    "max_vals": 100,
+    "pair_attn": 0,
+    "val_interval": 500
+  },
+  "edges-ccg-tag": {
+    "classifier_dropout": 0.3,
+    "classifier_hid_dim": 256,
+    "classifier_loss_fn": "sigmoid",
+    "classifier_span_pooling": "attn",
+    "max_vals": 100,
+    "pair_attn": 0,
+    "val_interval": 500
+  },
+  "edges-constituent-ontonotes": {
+    "classifier_dropout": 0.3,
+    "classifier_hid_dim": 256,
+    "classifier_loss_fn": "sigmoid",
+    "classifier_span_pooling": "attn",
+    "max_vals": 250,
+    "pair_attn": 0,
+    "val_interval": 1000
+  },
+  "edges-constituent-ontonotes-openai": {
+    "classifier_dropout": 0.3,
+    "classifier_hid_dim": 256,
+    "classifier_loss_fn": "sigmoid",
+    "classifier_span_pooling": "attn",
+    "max_vals": 250,
+    "pair_attn": 0,
+    "val_interval": 1000
+  },
+  "edges-constituent-ptb": {
+    "classifier_dropout": 0.3,
+    "classifier_hid_dim": 256,
+    "classifier_loss_fn": "sigmoid",
+    "classifier_span_pooling": "attn",
+    "max_vals": 100,
+    "pair_attn": 0,
+    "val_interval": 500
+  },
+  "edges-coref-ontonotes": {
+    "classifier_dropout": 0.3,
+    "classifier_hid_dim": 256,
+    "classifier_loss_fn": "sigmoid",
+    "classifier_span_pooling": "attn",
+    "max_vals": 100,
+    "pair_attn": 0,
+    "val_interval": 500
+  },
+  "edges-coref-ontonotes-conll": {
+    "classifier_dropout": 0.3,
+    "classifier_hid_dim": 256,
+    "classifier_loss_fn": "sigmoid",
+    "classifier_span_pooling": "attn",
+    "max_vals": 250,
+    "pair_attn": 0,
+    "val_interval": 1000
+  },
+  "edges-coref-ontonotes-conll-openai": {
+    "classifier_dropout": 0.3,
+    "classifier_hid_dim": 256,
+    "classifier_loss_fn": "sigmoid",
+    "classifier_span_pooling": "attn",
+    "max_vals": 250,
+    "pair_attn": 0,
+    "val_interval": 1000
+  },
+  "edges-dep-labeling": {
+    "classifier_dropout": 0.3,
+    "classifier_hid_dim": 256,
+    "classifier_loss_fn": "sigmoid",
+    "classifier_span_pooling": "attn",
+    "max_vals": 100,
+    "pair_attn": 0,
+    "val_interval": 500
+  },
+  "edges-dep-labeling-ewt": {
+    "classifier_dropout": 0.3,
+    "classifier_hid_dim": 256,
+    "classifier_loss_fn": "sigmoid",
+    "classifier_span_pooling": "attn",
+    "max_vals": 250,
+    "pair_attn": 0,
+    "val_interval": 1000
+  },
+  "edges-dep-labeling-ewt-openai": {
+    "classifier_dropout": 0.3,
+    "classifier_hid_dim": 256,
+    "classifier_loss_fn": "sigmoid",
+    "classifier_span_pooling": "attn",
+    "max_vals": 250,
+    "pair_attn": 0,
+    "val_interval": 1000
+  },
+  "edges-dpr": {
+    "classifier_dropout": 0.3,
+    "classifier_hid_dim": 256,
+    "classifier_loss_fn": "sigmoid",
+    "classifier_span_pooling": "attn",
+    "max_vals": 100,
+    "pair_attn": 0,
+    "val_interval": 100
+  },
+  "edges-dpr-openai": {
+    "classifier_dropout": 0.3,
+    "classifier_hid_dim": 256,
+    "classifier_loss_fn": "sigmoid",
+    "classifier_span_pooling": "attn",
+    "max_vals": 100,
+    "pair_attn": 0,
+    "val_interval": 100
+  },
+  "edges-ner-conll2003": {
+    "classifier_dropout": 0.3,
+    "classifier_hid_dim": 256,
+    "classifier_loss_fn": "sigmoid",
+    "classifier_span_pooling": "attn",
+    "max_vals": 100,
+    "pair_attn": 0,
+    "val_interval": 250
+  },
+  "edges-ner-ontonotes": {
+    "classifier_dropout": 0.3,
+    "classifier_hid_dim": 256,
+    "classifier_loss_fn": "sigmoid",
+    "classifier_span_pooling": "attn",
+    "max_vals": 250,
+    "pair_attn": 0,
+    "val_interval": 1000
+  },
+  "edges-ner-ontonotes-openai": {
+    "classifier_dropout": 0.3,
+    "classifier_hid_dim": 256,
+    "classifier_loss_fn": "sigmoid",
+    "classifier_span_pooling": "attn",
+    "max_vals": 250,
+    "pair_attn": 0,
+    "val_interval": 1000
+  },
+  "edges-nonterminal-ontonotes": {
+    "classifier_dropout": 0.3,
+    "classifier_hid_dim": 256,
+    "classifier_loss_fn": "sigmoid",
+    "classifier_span_pooling": "attn",
+    "max_vals": 250,
+    "pair_attn": 0,
+    "val_interval": 1000
+  },
+  "edges-pos-ontonotes": {
+    "classifier_dropout": 0.3,
+    "classifier_hid_dim": 256,
+    "classifier_loss_fn": "sigmoid",
+    "classifier_span_pooling": "attn",
+    "max_vals": 250,
+    "pair_attn": 0,
+    "val_interval": 1000
+  },
+  "edges-spr1": {
+    "classifier_dropout": 0.3,
+    "classifier_hid_dim": 256,
+    "classifier_loss_fn": "sigmoid",
+    "classifier_span_pooling": "attn",
+    "max_vals": 100,
+    "pair_attn": 0,
+    "val_interval": 100
+  },
+  "edges-spr1-openai": {
+    "classifier_dropout": 0.3,
+    "classifier_hid_dim": 256,
+    "classifier_loss_fn": "sigmoid",
+    "classifier_span_pooling": "attn",
+    "max_vals": 100,
+    "pair_attn": 0,
+    "val_interval": 100
+  },
+  "edges-spr2": {
+    "classifier_dropout": 0.3,
+    "classifier_hid_dim": 256,
+    "classifier_loss_fn": "sigmoid",
+    "classifier_span_pooling": "attn",
+    "max_vals": 100,
+    "pair_attn": 0,
+    "val_interval": 100
+  },
+  "edges-spr2-openai": {
+    "classifier_dropout": 0.3,
+    "classifier_hid_dim": 256,
+    "classifier_loss_fn": "sigmoid",
+    "classifier_span_pooling": "attn",
+    "max_vals": 100,
+    "pair_attn": 0,
+    "val_interval": 100
+  },
+  "edges-srl-conll2005": {
+    "classifier_dropout": 0.3,
+    "classifier_hid_dim": 256,
+    "classifier_loss_fn": "sigmoid",
+    "classifier_span_pooling": "attn",
+    "max_vals": 100,
+    "pair_attn": 0,
+    "val_interval": 500
+  },
+  "edges-srl-conll2012": {
+    "classifier_dropout": 0.3,
+    "classifier_hid_dim": 256,
+    "classifier_loss_fn": "sigmoid",
+    "classifier_span_pooling": "attn",
+    "max_vals": 100,
+    "pair_attn": 0,
+    "val_interval": 1000
+  },
+  "edges-srl-conll2012-openai": {
+    "classifier_dropout": 0.3,
+    "classifier_hid_dim": 256,
+    "classifier_loss_fn": "sigmoid",
+    "classifier_span_pooling": "attn",
+    "max_vals": 100,
+    "pair_attn": 0,
+    "val_interval": 1000
+  },
+  "edges-tmpl": {
+    "classifier_dropout": 0.3,
+    "classifier_hid_dim": 256,
+    "classifier_loss_fn": "sigmoid",
+    "classifier_span_pooling": "attn",
+    "max_vals": 100,
+    "pair_attn": 0,
+    "val_interval": 500
+  },
+  "elmo": 1,
+  "elmo_chars_only": 1,
+  "elmo_weight_file_path": "none",
+  "eval_data_fraction": 1,
+  "eval_max_vals": 10,
+  "eval_val_interval": 10,
+  "exp_dir": "outputs/iwslt/",
+  "exp_name": "iwslt",
+  "fastText": 0,
+  "fastText_model_file": ".",
+  "global_ro_exp_dir": "/nfs/jsalt/share/exp/demo",
+  "grounded": {},
+  "grounded_d_proj": 2048,
+  "groundedsw": {},
+  "groundedsw_d_proj": 2048,
+  "is_probing_task": 0,
+  "keep_all_checkpoints": 0,
+  "load_eval_checkpoint": "none",
+  "load_model": 1,
+  "local_log_path": "outputs/iwslt/iwslt/log.log",
+  "lr": 0.0001,
+  "lr_decay_factor": 0.5,
+  "lr_patience": 1,
+  "max_char_v_size": 250,
+  "max_grad_norm": 5.0,
+  "max_seq_len": 10,
+  "max_targ_word_v_size": 20000,
+  "max_vals": 10,
+  "max_word_v_size": 5000,
+  "min_lr": 1e-06,
+  "mnli": {},
+  "mnli-alt": {},
+  "mnli-alt_classifier_dropout": 0.2,
+  "mnli-alt_classifier_hid_dim": 512,
+  "mnli-alt_lr": 0.0003,
+  "mnli-alt_pair_attn": 1,
+  "mnli-alt_val_interval": 1000,
+  "mnli-diagnostic": {
+    "use_classifier": "mnli"
+  },
+  "mnli_classifier_dropout": 0.2,
+  "mnli_classifier_hid_dim": 512,
+  "mnli_lr": 0.0003,
+  "mnli_pair_attn": 1,
+  "mnli_val_interval": 1000,
+  "mrpc": {
+    "classifier_dropout": 0.1,
+    "classifier_hid_dim": 256,
+    "max_vals": 8,
+    "val_interval": 1
+  },
+  "mrpc_classifier_dropout": 0.2,
+  "mrpc_classifier_hid_dim": 256,
+  "mrpc_d_proj": 256,
+  "mrpc_lr": 0.0003,
+  "mrpc_pair_attn": 0,
+  "mrpc_val_interval": 100,
+  "n_char_filters": 100,
+  "n_heads": 8,
+  "n_layers_enc": 1,
+  "n_layers_highway": 0,
+  "nli-prob": {
+    "probe_path": ""
+  },
+  "openai_embeddings_mode": "none",
+  "openai_transformer": 0,
+  "openai_transformer_ckpt": "",
+  "openai_transformer_fine_tune": 0,
+  "optimizer": "adam",
+  "pair_attn": 1,
+  "patience": 5,
+  "pretrain_tasks": "sst,mrpc,wnli",
+  "project_dir": "outputs",
+  "qnli": {},
+  "qnli-alt": {},
+  "qnli-alt_classifier_dropout": 0.2,
+  "qnli-alt_classifier_hid_dim": 512,
+  "qnli-alt_lr": 0.0003,
+  "qnli-alt_pair_attn": 1,
+  "qnli-alt_val_interval": 1000,
+  "qnli_classifier_dropout": 0.2,
+  "qnli_classifier_hid_dim": 512,
+  "qnli_lr": 0.0003,
+  "qnli_pair_attn": 1,
+  "qnli_val_interval": 1000,
+  "qqp": {},
+  "qqp-alt": {},
+  "qqp-alt_classifier_dropout": 0.2,
+  "qqp-alt_classifier_hid_dim": 512,
+  "qqp-alt_lr": 0.0003,
+  "qqp-alt_pair_attn": 1,
+  "qqp-alt_val_interval": 1000,
+  "qqp_classifier_dropout": 0.2,
+  "qqp_classifier_hid_dim": 512,
+  "qqp_lr": 0.0003,
+  "qqp_pair_attn": 1,
+  "qqp_val_interval": 1000,
+  "random_seed": 42,
+  "reindex_tasks": "",
+  "reload_indexing": 0,
+  "reload_tasks": 0,
+  "reload_vocab": 0,
+  "remote_log_name": "iwslt__iwslt",
+  "rte": {},
+  "rte_classifier_dropout": 0.4,
+  "rte_classifier_hid_dim": 128,
+  "rte_d_proj": 128,
+  "rte_lr": 0.0003,
+  "rte_pair_attn": 0,
+  "rte_val_interval": 100,
+  "run_dir": "outputs/iwslt/iwslt",
+  "run_name": "iwslt",
+  "s2s": {
+    "attention": "bilinear",
+    "d_hid_dec": 1024,
+    "n_layers_dec": 1,
+    "output_proj_input_dim": 1024,
+    "target_embedding_dim": 300
+  },
+  "scaling_method": "uniform",
+  "scheduler_threshold": 0.0001,
+  "sent_enc": "rnn",
+  "sep_embs_for_skip": 0,
+  "shared_optimizer": 1,
+  "shared_pair_attn": 0,
+  "skip_embs": 1,
+  "sst": {},
+  "sst_classifier_dropout": 0.2,
+  "sst_classifier_hid_dim": 256,
+  "sst_d_proj": 256,
+  "sst_lr": 0.0003,
+  "sst_val_interval": 100,
+  "sts-b": {
+    "classifier_dropout": 0.3,
+    "classifier_hid_dim": 512,
+    "max_vals": 16,
+    "pair_attn": 0,
+    "val_interval": 100
+  },
+  "sts-b-alt": {},
+  "sts-b-alt_classifier_dropout": 0.2,
+  "sts-b-alt_classifier_hid_dim": 512,
+  "sts-b-alt_lr": 0.0003,
+  "sts-b-alt_pair_attn": 1,
+  "sts-b-alt_val_interval": 1000,
+  "sts-b_classifier_dropout": 0.2,
+  "sts-b_classifier_hid_dim": 512,
+  "sts-b_lr": 0.0003,
+  "sts-b_pair_attn": 1,
+  "sts-b_val_interval": 1000,
+  "target_tasks": "iwslt",
+  "track_batch_utilization": 0,
+  "trainer_type": "sampling",
+  "training_data_fraction": 1,
+  "use_classifier": "",
+  "val_data_limit": 5000,
+  "val_interval": 100,
+  "warmup": 4000,
+  "weighting_method": "uniform",
+  "wnli": {},
+  "wnli_classifier_dropout": 0.4,
+  "wnli_classifier_hid_dim": 128,
+  "wnli_d_proj": 128,
+  "wnli_lr": 0.0003,
+  "wnli_pair_attn": 0,
+  "wnli_val_interval": 100,
+  "word_embs": "none",
+  "word_embs_file": "embeddings/glove.840B.300d.txt",
+  "write_preds": 0,
+  "write_strict_glue_format": 0
+}
+12/16 02:12:21 AM: Saved config to outputs/iwslt/iwslt/params.conf
+12/16 02:12:21 AM: Using random seed 42
+12/16 02:12:21 AM: Using GPU 0
+12/16 02:12:21 AM: Loading tasks...
+12/16 02:12:21 AM: Writing pre-preprocessed tasks to outputs/iwslt/
+12/16 02:12:21 AM: 	Loaded existing task iwslt
+12/16 02:12:22 AM: 	Task 'iwslt': train=150849 val=1525 test=1525
+12/16 02:12:22 AM: 	Loaded existing task mrpc
+12/16 02:12:22 AM: 	Task 'mrpc': train=3668 val=408 test=1725
+12/16 02:12:22 AM: 	Loaded existing task sst
+12/16 02:12:22 AM: 	Task 'sst': train=67349 val=872 test=1821
+12/16 02:12:22 AM: 	Loaded existing task wnli
+12/16 02:12:22 AM: 	Task 'wnli': train=635 val=71 test=146
+12/16 02:12:22 AM: 	Finished loading tasks: iwslt mrpc sst wnli.
+12/16 02:12:22 AM: Loading token dictionary from outputs/iwslt/vocab.
+12/16 02:12:22 AM: 	Loaded vocab from outputs/iwslt/vocab
+12/16 02:12:22 AM: 	Vocab namespace chars: size 115
+12/16 02:12:22 AM: 	Vocab namespace iwslt_tokens: size 20002
+12/16 02:12:22 AM: 	Vocab namespace tokens: size 5002
+12/16 02:12:22 AM: 	Finished building vocab.
+12/16 02:12:22 AM: 	Task 'iwslt', split 'train': Found preprocessed copy in outputs/iwslt/preproc/iwslt__train_data
+12/16 02:12:22 AM: 	Task 'iwslt', split 'val': Found preprocessed copy in outputs/iwslt/preproc/iwslt__val_data
+12/16 02:12:22 AM: 	Task 'iwslt', split 'test': Found preprocessed copy in outputs/iwslt/preproc/iwslt__test_data
+12/16 02:12:22 AM: 	Task 'iwslt': cleared in-memory data.
+12/16 02:12:22 AM: 	Task 'mrpc', split 'train': Found preprocessed copy in outputs/iwslt/preproc/mrpc__train_data
+12/16 02:12:22 AM: 	Task 'mrpc', split 'val': Found preprocessed copy in outputs/iwslt/preproc/mrpc__val_data
+12/16 02:12:22 AM: 	Task 'mrpc', split 'test': Found preprocessed copy in outputs/iwslt/preproc/mrpc__test_data
+12/16 02:12:22 AM: 	Task 'mrpc': cleared in-memory data.
+12/16 02:12:22 AM: 	Task 'sst', split 'train': Found preprocessed copy in outputs/iwslt/preproc/sst__train_data
+12/16 02:12:22 AM: 	Task 'sst', split 'val': Found preprocessed copy in outputs/iwslt/preproc/sst__val_data
+12/16 02:12:22 AM: 	Task 'sst', split 'test': Found preprocessed copy in outputs/iwslt/preproc/sst__test_data
+12/16 02:12:22 AM: 	Task 'sst': cleared in-memory data.
+12/16 02:12:22 AM: 	Task 'wnli', split 'train': Found preprocessed copy in outputs/iwslt/preproc/wnli__train_data
+12/16 02:12:22 AM: 	Task 'wnli', split 'val': Found preprocessed copy in outputs/iwslt/preproc/wnli__val_data
+12/16 02:12:22 AM: 	Task 'wnli', split 'test': Found preprocessed copy in outputs/iwslt/preproc/wnli__test_data
+12/16 02:12:22 AM: 	Task 'wnli': cleared in-memory data.
+12/16 02:12:22 AM: 	Finished indexing tasks
+12/16 02:12:22 AM: 	Lazy-loading indexed data for task='iwslt' from outputs/iwslt/preproc
+12/16 02:12:22 AM: 	Lazy-loading indexed data for task='mrpc' from outputs/iwslt/preproc
+12/16 02:12:22 AM: 	Lazy-loading indexed data for task='sst' from outputs/iwslt/preproc
+12/16 02:12:22 AM: 	Lazy-loading indexed data for task='wnli' from outputs/iwslt/preproc
+12/16 02:12:22 AM: All tasks initialized with data iterators.
+12/16 02:12:22 AM: 	  Training on sst, mrpc, wnli
+12/16 02:12:22 AM: 	  Evaluating on iwslt
+12/16 02:12:22 AM: 	Finished loading tasks in 1.176s
+12/16 02:12:22 AM: 	 Tasks: ['iwslt', 'mrpc', 'sst', 'wnli']
+12/16 02:12:22 AM: Building model...
+12/16 02:12:22 AM: 	Not using word embeddings!
+12/16 02:12:22 AM: 	Not using character embeddings!
+12/16 02:12:22 AM: Loading ELMo from files:
+12/16 02:12:22 AM: ELMO_OPT_PATH = https://s3-us-west-2.amazonaws.com/allennlp/models/elmo/2x4096_512_2048cnn_2xhighway/elmo_2x4096_512_2048cnn_2xhighway_options.json
+12/16 02:12:22 AM: 	Using ELMo character CNN only!
+12/16 02:12:22 AM: ELMO_WEIGHTS_PATH = https://s3-us-west-2.amazonaws.com/allennlp/models/elmo/2x4096_512_2048cnn_2xhighway/elmo_2x4096_512_2048cnn_2xhighway_weights.hdf5
+12/16 02:12:27 AM: batch_first = True
+12/16 02:12:27 AM: Converting Params object to dict; logging of default values will not occur when dictionary parameters are used subsequently.
+12/16 02:12:27 AM: CURRENTLY DEFINED PARAMETERS: 
+12/16 02:12:27 AM: input_size = 512
+12/16 02:12:27 AM: bidirectional = True
+12/16 02:12:27 AM: hidden_size = 256
+12/16 02:12:27 AM: num_layers = 1
+12/16 02:12:27 AM: batch_first = True
+12/16 02:12:27 AM: Initializing parameters
+12/16 02:12:27 AM: Done initializing parameters; the following parameters are using their default initialization from their code
+12/16 02:12:27 AM:    _phrase_layer._module.bias_hh_l0
+12/16 02:12:27 AM:    _phrase_layer._module.bias_hh_l0_reverse
+12/16 02:12:27 AM:    _phrase_layer._module.bias_ih_l0
+12/16 02:12:27 AM:    _phrase_layer._module.bias_ih_l0_reverse
+12/16 02:12:27 AM:    _phrase_layer._module.weight_hh_l0
+12/16 02:12:27 AM:    _phrase_layer._module.weight_hh_l0_reverse
+12/16 02:12:27 AM:    _phrase_layer._module.weight_ih_l0
+12/16 02:12:27 AM:    _phrase_layer._module.weight_ih_l0_reverse
+12/16 02:12:27 AM:    _text_field_embedder.token_embedder_elmo._char_embedding_weights
+12/16 02:12:27 AM:    _text_field_embedder.token_embedder_elmo._highways._layers.0.bias
+12/16 02:12:27 AM:    _text_field_embedder.token_embedder_elmo._highways._layers.0.weight
+12/16 02:12:27 AM:    _text_field_embedder.token_embedder_elmo._highways._layers.1.bias
+12/16 02:12:27 AM:    _text_field_embedder.token_embedder_elmo._highways._layers.1.weight
+12/16 02:12:27 AM:    _text_field_embedder.token_embedder_elmo._projection.bias
+12/16 02:12:27 AM:    _text_field_embedder.token_embedder_elmo._projection.weight
+12/16 02:12:27 AM:    _text_field_embedder.token_embedder_elmo.char_conv_0.bias
+12/16 02:12:27 AM:    _text_field_embedder.token_embedder_elmo.char_conv_0.weight
+12/16 02:12:27 AM:    _text_field_embedder.token_embedder_elmo.char_conv_1.bias
+12/16 02:12:27 AM:    _text_field_embedder.token_embedder_elmo.char_conv_1.weight
+12/16 02:12:27 AM:    _text_field_embedder.token_embedder_elmo.char_conv_2.bias
+12/16 02:12:27 AM:    _text_field_embedder.token_embedder_elmo.char_conv_2.weight
+12/16 02:12:27 AM:    _text_field_embedder.token_embedder_elmo.char_conv_3.bias
+12/16 02:12:27 AM:    _text_field_embedder.token_embedder_elmo.char_conv_3.weight
+12/16 02:12:27 AM:    _text_field_embedder.token_embedder_elmo.char_conv_4.bias
+12/16 02:12:27 AM:    _text_field_embedder.token_embedder_elmo.char_conv_4.weight
+12/16 02:12:27 AM:    _text_field_embedder.token_embedder_elmo.char_conv_5.bias
+12/16 02:12:27 AM:    _text_field_embedder.token_embedder_elmo.char_conv_5.weight
+12/16 02:12:27 AM:    _text_field_embedder.token_embedder_elmo.char_conv_6.bias
+12/16 02:12:27 AM:    _text_field_embedder.token_embedder_elmo.char_conv_6.weight
+12/16 02:12:27 AM: Using BiLSTM architecture for shared encoder!
+12/16 02:12:27 AM: Converting Params object to dict; logging of default values will not occur when dictionary parameters are used subsequently.
+12/16 02:12:27 AM: CURRENTLY DEFINED PARAMETERS: 
+12/16 02:12:27 AM: cls_type = mlp
+12/16 02:12:27 AM: d_hid = 256
+12/16 02:12:27 AM: d_proj = 256
+12/16 02:12:27 AM: shared_pair_attn = 0
+12/16 02:12:27 AM: attn = 0
+12/16 02:12:27 AM: d_hid_attn = 512
+12/16 02:12:27 AM: dropout = 0.1
+12/16 02:12:27 AM: cls_loss_fn = 
+12/16 02:12:27 AM: cls_span_pooling = x,y
+12/16 02:12:27 AM: edgeprobe_cnn_context = 0
+12/16 02:12:27 AM: use_classifier = mrpc
+12/16 02:12:27 AM: 	Task 'mrpc' params: {
+  "cls_type": "mlp",
+  "d_hid": 256,
+  "d_proj": 256,
+  "shared_pair_attn": 0,
+  "attn": 0,
+  "d_hid_attn": 512,
+  "dropout": 0.1,
+  "cls_loss_fn": "",
+  "cls_span_pooling": "x,y",
+  "edgeprobe_cnn_context": 0,
+  "use_classifier": "mrpc"
+}
+12/16 02:12:27 AM: Converting Params object to dict; logging of default values will not occur when dictionary parameters are used subsequently.
+12/16 02:12:27 AM: CURRENTLY DEFINED PARAMETERS: 
+12/16 02:12:27 AM: cls_type = mlp
+12/16 02:12:27 AM: d_hid = 256
+12/16 02:12:27 AM: d_proj = 256
+12/16 02:12:27 AM: shared_pair_attn = 0
+12/16 02:12:27 AM: attn = 1
+12/16 02:12:27 AM: d_hid_attn = 512
+12/16 02:12:27 AM: dropout = 0.2
+12/16 02:12:27 AM: cls_loss_fn = 
+12/16 02:12:27 AM: cls_span_pooling = x,y
+12/16 02:12:27 AM: edgeprobe_cnn_context = 0
+12/16 02:12:27 AM: use_classifier = sst
+12/16 02:12:27 AM: 	Task 'sst' params: {
+  "cls_type": "mlp",
+  "d_hid": 256,
+  "d_proj": 256,
+  "shared_pair_attn": 0,
+  "attn": 1,
+  "d_hid_attn": 512,
+  "dropout": 0.2,
+  "cls_loss_fn": "",
+  "cls_span_pooling": "x,y",
+  "edgeprobe_cnn_context": 0,
+  "use_classifier": "sst"
+}
+12/16 02:12:27 AM: Converting Params object to dict; logging of default values will not occur when dictionary parameters are used subsequently.
+12/16 02:12:27 AM: CURRENTLY DEFINED PARAMETERS: 
+12/16 02:12:27 AM: cls_type = mlp
+12/16 02:12:27 AM: d_hid = 32
+12/16 02:12:27 AM: d_proj = 512
+12/16 02:12:27 AM: shared_pair_attn = 0
+12/16 02:12:27 AM: attn = 1
+12/16 02:12:27 AM: d_hid_attn = 512
+12/16 02:12:27 AM: dropout = 0.2
+12/16 02:12:27 AM: cls_loss_fn = 
+12/16 02:12:27 AM: cls_span_pooling = x,y
+12/16 02:12:27 AM: edgeprobe_cnn_context = 0
+12/16 02:12:27 AM: use_classifier = iwslt
+12/16 02:12:27 AM: 	Task 'iwslt' params: {
+  "cls_type": "mlp",
+  "d_hid": 32,
+  "d_proj": 512,
+  "shared_pair_attn": 0,
+  "attn": 1,
+  "d_hid_attn": 512,
+  "dropout": 0.2,
+  "cls_loss_fn": "",
+  "cls_span_pooling": "x,y",
+  "edgeprobe_cnn_context": 0,
+  "use_classifier": "iwslt"
+}
+12/16 02:12:27 AM: Converting Params object to dict; logging of default values will not occur when dictionary parameters are used subsequently.
+12/16 02:12:27 AM: CURRENTLY DEFINED PARAMETERS: 
+12/16 02:12:27 AM: cls_type = mlp
+12/16 02:12:27 AM: d_hid = 128
+12/16 02:12:27 AM: d_proj = 128
+12/16 02:12:27 AM: shared_pair_attn = 0
+12/16 02:12:27 AM: attn = 0
+12/16 02:12:27 AM: d_hid_attn = 512
+12/16 02:12:27 AM: dropout = 0.4
+12/16 02:12:27 AM: cls_loss_fn = 
+12/16 02:12:27 AM: cls_span_pooling = x,y
+12/16 02:12:27 AM: edgeprobe_cnn_context = 0
+12/16 02:12:27 AM: use_classifier = wnli
+12/16 02:12:27 AM: 	Task 'wnli' params: {
+  "cls_type": "mlp",
+  "d_hid": 128,
+  "d_proj": 128,
+  "shared_pair_attn": 0,
+  "attn": 0,
+  "d_hid_attn": 512,
+  "dropout": 0.4,
+  "cls_loss_fn": "",
+  "cls_span_pooling": "x,y",
+  "edgeprobe_cnn_context": 0,
+  "use_classifier": "wnli"
+}
+12/16 02:12:27 AM: using bilinear attention
+12/16 02:12:30 AM: MultiTaskModel(
+  (sent_encoder): SentenceEncoder(
+    (_text_field_embedder): ElmoTextFieldEmbedder(
+      (token_embedder_elmo): ElmoCharacterEncoder(
+        (char_conv_0): Conv1d(16, 32, kernel_size=(1,), stride=(1,))
+        (char_conv_1): Conv1d(16, 32, kernel_size=(2,), stride=(1,))
+        (char_conv_2): Conv1d(16, 64, kernel_size=(3,), stride=(1,))
+        (char_conv_3): Conv1d(16, 128, kernel_size=(4,), stride=(1,))
+        (char_conv_4): Conv1d(16, 256, kernel_size=(5,), stride=(1,))
+        (char_conv_5): Conv1d(16, 512, kernel_size=(6,), stride=(1,))
+        (char_conv_6): Conv1d(16, 1024, kernel_size=(7,), stride=(1,))
+        (_highways): Highway(
+          (_layers): ModuleList(
+            (0): Linear(in_features=2048, out_features=4096, bias=True)
+            (1): Linear(in_features=2048, out_features=4096, bias=True)
+          )
+        )
+        (_projection): Linear(in_features=2048, out_features=512, bias=True)
+      )
+    )
+    (_highway_layer): TimeDistributed(
+      (_module): Highway(
+        (_layers): ModuleList()
+      )
+    )
+    (_phrase_layer): PytorchSeq2SeqWrapper(
+      (_module): LSTM(512, 256, batch_first=True, bidirectional=True)
+    )
+    (_dropout): Dropout(p=0.2)
+  )
+  (iwslt_decoder): Seq2SeqDecoder(
+    (_target_embedder): Embedding()
+    (_sent_pooler): Pooler(
+      (project): Linear(in_features=1024, out_features=1024, bias=True)
+    )
+    (_decoder_attention): BilinearAttention()
+    (_decoder_cell): LSTMCell(1324, 1024)
+    (_output_projection_layer): Linear(in_features=1024, out_features=20002, bias=True)
+    (_dropout): Dropout(p=0.2)
+  )
+  (mrpc_mdl): PairClassifier(
+    (pooler): Pooler(
+      (project): Linear(in_features=1024, out_features=256, bias=True)
+    )
+    (classifier): Classifier(
+      (classifier): Sequential(
+        (0): Linear(in_features=1024, out_features=256, bias=True)
+        (1): Tanh()
+        (2): LayerNorm(torch.Size([256]), eps=1e-05, elementwise_affine=True)
+        (3): Dropout(p=0.1)
+        (4): Linear(in_features=256, out_features=2, bias=True)
+      )
+    )
+  )
+  (sst_mdl): SingleClassifier(
+    (pooler): Pooler(
+      (project): Linear(in_features=1024, out_features=256, bias=True)
+    )
+    (classifier): Classifier(
+      (classifier): Sequential(
+        (0): Linear(in_features=256, out_features=256, bias=True)
+        (1): Tanh()
+        (2): LayerNorm(torch.Size([256]), eps=1e-05, elementwise_affine=True)
+        (3): Dropout(p=0.2)
+        (4): Linear(in_features=256, out_features=2, bias=True)
+      )
+    )
+  )
+  (wnli_mdl): PairClassifier(
+    (pooler): Pooler(
+      (project): Linear(in_features=1024, out_features=128, bias=True)
+    )
+    (classifier): Classifier(
+      (classifier): Sequential(
+        (0): Linear(in_features=512, out_features=128, bias=True)
+        (1): Tanh()
+        (2): LayerNorm(torch.Size([128]), eps=1e-05, elementwise_affine=True)
+        (3): Dropout(p=0.4)
+        (4): Linear(in_features=128, out_features=2, bias=True)
+      )
+    )
+  )
+)
+12/16 02:12:31 AM: >> Trainable param sent_encoder._phrase_layer._module.weight_ih_l0: torch.Size([1024, 512]) = 524288
+12/16 02:12:31 AM: >> Trainable param sent_encoder._phrase_layer._module.weight_hh_l0: torch.Size([1024, 256]) = 262144
+12/16 02:12:31 AM: >> Trainable param sent_encoder._phrase_layer._module.bias_ih_l0: torch.Size([1024]) = 1024
+12/16 02:12:31 AM: >> Trainable param sent_encoder._phrase_layer._module.bias_hh_l0: torch.Size([1024]) = 1024
+12/16 02:12:31 AM: >> Trainable param sent_encoder._phrase_layer._module.weight_ih_l0_reverse: torch.Size([1024, 512]) = 524288
+12/16 02:12:31 AM: >> Trainable param sent_encoder._phrase_layer._module.weight_hh_l0_reverse: torch.Size([1024, 256]) = 262144
+12/16 02:12:31 AM: >> Trainable param sent_encoder._phrase_layer._module.bias_ih_l0_reverse: torch.Size([1024]) = 1024
+12/16 02:12:31 AM: >> Trainable param sent_encoder._phrase_layer._module.bias_hh_l0_reverse: torch.Size([1024]) = 1024
+12/16 02:12:31 AM: >> Trainable param iwslt_decoder._target_embedder.weight: torch.Size([20002, 300]) = 6000600
+12/16 02:12:31 AM: >> Trainable param iwslt_decoder._sent_pooler.project.weight: torch.Size([1024, 1024]) = 1048576
+12/16 02:12:31 AM: >> Trainable param iwslt_decoder._sent_pooler.project.bias: torch.Size([1024]) = 1024
+12/16 02:12:31 AM: >> Trainable param iwslt_decoder._decoder_attention._weight_matrix: torch.Size([1024, 1024]) = 1048576
+12/16 02:12:31 AM: >> Trainable param iwslt_decoder._decoder_attention._bias: torch.Size([1]) = 1
+12/16 02:12:31 AM: >> Trainable param iwslt_decoder._decoder_cell.weight_ih: torch.Size([4096, 1324]) = 5423104
+12/16 02:12:31 AM: >> Trainable param iwslt_decoder._decoder_cell.weight_hh: torch.Size([4096, 1024]) = 4194304
+12/16 02:12:31 AM: >> Trainable param iwslt_decoder._decoder_cell.bias_ih: torch.Size([4096]) = 4096
+12/16 02:12:31 AM: >> Trainable param iwslt_decoder._decoder_cell.bias_hh: torch.Size([4096]) = 4096
+12/16 02:12:31 AM: >> Trainable param iwslt_decoder._output_projection_layer.weight: torch.Size([20002, 1024]) = 20482048
+12/16 02:12:31 AM: >> Trainable param iwslt_decoder._output_projection_layer.bias: torch.Size([20002]) = 20002
+12/16 02:12:31 AM: >> Trainable param mrpc_mdl.pooler.project.weight: torch.Size([256, 1024]) = 262144
+12/16 02:12:31 AM: >> Trainable param mrpc_mdl.pooler.project.bias: torch.Size([256]) = 256
+12/16 02:12:31 AM: >> Trainable param mrpc_mdl.classifier.classifier.0.weight: torch.Size([256, 1024]) = 262144
+12/16 02:12:31 AM: >> Trainable param mrpc_mdl.classifier.classifier.0.bias: torch.Size([256]) = 256
+12/16 02:12:31 AM: >> Trainable param mrpc_mdl.classifier.classifier.2.weight: torch.Size([256]) = 256
+12/16 02:12:31 AM: >> Trainable param mrpc_mdl.classifier.classifier.2.bias: torch.Size([256]) = 256
+12/16 02:12:31 AM: >> Trainable param mrpc_mdl.classifier.classifier.4.weight: torch.Size([2, 256]) = 512
+12/16 02:12:31 AM: >> Trainable param mrpc_mdl.classifier.classifier.4.bias: torch.Size([2]) = 2
+12/16 02:12:31 AM: >> Trainable param sst_mdl.pooler.project.weight: torch.Size([256, 1024]) = 262144
+12/16 02:12:31 AM: >> Trainable param sst_mdl.pooler.project.bias: torch.Size([256]) = 256
+12/16 02:12:31 AM: >> Trainable param sst_mdl.classifier.classifier.0.weight: torch.Size([256, 256]) = 65536
+12/16 02:12:31 AM: >> Trainable param sst_mdl.classifier.classifier.0.bias: torch.Size([256]) = 256
+12/16 02:12:31 AM: >> Trainable param sst_mdl.classifier.classifier.2.weight: torch.Size([256]) = 256
+12/16 02:12:31 AM: >> Trainable param sst_mdl.classifier.classifier.2.bias: torch.Size([256]) = 256
+12/16 02:12:31 AM: >> Trainable param sst_mdl.classifier.classifier.4.weight: torch.Size([2, 256]) = 512
+12/16 02:12:31 AM: >> Trainable param sst_mdl.classifier.classifier.4.bias: torch.Size([2]) = 2
+12/16 02:12:31 AM: >> Trainable param wnli_mdl.pooler.project.weight: torch.Size([128, 1024]) = 131072
+12/16 02:12:31 AM: >> Trainable param wnli_mdl.pooler.project.bias: torch.Size([128]) = 128
+12/16 02:12:31 AM: >> Trainable param wnli_mdl.classifier.classifier.0.weight: torch.Size([128, 512]) = 65536
+12/16 02:12:31 AM: >> Trainable param wnli_mdl.classifier.classifier.0.bias: torch.Size([128]) = 128
+12/16 02:12:31 AM: >> Trainable param wnli_mdl.classifier.classifier.2.weight: torch.Size([128]) = 128
+12/16 02:12:31 AM: >> Trainable param wnli_mdl.classifier.classifier.2.bias: torch.Size([128]) = 128
+12/16 02:12:31 AM: >> Trainable param wnli_mdl.classifier.classifier.4.weight: torch.Size([2, 128]) = 256
+12/16 02:12:31 AM: >> Trainable param wnli_mdl.classifier.classifier.4.bias: torch.Size([2]) = 2
+12/16 02:12:31 AM: Total number of parameters: 58893665 (5.88937e+07)
+12/16 02:12:31 AM: Number of trainable parameters: 40855809 (4.08558e+07)
+12/16 02:12:31 AM: 	Finished building model in 8.561s
+12/16 02:12:31 AM: Will run the following steps:
+Training model on tasks: sst,mrpc,wnli
+Re-training model for individual eval tasks
+Evaluating model on tasks: iwslt
+12/16 02:12:31 AM: Training...
+12/16 02:12:31 AM: 	Using ReduceLROnPlateau scheduler!
+12/16 02:12:31 AM: patience = 5
+12/16 02:12:31 AM: val_interval = 100
+12/16 02:12:31 AM: max_vals = 10
+12/16 02:12:31 AM: cuda_device = 0
+12/16 02:12:31 AM: grad_norm = 5.0
+12/16 02:12:31 AM: grad_clipping = None
+12/16 02:12:31 AM: lr_decay = 0.99
+12/16 02:12:31 AM: min_lr = 1e-06
+12/16 02:12:31 AM: keep_all_checkpoints = 0
+12/16 02:12:31 AM: val_data_limit = 5000
+12/16 02:12:31 AM: dec_val_scale = 250
+12/16 02:12:31 AM: training_data_fraction = 1
+12/16 02:12:31 AM: type = adam
+12/16 02:12:31 AM: parameter_groups = None
+12/16 02:12:31 AM: Converting Params object to dict; logging of default values will not occur when dictionary parameters are used subsequently.
+12/16 02:12:31 AM: CURRENTLY DEFINED PARAMETERS: 
+12/16 02:12:31 AM: lr = 0.0001
+12/16 02:12:31 AM: weight_decay = 0
+12/16 02:12:31 AM: amsgrad = True
+12/16 02:12:31 AM: type = reduce_on_plateau
+12/16 02:12:31 AM: Converting Params object to dict; logging of default values will not occur when dictionary parameters are used subsequently.
+12/16 02:12:31 AM: CURRENTLY DEFINED PARAMETERS: 
+12/16 02:12:31 AM: mode = max
+12/16 02:12:31 AM: factor = 0.5
+12/16 02:12:31 AM: patience = 1
+12/16 02:12:31 AM: threshold = 0.0001
+12/16 02:12:31 AM: threshold_mode = abs
+12/16 02:12:31 AM: verbose = True
+12/16 02:12:31 AM: type = adam
+12/16 02:12:31 AM: parameter_groups = None
+12/16 02:12:31 AM: Converting Params object to dict; logging of default values will not occur when dictionary parameters are used subsequently.
+12/16 02:12:31 AM: CURRENTLY DEFINED PARAMETERS: 
+12/16 02:12:31 AM: lr = 0.0001
+12/16 02:12:31 AM: weight_decay = 0
+12/16 02:12:31 AM: amsgrad = True
+12/16 02:12:31 AM: type = reduce_on_plateau
+12/16 02:12:31 AM: Converting Params object to dict; logging of default values will not occur when dictionary parameters are used subsequently.
+12/16 02:12:31 AM: CURRENTLY DEFINED PARAMETERS: 
+12/16 02:12:31 AM: mode = max
+12/16 02:12:31 AM: factor = 0.5
+12/16 02:12:31 AM: patience = 1
+12/16 02:12:31 AM: threshold = 0.0001
+12/16 02:12:31 AM: threshold_mode = abs
+12/16 02:12:31 AM: verbose = True
+12/16 02:12:31 AM: type = adam
+12/16 02:12:31 AM: parameter_groups = None
+12/16 02:12:31 AM: Converting Params object to dict; logging of default values will not occur when dictionary parameters are used subsequently.
+12/16 02:12:31 AM: CURRENTLY DEFINED PARAMETERS: 
+12/16 02:12:31 AM: lr = 0.0001
+12/16 02:12:31 AM: weight_decay = 0
+12/16 02:12:31 AM: amsgrad = True
+12/16 02:12:31 AM: type = reduce_on_plateau
+12/16 02:12:31 AM: Converting Params object to dict; logging of default values will not occur when dictionary parameters are used subsequently.
+12/16 02:12:31 AM: CURRENTLY DEFINED PARAMETERS: 
+12/16 02:12:31 AM: mode = max
+12/16 02:12:31 AM: factor = 0.5
+12/16 02:12:31 AM: patience = 1
+12/16 02:12:31 AM: threshold = 0.0001
+12/16 02:12:31 AM: threshold_mode = abs
+12/16 02:12:31 AM: verbose = True
+12/16 02:12:31 AM: type = adam
+12/16 02:12:31 AM: parameter_groups = None
+12/16 02:12:31 AM: Converting Params object to dict; logging of default values will not occur when dictionary parameters are used subsequently.
+12/16 02:12:31 AM: CURRENTLY DEFINED PARAMETERS: 
+12/16 02:12:31 AM: lr = 0.0001
+12/16 02:12:31 AM: weight_decay = 0
+12/16 02:12:31 AM: amsgrad = True
+12/16 02:12:31 AM: type = reduce_on_plateau
+12/16 02:12:31 AM: Converting Params object to dict; logging of default values will not occur when dictionary parameters are used subsequently.
+12/16 02:12:31 AM: CURRENTLY DEFINED PARAMETERS: 
+12/16 02:12:31 AM: mode = max
+12/16 02:12:31 AM: factor = 0.5
+12/16 02:12:31 AM: patience = 1
+12/16 02:12:31 AM: threshold = 0.0001
+12/16 02:12:31 AM: threshold_mode = abs
+12/16 02:12:31 AM: verbose = True
+12/16 02:12:31 AM: Found checkpoint main_epoch_10.th. Loading.
+12/16 02:12:34 AM: Loaded model from checkpoint. Starting at pass 1000.
+12/16 02:12:34 AM: Training examples per task: {'mrpc': 3668, 'sst': 67349, 'wnli': 635}
+12/16 02:12:34 AM: Sampling tasks uniformly.
+12/16 02:12:34 AM: Using weighting method: uniform, with normalized sample weights [0.3333 0.3333 0.3333] 
+12/16 02:12:34 AM: Using loss scaling method: uniform, with weights {'mrpc': 1.0, 'sst': 1.0, 'wnli': 1.0}
+12/16 02:12:34 AM: Beginning training. Stopping metric: macro_avg
+12/16 02:12:34 AM: Beginning training. Stopping metric: macro_avg
+12/16 02:12:34 AM: Stopped training after 10 validation checks
+12/16 02:12:34 AM: Trained mrpc for 343 batches or 0.747 epochs
+12/16 02:12:34 AM: Trained sst for 328 batches or 0.039 epochs
+12/16 02:12:34 AM: Trained wnli for 329 batches or 4.112 epochs
+12/16 02:12:34 AM: ***** VALIDATION RESULTS *****
+12/16 02:12:34 AM: mrpc_acc_f1, 8, mrpc_loss: 0.58652, sst_loss: 0.56700, wnli_loss: 0.72692, macro_avg: 0.58083, micro_avg: 0.70565, mrpc_acc_f1: 0.75815, mrpc_accuracy: 0.69853, mrpc_f1: 0.81778, mrpc_precision: 0.69697, mrpc_recall: 0.98925, sst_accuracy: 0.71674, wnli_accuracy: 0.26761
+12/16 02:12:34 AM: sst_accuracy, 8, mrpc_loss: 0.58652, sst_loss: 0.56700, wnli_loss: 0.72692, macro_avg: 0.58083, micro_avg: 0.70565, mrpc_acc_f1: 0.75815, mrpc_accuracy: 0.69853, mrpc_f1: 0.81778, mrpc_precision: 0.69697, mrpc_recall: 0.98925, sst_accuracy: 0.71674, wnli_accuracy: 0.26761
+12/16 02:12:34 AM: wnli_accuracy, 1, mrpc_loss: 0.60417, sst_loss: 0.72567, wnli_loss: 0.70679, macro_avg: 0.60998, micro_avg: 0.58895, mrpc_acc_f1: 0.75166, mrpc_accuracy: 0.68873, mrpc_f1: 0.81460, mrpc_precision: 0.68719, mrpc_recall: 1.00000, sst_accuracy: 0.51491, wnli_accuracy: 0.56338
+12/16 02:12:34 AM: micro_avg, 9, mrpc_loss: 0.57565, sst_loss: 0.57388, wnli_loss: 0.71731, macro_avg: 0.66835, micro_avg: 0.70876, mrpc_acc_f1: 0.75622, mrpc_accuracy: 0.69853, mrpc_f1: 0.81392, mrpc_precision: 0.70419, mrpc_recall: 0.96416, sst_accuracy: 0.69954, wnli_accuracy: 0.54930
+12/16 02:12:34 AM: macro_avg, 9, mrpc_loss: 0.57565, sst_loss: 0.57388, wnli_loss: 0.71731, macro_avg: 0.66835, micro_avg: 0.70876, mrpc_acc_f1: 0.75622, mrpc_accuracy: 0.69853, mrpc_f1: 0.81392, mrpc_precision: 0.70419, mrpc_recall: 0.96416, sst_accuracy: 0.69954, wnli_accuracy: 0.54930
+12/16 02:12:34 AM: Found no task-specific parameters to skip for task: iwslt
+12/16 02:12:34 AM: Loaded model state from outputs/iwslt/iwslt/model_state_main_epoch_9.best_macro.th
+12/16 02:12:34 AM: 	Using ReduceLROnPlateau scheduler!
+12/16 02:12:34 AM: patience = 5
+12/16 02:12:34 AM: val_interval = 10
+12/16 02:12:34 AM: max_vals = 10
+12/16 02:12:34 AM: cuda_device = 0
+12/16 02:12:34 AM: grad_norm = 5.0
+12/16 02:12:34 AM: grad_clipping = None
+12/16 02:12:34 AM: lr_decay = 0.99
+12/16 02:12:34 AM: min_lr = 1e-06
+12/16 02:12:34 AM: keep_all_checkpoints = 0
+12/16 02:12:34 AM: val_data_limit = 5000
+12/16 02:12:34 AM: dec_val_scale = 250
+12/16 02:12:34 AM: training_data_fraction = 1
+12/16 02:12:35 AM: type = adam
+12/16 02:12:35 AM: parameter_groups = None
+12/16 02:12:35 AM: Converting Params object to dict; logging of default values will not occur when dictionary parameters are used subsequently.
+12/16 02:12:35 AM: CURRENTLY DEFINED PARAMETERS: 
+12/16 02:12:35 AM: lr = 0.0001
+12/16 02:12:35 AM: weight_decay = 0
+12/16 02:12:35 AM: amsgrad = True
+12/16 02:12:35 AM: type = reduce_on_plateau
+12/16 02:12:35 AM: Converting Params object to dict; logging of default values will not occur when dictionary parameters are used subsequently.
+12/16 02:12:35 AM: CURRENTLY DEFINED PARAMETERS: 
+12/16 02:12:35 AM: mode = min
+12/16 02:12:35 AM: factor = 0.5
+12/16 02:12:35 AM: patience = 1
+12/16 02:12:35 AM: threshold = 0.0001
+12/16 02:12:35 AM: threshold_mode = abs
+12/16 02:12:35 AM: verbose = True
+12/16 02:12:35 AM: type = adam
+12/16 02:12:35 AM: parameter_groups = None
+12/16 02:12:35 AM: Converting Params object to dict; logging of default values will not occur when dictionary parameters are used subsequently.
+12/16 02:12:35 AM: CURRENTLY DEFINED PARAMETERS: 
+12/16 02:12:35 AM: lr = 0.0001
+12/16 02:12:35 AM: weight_decay = 0
+12/16 02:12:35 AM: amsgrad = True
+12/16 02:12:35 AM: type = reduce_on_plateau
+12/16 02:12:35 AM: Converting Params object to dict; logging of default values will not occur when dictionary parameters are used subsequently.
+12/16 02:12:35 AM: CURRENTLY DEFINED PARAMETERS: 
+12/16 02:12:35 AM: mode = min
+12/16 02:12:35 AM: factor = 0.5
+12/16 02:12:35 AM: patience = 1
+12/16 02:12:35 AM: threshold = 0.0001
+12/16 02:12:35 AM: threshold_mode = abs
+12/16 02:12:35 AM: verbose = True
+12/16 02:12:35 AM: Training examples per task: {'iwslt': 150849}
+12/16 02:12:35 AM: Sampling tasks uniformly.
+12/16 02:12:35 AM: Using weighting method: uniform, with normalized sample weights [1.] 
+12/16 02:12:35 AM: Using loss scaling method: uniform, with weights {'iwslt': 1.0}
+12/16 02:12:35 AM: Beginning training. Stopping metric: iwslt_perplexity
+12/16 02:12:35 AM: Beginning training. Stopping metric: iwslt_perplexity
+12/16 02:12:37 AM: ***** Pass 10 / Epoch 1 *****
+12/16 02:12:37 AM: iwslt: trained on 10 batches, 0.001 epochs
+12/16 02:12:37 AM: Validating...
+12/16 02:12:40 AM: Best model found for iwslt.
+12/16 02:12:40 AM: Best model found for micro.
+12/16 02:12:40 AM: Best model found for macro.
+12/16 02:12:40 AM: Advancing scheduler.
+12/16 02:12:40 AM: 	Best macro_avg: 17460.406
+12/16 02:12:40 AM: 	# bad epochs: 0
+12/16 02:12:40 AM: Statistic: iwslt_loss
+12/16 02:12:40 AM: 	training: 9.871211
+12/16 02:12:40 AM: 	validation: 9.767691
+12/16 02:12:40 AM: Statistic: macro_avg
+12/16 02:12:40 AM: 	validation: 17460.406361
+12/16 02:12:40 AM: Statistic: micro_avg
+12/16 02:12:40 AM: 	validation: 17460.406361
+12/16 02:12:40 AM: Statistic: iwslt_perplexity
+12/16 02:12:40 AM: 	training: 19364.770989
+12/16 02:12:40 AM: 	validation: 17460.406361
+12/16 02:12:40 AM: Statistic: iwslt_bleu_score
+12/16 02:12:40 AM: 	training: 0.000000
+12/16 02:12:40 AM: 	validation: 0.000000
+12/16 02:12:40 AM: Statistic: iwslt_unk_ratio_macroavg
+12/16 02:12:40 AM: 	training: 0.000000
+12/16 02:12:40 AM: 	validation: 0.000000
+12/16 02:12:40 AM: global_lr: 0.000100
+12/16 02:12:40 AM: Saved files to outputs/iwslt/iwslt
+12/16 02:12:41 AM: ***** Pass 20 / Epoch 2 *****
+12/16 02:12:41 AM: iwslt: trained on 10 batches, 0.001 epochs
+12/16 02:12:41 AM: Validating...
+12/16 02:12:43 AM: Best model found for iwslt.
+12/16 02:12:43 AM: Best model found for micro.
+12/16 02:12:43 AM: Best model found for macro.
+12/16 02:12:43 AM: Advancing scheduler.
+12/16 02:12:43 AM: 	Best macro_avg: 10033.022
+12/16 02:12:43 AM: 	# bad epochs: 0
+12/16 02:12:43 AM: Statistic: iwslt_loss
+12/16 02:12:43 AM: 	training: 9.609772
+12/16 02:12:43 AM: 	validation: 9.213637
+12/16 02:12:43 AM: Statistic: macro_avg
+12/16 02:12:43 AM: 	validation: 10033.021906
+12/16 02:12:43 AM: Statistic: micro_avg
+12/16 02:12:43 AM: 	validation: 10033.021906
+12/16 02:12:43 AM: Statistic: iwslt_perplexity
+12/16 02:12:43 AM: 	training: 14909.774756
+12/16 02:12:43 AM: 	validation: 10033.021906
+12/16 02:12:43 AM: Statistic: iwslt_bleu_score
+12/16 02:12:43 AM: 	training: 0.000000
+12/16 02:12:43 AM: 	validation: 0.000000
+12/16 02:12:43 AM: Statistic: iwslt_unk_ratio_macroavg
+12/16 02:12:43 AM: 	training: 0.000000
+12/16 02:12:43 AM: 	validation: 0.000000
+12/16 02:12:43 AM: global_lr: 0.000100
+12/16 02:12:43 AM: Saved files to outputs/iwslt/iwslt
+12/16 02:12:44 AM: ***** Pass 30 / Epoch 3 *****
+12/16 02:12:44 AM: iwslt: trained on 10 batches, 0.001 epochs
+12/16 02:12:44 AM: Validating...
+12/16 02:12:45 AM: Batch 33/191: perplexity: 2724.2324, bleu_score: 0.0000, unk_ratio_macroavg: 0.0000, iwslt_loss: 7.9099 ||
+12/16 02:12:47 AM: Best model found for iwslt.
+12/16 02:12:47 AM: Best model found for micro.
+12/16 02:12:47 AM: Best model found for macro.
+12/16 02:12:47 AM: Advancing scheduler.
+12/16 02:12:47 AM: 	Best macro_avg: 2688.482
+12/16 02:12:47 AM: 	# bad epochs: 0
+12/16 02:12:47 AM: Statistic: iwslt_loss
+12/16 02:12:47 AM: 	training: 8.540959
+12/16 02:12:47 AM: 	validation: 7.896732
+12/16 02:12:47 AM: Statistic: macro_avg
+12/16 02:12:47 AM: 	validation: 2688.482288
+12/16 02:12:47 AM: Statistic: micro_avg
+12/16 02:12:47 AM: 	validation: 2688.482288
+12/16 02:12:47 AM: Statistic: iwslt_perplexity
+12/16 02:12:47 AM: 	training: 5120.250502
+12/16 02:12:47 AM: 	validation: 2688.482288
+12/16 02:12:47 AM: Statistic: iwslt_bleu_score
+12/16 02:12:47 AM: 	training: 0.000000
+12/16 02:12:47 AM: 	validation: 0.000000
+12/16 02:12:47 AM: Statistic: iwslt_unk_ratio_macroavg
+12/16 02:12:47 AM: 	training: 0.000000
+12/16 02:12:47 AM: 	validation: 0.000000
+12/16 02:12:47 AM: global_lr: 0.000100
+12/16 02:12:47 AM: Saved files to outputs/iwslt/iwslt
+12/16 02:12:48 AM: ***** Pass 40 / Epoch 4 *****
+12/16 02:12:48 AM: iwslt: trained on 10 batches, 0.001 epochs
+12/16 02:12:48 AM: Validating...
+12/16 02:12:50 AM: Best model found for iwslt.
+12/16 02:12:50 AM: Best model found for micro.
+12/16 02:12:50 AM: Best model found for macro.
+12/16 02:12:50 AM: Advancing scheduler.
+12/16 02:12:50 AM: 	Best macro_avg: 1392.718
+12/16 02:12:50 AM: 	# bad epochs: 0
+12/16 02:12:50 AM: Statistic: iwslt_loss
+12/16 02:12:50 AM: 	training: 7.685701
+12/16 02:12:50 AM: 	validation: 7.239012
+12/16 02:12:50 AM: Statistic: macro_avg
+12/16 02:12:50 AM: 	validation: 1392.717761
+12/16 02:12:50 AM: Statistic: micro_avg
+12/16 02:12:50 AM: 	validation: 1392.717761
+12/16 02:12:50 AM: Statistic: iwslt_perplexity
+12/16 02:12:50 AM: 	training: 2176.996111
+12/16 02:12:50 AM: 	validation: 1392.717761
+12/16 02:12:50 AM: Statistic: iwslt_bleu_score
+12/16 02:12:50 AM: 	training: 0.000000
+12/16 02:12:50 AM: 	validation: 0.000000
+12/16 02:12:50 AM: Statistic: iwslt_unk_ratio_macroavg
+12/16 02:12:50 AM: 	training: 0.000000
+12/16 02:12:50 AM: 	validation: 0.000000
+12/16 02:12:50 AM: global_lr: 0.000100
+12/16 02:12:51 AM: Saved files to outputs/iwslt/iwslt
+12/16 02:12:51 AM: ***** Pass 50 / Epoch 5 *****
+12/16 02:12:51 AM: iwslt: trained on 10 batches, 0.001 epochs
+12/16 02:12:51 AM: Validating...
+12/16 02:12:54 AM: Best model found for iwslt.
+12/16 02:12:54 AM: Best model found for micro.
+12/16 02:12:54 AM: Best model found for macro.
+12/16 02:12:54 AM: Advancing scheduler.
+12/16 02:12:54 AM: 	Best macro_avg: 1078.541
+12/16 02:12:54 AM: 	# bad epochs: 0
+12/16 02:12:54 AM: Statistic: iwslt_loss
+12/16 02:12:54 AM: 	training: 7.243012
+12/16 02:12:54 AM: 	validation: 6.983365
+12/16 02:12:54 AM: Statistic: macro_avg
+12/16 02:12:54 AM: 	validation: 1078.541292
+12/16 02:12:54 AM: Statistic: micro_avg
+12/16 02:12:54 AM: 	validation: 1078.541292
+12/16 02:12:54 AM: Statistic: iwslt_perplexity
+12/16 02:12:54 AM: 	training: 1398.299177
+12/16 02:12:54 AM: 	validation: 1078.541292
+12/16 02:12:54 AM: Statistic: iwslt_bleu_score
+12/16 02:12:54 AM: 	training: 0.000000
+12/16 02:12:54 AM: 	validation: 0.000000
+12/16 02:12:54 AM: Statistic: iwslt_unk_ratio_macroavg
+12/16 02:12:54 AM: 	training: 0.000000
+12/16 02:12:54 AM: 	validation: 0.000000
+12/16 02:12:54 AM: global_lr: 0.000100
+12/16 02:12:54 AM: Saved files to outputs/iwslt/iwslt
+12/16 02:12:55 AM: Update 57: task iwslt, batch 7 (57): perplexity: 1045.4582, bleu_score: 0.0000, unk_ratio_macroavg: 0.0000, iwslt_loss: 6.9522 ||
+12/16 02:12:55 AM: ***** Pass 60 / Epoch 6 *****
+12/16 02:12:55 AM: iwslt: trained on 10 batches, 0.001 epochs
+12/16 02:12:55 AM: Validating...
+12/16 02:12:57 AM: Best model found for iwslt.
+12/16 02:12:57 AM: Best model found for micro.
+12/16 02:12:57 AM: Best model found for macro.
+12/16 02:12:57 AM: Advancing scheduler.
+12/16 02:12:57 AM: 	Best macro_avg: 954.756
+12/16 02:12:57 AM: 	# bad epochs: 0
+12/16 02:12:57 AM: Statistic: iwslt_loss
+12/16 02:12:57 AM: 	training: 6.912914
+12/16 02:12:57 AM: 	validation: 6.861456
+12/16 02:12:57 AM: Statistic: macro_avg
+12/16 02:12:57 AM: 	validation: 954.755997
+12/16 02:12:57 AM: Statistic: micro_avg
+12/16 02:12:57 AM: 	validation: 954.755997
+12/16 02:12:57 AM: Statistic: iwslt_perplexity
+12/16 02:12:57 AM: 	training: 1005.171992
+12/16 02:12:57 AM: 	validation: 954.755997
+12/16 02:12:57 AM: Statistic: iwslt_bleu_score
+12/16 02:12:57 AM: 	training: 0.000000
+12/16 02:12:57 AM: 	validation: 0.000000
+12/16 02:12:57 AM: Statistic: iwslt_unk_ratio_macroavg
+12/16 02:12:57 AM: 	training: 0.000000
+12/16 02:12:57 AM: 	validation: 0.000000
+12/16 02:12:57 AM: global_lr: 0.000100
+12/16 02:12:58 AM: Saved files to outputs/iwslt/iwslt
+12/16 02:12:58 AM: ***** Pass 70 / Epoch 7 *****
+12/16 02:12:58 AM: iwslt: trained on 10 batches, 0.001 epochs
+12/16 02:12:58 AM: Validating...
+12/16 02:13:01 AM: Best model found for iwslt.
+12/16 02:13:01 AM: Best model found for micro.
+12/16 02:13:01 AM: Best model found for macro.
+12/16 02:13:01 AM: Advancing scheduler.
+12/16 02:13:01 AM: 	Best macro_avg: 900.570
+12/16 02:13:01 AM: 	# bad epochs: 0
+12/16 02:13:01 AM: Statistic: iwslt_loss
+12/16 02:13:01 AM: 	training: 6.980090
+12/16 02:13:01 AM: 	validation: 6.803028
+12/16 02:13:01 AM: Statistic: macro_avg
+12/16 02:13:01 AM: 	validation: 900.570387
+12/16 02:13:01 AM: Statistic: micro_avg
+12/16 02:13:01 AM: 	validation: 900.570387
+12/16 02:13:01 AM: Statistic: iwslt_perplexity
+12/16 02:13:01 AM: 	training: 1075.014600
+12/16 02:13:01 AM: 	validation: 900.570387
+12/16 02:13:01 AM: Statistic: iwslt_bleu_score
+12/16 02:13:01 AM: 	training: 0.000000
+12/16 02:13:01 AM: 	validation: 0.000000
+12/16 02:13:01 AM: Statistic: iwslt_unk_ratio_macroavg
+12/16 02:13:01 AM: 	training: 0.000000
+12/16 02:13:01 AM: 	validation: 0.000000
+12/16 02:13:01 AM: global_lr: 0.000100
+12/16 02:13:01 AM: Saved files to outputs/iwslt/iwslt
+12/16 02:13:02 AM: ***** Pass 80 / Epoch 8 *****
+12/16 02:13:02 AM: iwslt: trained on 10 batches, 0.001 epochs
+12/16 02:13:02 AM: Validating...
+12/16 02:13:05 AM: Best model found for iwslt.
+12/16 02:13:05 AM: Best model found for micro.
+12/16 02:13:05 AM: Best model found for macro.
+12/16 02:13:05 AM: Advancing scheduler.
+12/16 02:13:05 AM: 	Best macro_avg: 852.821
+12/16 02:13:05 AM: 	# bad epochs: 0
+12/16 02:13:05 AM: Statistic: iwslt_loss
+12/16 02:13:05 AM: 	training: 6.709356
+12/16 02:13:05 AM: 	validation: 6.748550
+12/16 02:13:05 AM: Statistic: macro_avg
+12/16 02:13:05 AM: 	validation: 852.820913
+12/16 02:13:05 AM: Statistic: micro_avg
+12/16 02:13:05 AM: 	validation: 852.820913
+12/16 02:13:05 AM: Statistic: iwslt_perplexity
+12/16 02:13:05 AM: 	training: 820.042458
+12/16 02:13:05 AM: 	validation: 852.820913
+12/16 02:13:05 AM: Statistic: iwslt_bleu_score
+12/16 02:13:05 AM: 	training: 0.000000
+12/16 02:13:05 AM: 	validation: 0.000000
+12/16 02:13:05 AM: Statistic: iwslt_unk_ratio_macroavg
+12/16 02:13:05 AM: 	training: 0.000000
+12/16 02:13:05 AM: 	validation: 0.000000
+12/16 02:13:05 AM: global_lr: 0.000100
+12/16 02:13:05 AM: Saved files to outputs/iwslt/iwslt
+12/16 02:13:05 AM: Update 81: task iwslt, batch 1 (81): perplexity: 691.0850, bleu_score: 0.0000, unk_ratio_macroavg: 0.0000, iwslt_loss: 6.5383 ||
+12/16 02:13:05 AM: ***** Pass 90 / Epoch 9 *****
+12/16 02:13:05 AM: iwslt: trained on 10 batches, 0.001 epochs
+12/16 02:13:05 AM: Validating...
+12/16 02:13:08 AM: Best model found for iwslt.
+12/16 02:13:08 AM: Best model found for micro.
+12/16 02:13:08 AM: Best model found for macro.
+12/16 02:13:08 AM: Advancing scheduler.
+12/16 02:13:08 AM: 	Best macro_avg: 808.845
+12/16 02:13:08 AM: 	# bad epochs: 0
+12/16 02:13:08 AM: Statistic: iwslt_loss
+12/16 02:13:08 AM: 	training: 6.673968
+12/16 02:13:08 AM: 	validation: 6.695607
+12/16 02:13:08 AM: Statistic: macro_avg
+12/16 02:13:08 AM: 	validation: 808.845086
+12/16 02:13:08 AM: Statistic: micro_avg
+12/16 02:13:08 AM: 	validation: 808.845086
+12/16 02:13:08 AM: Statistic: iwslt_perplexity
+12/16 02:13:08 AM: 	training: 791.530196
+12/16 02:13:08 AM: 	validation: 808.845086
+12/16 02:13:08 AM: Statistic: iwslt_bleu_score
+12/16 02:13:08 AM: 	training: 0.000000
+12/16 02:13:08 AM: 	validation: 0.000000
+12/16 02:13:08 AM: Statistic: iwslt_unk_ratio_macroavg
+12/16 02:13:08 AM: 	training: 0.000000
+12/16 02:13:08 AM: 	validation: 0.000000
+12/16 02:13:08 AM: global_lr: 0.000100
+12/16 02:13:08 AM: Saved files to outputs/iwslt/iwslt
+12/16 02:13:09 AM: ***** Pass 100 / Epoch 10 *****
+12/16 02:13:09 AM: iwslt: trained on 10 batches, 0.001 epochs
+12/16 02:13:09 AM: Validating...
+12/16 02:13:12 AM: Best model found for iwslt.
+12/16 02:13:12 AM: Best model found for micro.
+12/16 02:13:12 AM: Best model found for macro.
+12/16 02:13:12 AM: Advancing scheduler.
+12/16 02:13:12 AM: 	Best macro_avg: 764.333
+12/16 02:13:12 AM: 	# bad epochs: 0
+12/16 02:13:12 AM: Maximum number of validations hit. Stopping training.
+12/16 02:13:12 AM: Statistic: iwslt_loss
+12/16 02:13:12 AM: 	training: 6.485430
+12/16 02:13:12 AM: 	validation: 6.639003
+12/16 02:13:12 AM: Statistic: macro_avg
+12/16 02:13:12 AM: 	validation: 764.332621
+12/16 02:13:12 AM: Statistic: micro_avg
+12/16 02:13:12 AM: 	validation: 764.332621
+12/16 02:13:12 AM: Statistic: iwslt_perplexity
+12/16 02:13:12 AM: 	training: 655.520904
+12/16 02:13:12 AM: 	validation: 764.332621
+12/16 02:13:12 AM: Statistic: iwslt_bleu_score
+12/16 02:13:12 AM: 	training: 0.000000
+12/16 02:13:12 AM: 	validation: 0.000000
+12/16 02:13:12 AM: Statistic: iwslt_unk_ratio_macroavg
+12/16 02:13:12 AM: 	training: 0.000000
+12/16 02:13:12 AM: 	validation: 0.000000
+12/16 02:13:12 AM: global_lr: 0.000100
+12/16 02:13:12 AM: Saved files to outputs/iwslt/iwslt
+12/16 02:13:12 AM: Stopped training after 10 validation checks
+12/16 02:13:12 AM: Trained iwslt for 100 batches or 0.005 epochs
+12/16 02:13:12 AM: ***** VALIDATION RESULTS *****
+12/16 02:13:12 AM: iwslt_perplexity, 10, iwslt_loss: 6.63900, macro_avg: 764.33262, micro_avg: 764.33262, iwslt_perplexity: 764.33262, iwslt_bleu_score: 0.00000, iwslt_unk_ratio_macroavg: 0.00000
+12/16 02:13:12 AM: micro_avg, 10, iwslt_loss: 6.63900, macro_avg: 764.33262, micro_avg: 764.33262, iwslt_perplexity: 764.33262, iwslt_bleu_score: 0.00000, iwslt_unk_ratio_macroavg: 0.00000
+12/16 02:13:12 AM: macro_avg, 10, iwslt_loss: 6.63900, macro_avg: 764.33262, micro_avg: 764.33262, iwslt_perplexity: 764.33262, iwslt_bleu_score: 0.00000, iwslt_unk_ratio_macroavg: 0.00000
+12/16 02:13:12 AM: Loaded model state from outputs/iwslt/iwslt/model_state_eval_best.th
+12/16 02:13:12 AM: Evaluating...
+12/16 02:13:12 AM: Evaluating on: iwslt, split: val
+12/16 02:13:15 AM: Task iwslt: has no predictions!
+12/16 02:13:15 AM: Writing results for split 'val' to outputs/iwslt/results.tsv
+12/16 02:13:15 AM: micro_avg: 764.333, macro_avg: 764.333, iwslt_perplexity: 764.333, iwslt_bleu_score: 0.000, iwslt_unk_ratio_macroavg: 0.000
+12/16 02:13:15 AM: Done!
