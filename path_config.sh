@@ -22,8 +22,10 @@
 # export FASTTEXT_MODEL_FILE=None
 # export FASTTEXT_EMBS_FILE=None
 
-export JIANT_PROJECT_PREFIX=exp
-export JIANT_DATA_DIR=/nfs/jsalt/home/
+export JIANT_PROJECT_PREFIX=outputs
+export JIANT_DATA_DIR=data
+export FASTTEXT_MODEL_FILE=.
+export WORD_EMBS_FILE=embeddings/glove.840B.300d.txt
 export NFS_PROJECT_PREFIX=/nfs/jsalt/exp/nkim
 export NFS_DATA_DIR=/nfs/jsalt/home/
 

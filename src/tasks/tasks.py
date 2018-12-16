@@ -2181,3 +2181,13 @@ class CCGTaggingTask(TaggingTask):
         self.val_data_text = val_data
         self.test_data_text = te_data
         log.info("\tFinished loading CCGTagging data.")
+
+@register_task('iwslt', rel_path='iwslt/', max_targ_v_size=20000)
+class MTTaskIWSLT(MTTask):
+    def __init__(self, path, max_seq_len, max_targ_v_size, name='iwslt'):
+        ''' MT iwslt'''
+        super().__init__(path=path, max_seq_len=max_seq_len,
+                         max_targ_v_size=max_targ_v_size, name=name)
+        self.files_by_split = {"train": os.path.join(path, "train.txt"),
+                               "val": os.path.join(path, "valid.txt"),
+                               "test": os.path.join(path, "test.txt")}

@@ -1,0 +1,1304 @@
+12/15 10:00:17 PM: fastText library not found!
+12/15 10:00:17 PM: Loading config from config/demo.conf
+12/15 10:00:17 PM: Config overrides: exp_name = wmt, run_name = foobar, d_hid = 256
+12/15 10:00:18 PM: Waiting on git info....
+12/15 10:00:18 PM: Git branch: master
+12/15 10:00:18 PM: Git SHA: 58e9079f6a11a6ebd29edc0fe3d4fec403c7819c
+12/15 10:00:18 PM: Parsed args: 
+{
+  "allow_missing_task_map": 0,
+  "allow_reuse_of_pretraining_parameters": 0,
+  "allow_untrained_encoder_parameters": 0,
+  "batch_size": 8,
+  "bidirectional": 1,
+  "bpp_base": 1,
+  "char_embs": 0,
+  "char_filter_sizes": "2,3,4,5",
+  "classifier": "mlp",
+  "classifier_dropout": 0.2,
+  "classifier_hid_dim": 32,
+  "classifier_loss_fn": "",
+  "classifier_span_pooling": "x,y",
+  "cola": {},
+  "cola_classifier_dropout": 0.2,
+  "cola_classifier_hid_dim": 256,
+  "cola_d_proj": 256,
+  "cola_lr": 0.0003,
+  "cola_val_interval": 100,
+  "cove": 0,
+  "cove_fine_tune": 0,
+  "cuda": 0,
+  "d_char": 100,
+  "d_ff": 2048,
+  "d_hid": 256,
+  "d_hid_attn": 512,
+  "d_proj": 512,
+  "d_tproj": 64,
+  "d_word": 300,
+  "data_dir": "data",
+  "dec_val_scale": 250,
+  "do_full_eval": 1,
+  "do_pretrain": 1,
+  "do_target_task_training": 1,
+  "dropout": 0.2,
+  "dropout_embs": 0.2,
+  "edgeprobe_cnn_context": 0,
+  "edges-ccg-parse": {
+    "classifier_dropout": 0.3,
+    "classifier_hid_dim": 256,
+    "classifier_loss_fn": "sigmoid",
+    "classifier_span_pooling": "attn",
+    "max_vals": 100,
+    "pair_attn": 0,
+    "val_interval": 500
+  },
+  "edges-ccg-tag": {
+    "classifier_dropout": 0.3,
+    "classifier_hid_dim": 256,
+    "classifier_loss_fn": "sigmoid",
+    "classifier_span_pooling": "attn",
+    "max_vals": 100,
+    "pair_attn": 0,
+    "val_interval": 500
+  },
+  "edges-constituent-ontonotes": {
+    "classifier_dropout": 0.3,
+    "classifier_hid_dim": 256,
+    "classifier_loss_fn": "sigmoid",
+    "classifier_span_pooling": "attn",
+    "max_vals": 250,
+    "pair_attn": 0,
+    "val_interval": 1000
+  },
+  "edges-constituent-ontonotes-openai": {
+    "classifier_dropout": 0.3,
+    "classifier_hid_dim": 256,
+    "classifier_loss_fn": "sigmoid",
+    "classifier_span_pooling": "attn",
+    "max_vals": 250,
+    "pair_attn": 0,
+    "val_interval": 1000
+  },
+  "edges-constituent-ptb": {
+    "classifier_dropout": 0.3,
+    "classifier_hid_dim": 256,
+    "classifier_loss_fn": "sigmoid",
+    "classifier_span_pooling": "attn",
+    "max_vals": 100,
+    "pair_attn": 0,
+    "val_interval": 500
+  },
+  "edges-coref-ontonotes": {
+    "classifier_dropout": 0.3,
+    "classifier_hid_dim": 256,
+    "classifier_loss_fn": "sigmoid",
+    "classifier_span_pooling": "attn",
+    "max_vals": 100,
+    "pair_attn": 0,
+    "val_interval": 500
+  },
+  "edges-coref-ontonotes-conll": {
+    "classifier_dropout": 0.3,
+    "classifier_hid_dim": 256,
+    "classifier_loss_fn": "sigmoid",
+    "classifier_span_pooling": "attn",
+    "max_vals": 250,
+    "pair_attn": 0,
+    "val_interval": 1000
+  },
+  "edges-coref-ontonotes-conll-openai": {
+    "classifier_dropout": 0.3,
+    "classifier_hid_dim": 256,
+    "classifier_loss_fn": "sigmoid",
+    "classifier_span_pooling": "attn",
+    "max_vals": 250,
+    "pair_attn": 0,
+    "val_interval": 1000
+  },
+  "edges-dep-labeling": {
+    "classifier_dropout": 0.3,
+    "classifier_hid_dim": 256,
+    "classifier_loss_fn": "sigmoid",
+    "classifier_span_pooling": "attn",
+    "max_vals": 100,
+    "pair_attn": 0,
+    "val_interval": 500
+  },
+  "edges-dep-labeling-ewt": {
+    "classifier_dropout": 0.3,
+    "classifier_hid_dim": 256,
+    "classifier_loss_fn": "sigmoid",
+    "classifier_span_pooling": "attn",
+    "max_vals": 250,
+    "pair_attn": 0,
+    "val_interval": 1000
+  },
+  "edges-dep-labeling-ewt-openai": {
+    "classifier_dropout": 0.3,
+    "classifier_hid_dim": 256,
+    "classifier_loss_fn": "sigmoid",
+    "classifier_span_pooling": "attn",
+    "max_vals": 250,
+    "pair_attn": 0,
+    "val_interval": 1000
+  },
+  "edges-dpr": {
+    "classifier_dropout": 0.3,
+    "classifier_hid_dim": 256,
+    "classifier_loss_fn": "sigmoid",
+    "classifier_span_pooling": "attn",
+    "max_vals": 100,
+    "pair_attn": 0,
+    "val_interval": 100
+  },
+  "edges-dpr-openai": {
+    "classifier_dropout": 0.3,
+    "classifier_hid_dim": 256,
+    "classifier_loss_fn": "sigmoid",
+    "classifier_span_pooling": "attn",
+    "max_vals": 100,
+    "pair_attn": 0,
+    "val_interval": 100
+  },
+  "edges-ner-conll2003": {
+    "classifier_dropout": 0.3,
+    "classifier_hid_dim": 256,
+    "classifier_loss_fn": "sigmoid",
+    "classifier_span_pooling": "attn",
+    "max_vals": 100,
+    "pair_attn": 0,
+    "val_interval": 250
+  },
+  "edges-ner-ontonotes": {
+    "classifier_dropout": 0.3,
+    "classifier_hid_dim": 256,
+    "classifier_loss_fn": "sigmoid",
+    "classifier_span_pooling": "attn",
+    "max_vals": 250,
+    "pair_attn": 0,
+    "val_interval": 1000
+  },
+  "edges-ner-ontonotes-openai": {
+    "classifier_dropout": 0.3,
+    "classifier_hid_dim": 256,
+    "classifier_loss_fn": "sigmoid",
+    "classifier_span_pooling": "attn",
+    "max_vals": 250,
+    "pair_attn": 0,
+    "val_interval": 1000
+  },
+  "edges-nonterminal-ontonotes": {
+    "classifier_dropout": 0.3,
+    "classifier_hid_dim": 256,
+    "classifier_loss_fn": "sigmoid",
+    "classifier_span_pooling": "attn",
+    "max_vals": 250,
+    "pair_attn": 0,
+    "val_interval": 1000
+  },
+  "edges-pos-ontonotes": {
+    "classifier_dropout": 0.3,
+    "classifier_hid_dim": 256,
+    "classifier_loss_fn": "sigmoid",
+    "classifier_span_pooling": "attn",
+    "max_vals": 250,
+    "pair_attn": 0,
+    "val_interval": 1000
+  },
+  "edges-spr1": {
+    "classifier_dropout": 0.3,
+    "classifier_hid_dim": 256,
+    "classifier_loss_fn": "sigmoid",
+    "classifier_span_pooling": "attn",
+    "max_vals": 100,
+    "pair_attn": 0,
+    "val_interval": 100
+  },
+  "edges-spr1-openai": {
+    "classifier_dropout": 0.3,
+    "classifier_hid_dim": 256,
+    "classifier_loss_fn": "sigmoid",
+    "classifier_span_pooling": "attn",
+    "max_vals": 100,
+    "pair_attn": 0,
+    "val_interval": 100
+  },
+  "edges-spr2": {
+    "classifier_dropout": 0.3,
+    "classifier_hid_dim": 256,
+    "classifier_loss_fn": "sigmoid",
+    "classifier_span_pooling": "attn",
+    "max_vals": 100,
+    "pair_attn": 0,
+    "val_interval": 100
+  },
+  "edges-spr2-openai": {
+    "classifier_dropout": 0.3,
+    "classifier_hid_dim": 256,
+    "classifier_loss_fn": "sigmoid",
+    "classifier_span_pooling": "attn",
+    "max_vals": 100,
+    "pair_attn": 0,
+    "val_interval": 100
+  },
+  "edges-srl-conll2005": {
+    "classifier_dropout": 0.3,
+    "classifier_hid_dim": 256,
+    "classifier_loss_fn": "sigmoid",
+    "classifier_span_pooling": "attn",
+    "max_vals": 100,
+    "pair_attn": 0,
+    "val_interval": 500
+  },
+  "edges-srl-conll2012": {
+    "classifier_dropout": 0.3,
+    "classifier_hid_dim": 256,
+    "classifier_loss_fn": "sigmoid",
+    "classifier_span_pooling": "attn",
+    "max_vals": 100,
+    "pair_attn": 0,
+    "val_interval": 1000
+  },
+  "edges-srl-conll2012-openai": {
+    "classifier_dropout": 0.3,
+    "classifier_hid_dim": 256,
+    "classifier_loss_fn": "sigmoid",
+    "classifier_span_pooling": "attn",
+    "max_vals": 100,
+    "pair_attn": 0,
+    "val_interval": 1000
+  },
+  "edges-tmpl": {
+    "classifier_dropout": 0.3,
+    "classifier_hid_dim": 256,
+    "classifier_loss_fn": "sigmoid",
+    "classifier_span_pooling": "attn",
+    "max_vals": 100,
+    "pair_attn": 0,
+    "val_interval": 500
+  },
+  "elmo": 1,
+  "elmo_chars_only": 1,
+  "elmo_weight_file_path": "none",
+  "eval_data_fraction": 1,
+  "eval_max_vals": 10,
+  "eval_val_interval": 10,
+  "exp_dir": "outputs/wmt/",
+  "exp_name": "wmt",
+  "fastText": 0,
+  "fastText_model_file": ".",
+  "global_ro_exp_dir": "/nfs/jsalt/share/exp/demo",
+  "grounded": {},
+  "grounded_d_proj": 2048,
+  "groundedsw": {},
+  "groundedsw_d_proj": 2048,
+  "is_probing_task": 0,
+  "keep_all_checkpoints": 0,
+  "load_eval_checkpoint": "none",
+  "load_model": 0,
+  "local_log_path": "outputs/wmt/foobar/log.log",
+  "lr": 0.0001,
+  "lr_decay_factor": 0.5,
+  "lr_patience": 1,
+  "max_char_v_size": 250,
+  "max_grad_norm": 5.0,
+  "max_seq_len": 10,
+  "max_targ_word_v_size": 20000,
+  "max_vals": 10,
+  "max_word_v_size": 5000,
+  "min_lr": 1e-06,
+  "mnli": {},
+  "mnli-alt": {},
+  "mnli-alt_classifier_dropout": 0.2,
+  "mnli-alt_classifier_hid_dim": 512,
+  "mnli-alt_lr": 0.0003,
+  "mnli-alt_pair_attn": 1,
+  "mnli-alt_val_interval": 1000,
+  "mnli-diagnostic": {
+    "use_classifier": "mnli"
+  },
+  "mnli_classifier_dropout": 0.2,
+  "mnli_classifier_hid_dim": 512,
+  "mnli_lr": 0.0003,
+  "mnli_pair_attn": 1,
+  "mnli_val_interval": 1000,
+  "mrpc": {
+    "classifier_dropout": 0.1,
+    "classifier_hid_dim": 256,
+    "max_vals": 8,
+    "val_interval": 1
+  },
+  "mrpc_classifier_dropout": 0.2,
+  "mrpc_classifier_hid_dim": 256,
+  "mrpc_d_proj": 256,
+  "mrpc_lr": 0.0003,
+  "mrpc_pair_attn": 0,
+  "mrpc_val_interval": 100,
+  "n_char_filters": 100,
+  "n_heads": 8,
+  "n_layers_enc": 1,
+  "n_layers_highway": 0,
+  "nli-prob": {
+    "probe_path": ""
+  },
+  "openai_embeddings_mode": "none",
+  "openai_transformer": 0,
+  "openai_transformer_ckpt": "",
+  "openai_transformer_fine_tune": 0,
+  "optimizer": "adam",
+  "pair_attn": 1,
+  "patience": 5,
+  "pretrain_tasks": "sst,mrpc,wnli",
+  "project_dir": "outputs",
+  "qnli": {},
+  "qnli-alt": {},
+  "qnli-alt_classifier_dropout": 0.2,
+  "qnli-alt_classifier_hid_dim": 512,
+  "qnli-alt_lr": 0.0003,
+  "qnli-alt_pair_attn": 1,
+  "qnli-alt_val_interval": 1000,
+  "qnli_classifier_dropout": 0.2,
+  "qnli_classifier_hid_dim": 512,
+  "qnli_lr": 0.0003,
+  "qnli_pair_attn": 1,
+  "qnli_val_interval": 1000,
+  "qqp": {},
+  "qqp-alt": {},
+  "qqp-alt_classifier_dropout": 0.2,
+  "qqp-alt_classifier_hid_dim": 512,
+  "qqp-alt_lr": 0.0003,
+  "qqp-alt_pair_attn": 1,
+  "qqp-alt_val_interval": 1000,
+  "qqp_classifier_dropout": 0.2,
+  "qqp_classifier_hid_dim": 512,
+  "qqp_lr": 0.0003,
+  "qqp_pair_attn": 1,
+  "qqp_val_interval": 1000,
+  "random_seed": 42,
+  "reindex_tasks": "",
+  "reload_indexing": 0,
+  "reload_tasks": 0,
+  "reload_vocab": 0,
+  "remote_log_name": "wmt__foobar",
+  "rte": {},
+  "rte_classifier_dropout": 0.4,
+  "rte_classifier_hid_dim": 128,
+  "rte_d_proj": 128,
+  "rte_lr": 0.0003,
+  "rte_pair_attn": 0,
+  "rte_val_interval": 100,
+  "run_dir": "outputs/wmt/foobar",
+  "run_name": "foobar",
+  "s2s": {
+    "attention": "bilinear",
+    "d_hid_dec": 1024,
+    "n_layers_dec": 1,
+    "output_proj_input_dim": 1024,
+    "target_embedding_dim": 300
+  },
+  "scaling_method": "uniform",
+  "scheduler_threshold": 0.0001,
+  "sent_enc": "rnn",
+  "sep_embs_for_skip": 0,
+  "shared_optimizer": 1,
+  "shared_pair_attn": 0,
+  "skip_embs": 1,
+  "sst": {},
+  "sst_classifier_dropout": 0.2,
+  "sst_classifier_hid_dim": 256,
+  "sst_d_proj": 256,
+  "sst_lr": 0.0003,
+  "sst_val_interval": 100,
+  "sts-b": {
+    "classifier_dropout": 0.3,
+    "classifier_hid_dim": 512,
+    "max_vals": 16,
+    "pair_attn": 0,
+    "val_interval": 100
+  },
+  "sts-b-alt": {},
+  "sts-b-alt_classifier_dropout": 0.2,
+  "sts-b-alt_classifier_hid_dim": 512,
+  "sts-b-alt_lr": 0.0003,
+  "sts-b-alt_pair_attn": 1,
+  "sts-b-alt_val_interval": 1000,
+  "sts-b_classifier_dropout": 0.2,
+  "sts-b_classifier_hid_dim": 512,
+  "sts-b_lr": 0.0003,
+  "sts-b_pair_attn": 1,
+  "sts-b_val_interval": 1000,
+  "target_tasks": "wmt14_en_de",
+  "track_batch_utilization": 0,
+  "trainer_type": "sampling",
+  "training_data_fraction": 1,
+  "use_classifier": "",
+  "val_data_limit": 5000,
+  "val_interval": 100,
+  "warmup": 4000,
+  "weighting_method": "uniform",
+  "wnli": {},
+  "wnli_classifier_dropout": 0.4,
+  "wnli_classifier_hid_dim": 128,
+  "wnli_d_proj": 128,
+  "wnli_lr": 0.0003,
+  "wnli_pair_attn": 0,
+  "wnli_val_interval": 100,
+  "word_embs": "none",
+  "word_embs_file": "embeddings/glove.840B.300d.txt",
+  "write_preds": 0,
+  "write_strict_glue_format": 0
+}
+12/15 10:00:18 PM: Saved config to outputs/wmt/foobar/params.conf
+12/15 10:00:18 PM: Using random seed 42
+12/15 10:00:18 PM: Using GPU 0
+12/15 10:00:18 PM: Loading tasks...
+12/15 10:00:18 PM: Writing pre-preprocessed tasks to outputs/wmt/
+12/15 10:00:18 PM: 	Creating task mrpc from scratch
+12/15 10:00:21 PM: 	Finished loading MRPC data.
+12/15 10:00:21 PM: 	Task 'mrpc': train=3668 val=408 test=1725
+12/15 10:00:21 PM: 	Creating task sst from scratch
+12/15 10:00:27 PM: 	Finished loading SST data.
+12/15 10:00:27 PM: 	Task 'sst': train=67349 val=872 test=1821
+12/15 10:00:27 PM: 	Creating task wmt14_en_de from scratch
+12/15 10:00:27 PM: BLEU scoring is turned off (current code in progress).Please use outputed prediction files to score offline
+12/15 10:01:33 PM: 	Task 'wmt14_en_de': train=3434778 val=34681 test=3434778
+12/15 10:01:33 PM: 	Creating task wnli from scratch
+12/15 10:01:33 PM: 	Finished loading Winograd.
+12/15 10:01:33 PM: 	Task 'wnli': train=635 val=71 test=146
+12/15 10:01:33 PM: 	Finished loading tasks: mrpc sst wmt14_en_de wnli.
+12/15 10:01:33 PM: 	Building vocab from scratch
+12/15 10:01:33 PM: 	Counting words for task: 'mrpc'
+12/15 10:01:33 PM: 	Counting words for task: 'sst'
+12/15 10:01:33 PM: 	Counting words for task: 'wmt14_en_de'
+12/15 10:19:23 PM: 	Counting words for task: 'wnli'
+12/15 10:19:23 PM: 	Finished counting words
+12/15 10:19:23 PM: 	Task 'wmt14_en_de': adding vocab namespace 'wmt14_en_de_tokens'
+12/15 10:36:43 PM: 	Saved vocab to outputs/wmt/vocab
+12/15 10:36:43 PM: Loading token dictionary from outputs/wmt/vocab.
+12/15 10:36:43 PM: 	Loaded vocab from outputs/wmt/vocab
+12/15 10:36:43 PM: 	Vocab namespace chars: size 252
+12/15 10:36:43 PM: 	Vocab namespace wmt14_en_de_tokens: size 20002
+12/15 10:36:43 PM: 	Vocab namespace tokens: size 5002
+12/15 10:36:43 PM: 	Finished building vocab.
+12/15 10:36:43 PM: 	Task 'mrpc', split 'train': indexing from scratch
+12/15 10:36:43 PM: Your label namespace was 'idxs'. We recommend you use a namespace ending with 'labels' or 'tags', so we don't add UNK and PAD tokens by default to your vocabulary.  See documentation for `non_padded_namespaces` parameter in Vocabulary.
+12/15 10:36:44 PM: 	Task 'mrpc', split 'train': saved 3668 instances to outputs/wmt/preproc/mrpc__train_data
+12/15 10:36:44 PM: 	Task 'mrpc', split 'val': indexing from scratch
+12/15 10:36:44 PM: 	Task 'mrpc', split 'val': saved 408 instances to outputs/wmt/preproc/mrpc__val_data
+12/15 10:36:44 PM: 	Task 'mrpc', split 'test': indexing from scratch
+12/15 10:36:45 PM: 	Task 'mrpc', split 'test': saved 1725 instances to outputs/wmt/preproc/mrpc__test_data
+12/15 10:36:45 PM: 	Task 'mrpc': cleared in-memory data.
+12/15 10:36:45 PM: 	Task 'sst', split 'train': indexing from scratch
+12/15 10:36:50 PM: 	Task 'sst', split 'train': saved 67349 instances to outputs/wmt/preproc/sst__train_data
+12/15 10:36:50 PM: 	Task 'sst', split 'val': indexing from scratch
+12/15 10:36:50 PM: 	Task 'sst', split 'val': saved 872 instances to outputs/wmt/preproc/sst__val_data
+12/15 10:36:50 PM: 	Task 'sst', split 'test': indexing from scratch
+12/15 10:36:51 PM: 	Task 'sst', split 'test': saved 1821 instances to outputs/wmt/preproc/sst__test_data
+12/15 10:36:51 PM: 	Task 'sst': cleared in-memory data.
+12/15 10:36:51 PM: 	Task 'wmt14_en_de', split 'train': indexing from scratch
+12/15 11:03:44 PM: 	Task 'wmt14_en_de', split 'train': saved 3434778 instances to outputs/wmt/preproc/wmt14_en_de__train_data
+12/15 11:03:44 PM: 	Task 'wmt14_en_de', split 'val': indexing from scratch
+12/15 11:04:01 PM: 	Task 'wmt14_en_de', split 'val': saved 34681 instances to outputs/wmt/preproc/wmt14_en_de__val_data
+12/15 11:04:01 PM: 	Task 'wmt14_en_de', split 'test': indexing from scratch
+12/15 11:04:25 PM: 	Task 'wmt14_en_de', split 'test': saved 3003 instances to outputs/wmt/preproc/wmt14_en_de__test_data
+12/15 11:04:25 PM: 	Task 'wmt14_en_de': cleared in-memory data.
+12/15 11:04:25 PM: 	Task 'wnli', split 'train': indexing from scratch
+12/15 11:04:25 PM: 	Task 'wnli', split 'train': saved 635 instances to outputs/wmt/preproc/wnli__train_data
+12/15 11:04:25 PM: 	Task 'wnli', split 'val': indexing from scratch
+12/15 11:04:25 PM: 	Task 'wnli', split 'val': saved 71 instances to outputs/wmt/preproc/wnli__val_data
+12/15 11:04:25 PM: 	Task 'wnli', split 'test': indexing from scratch
+12/15 11:04:25 PM: 	Task 'wnli', split 'test': saved 146 instances to outputs/wmt/preproc/wnli__test_data
+12/15 11:04:25 PM: 	Task 'wnli': cleared in-memory data.
+12/15 11:04:25 PM: 	Finished indexing tasks
+12/15 11:04:25 PM: 	Lazy-loading indexed data for task='mrpc' from outputs/wmt/preproc
+12/15 11:04:25 PM: 	Lazy-loading indexed data for task='sst' from outputs/wmt/preproc
+12/15 11:04:25 PM: 	Lazy-loading indexed data for task='wmt14_en_de' from outputs/wmt/preproc
+12/15 11:04:25 PM: 	Lazy-loading indexed data for task='wnli' from outputs/wmt/preproc
+12/15 11:04:25 PM: All tasks initialized with data iterators.
+12/15 11:04:25 PM: 	  Training on sst, mrpc, wnli
+12/15 11:04:25 PM: 	  Evaluating on wmt14_en_de
+12/15 11:04:25 PM: 	Finished loading tasks in 3847.413s
+12/15 11:04:25 PM: 	 Tasks: ['mrpc', 'sst', 'wmt14_en_de', 'wnli']
+12/15 11:04:25 PM: Building model...
+12/15 11:04:25 PM: 	Not using word embeddings!
+12/15 11:04:25 PM: 	Not using character embeddings!
+12/15 11:04:25 PM: Loading ELMo from files:
+12/15 11:04:25 PM: ELMO_OPT_PATH = https://s3-us-west-2.amazonaws.com/allennlp/models/elmo/2x4096_512_2048cnn_2xhighway/elmo_2x4096_512_2048cnn_2xhighway_options.json
+12/15 11:04:25 PM: 	Using ELMo character CNN only!
+12/15 11:04:25 PM: ELMO_WEIGHTS_PATH = https://s3-us-west-2.amazonaws.com/allennlp/models/elmo/2x4096_512_2048cnn_2xhighway/elmo_2x4096_512_2048cnn_2xhighway_weights.hdf5
+12/15 11:04:30 PM: batch_first = True
+12/15 11:04:31 PM: Converting Params object to dict; logging of default values will not occur when dictionary parameters are used subsequently.
+12/15 11:04:31 PM: CURRENTLY DEFINED PARAMETERS: 
+12/15 11:04:31 PM: input_size = 512
+12/15 11:04:31 PM: bidirectional = True
+12/15 11:04:31 PM: hidden_size = 256
+12/15 11:04:31 PM: num_layers = 1
+12/15 11:04:31 PM: batch_first = True
+12/15 11:04:31 PM: Initializing parameters
+12/15 11:04:31 PM: Done initializing parameters; the following parameters are using their default initialization from their code
+12/15 11:04:31 PM:    _phrase_layer._module.bias_hh_l0
+12/15 11:04:31 PM:    _phrase_layer._module.bias_hh_l0_reverse
+12/15 11:04:31 PM:    _phrase_layer._module.bias_ih_l0
+12/15 11:04:31 PM:    _phrase_layer._module.bias_ih_l0_reverse
+12/15 11:04:31 PM:    _phrase_layer._module.weight_hh_l0
+12/15 11:04:31 PM:    _phrase_layer._module.weight_hh_l0_reverse
+12/15 11:04:31 PM:    _phrase_layer._module.weight_ih_l0
+12/15 11:04:31 PM:    _phrase_layer._module.weight_ih_l0_reverse
+12/15 11:04:31 PM:    _text_field_embedder.token_embedder_elmo._char_embedding_weights
+12/15 11:04:31 PM:    _text_field_embedder.token_embedder_elmo._highways._layers.0.bias
+12/15 11:04:31 PM:    _text_field_embedder.token_embedder_elmo._highways._layers.0.weight
+12/15 11:04:31 PM:    _text_field_embedder.token_embedder_elmo._highways._layers.1.bias
+12/15 11:04:31 PM:    _text_field_embedder.token_embedder_elmo._highways._layers.1.weight
+12/15 11:04:31 PM:    _text_field_embedder.token_embedder_elmo._projection.bias
+12/15 11:04:31 PM:    _text_field_embedder.token_embedder_elmo._projection.weight
+12/15 11:04:31 PM:    _text_field_embedder.token_embedder_elmo.char_conv_0.bias
+12/15 11:04:31 PM:    _text_field_embedder.token_embedder_elmo.char_conv_0.weight
+12/15 11:04:31 PM:    _text_field_embedder.token_embedder_elmo.char_conv_1.bias
+12/15 11:04:31 PM:    _text_field_embedder.token_embedder_elmo.char_conv_1.weight
+12/15 11:04:31 PM:    _text_field_embedder.token_embedder_elmo.char_conv_2.bias
+12/15 11:04:31 PM:    _text_field_embedder.token_embedder_elmo.char_conv_2.weight
+12/15 11:04:31 PM:    _text_field_embedder.token_embedder_elmo.char_conv_3.bias
+12/15 11:04:31 PM:    _text_field_embedder.token_embedder_elmo.char_conv_3.weight
+12/15 11:04:31 PM:    _text_field_embedder.token_embedder_elmo.char_conv_4.bias
+12/15 11:04:31 PM:    _text_field_embedder.token_embedder_elmo.char_conv_4.weight
+12/15 11:04:31 PM:    _text_field_embedder.token_embedder_elmo.char_conv_5.bias
+12/15 11:04:31 PM:    _text_field_embedder.token_embedder_elmo.char_conv_5.weight
+12/15 11:04:31 PM:    _text_field_embedder.token_embedder_elmo.char_conv_6.bias
+12/15 11:04:31 PM:    _text_field_embedder.token_embedder_elmo.char_conv_6.weight
+12/15 11:04:31 PM: Using BiLSTM architecture for shared encoder!
+12/15 11:04:31 PM: Converting Params object to dict; logging of default values will not occur when dictionary parameters are used subsequently.
+12/15 11:04:31 PM: CURRENTLY DEFINED PARAMETERS: 
+12/15 11:04:31 PM: cls_type = mlp
+12/15 11:04:31 PM: d_hid = 128
+12/15 11:04:31 PM: d_proj = 128
+12/15 11:04:31 PM: shared_pair_attn = 0
+12/15 11:04:31 PM: attn = 0
+12/15 11:04:31 PM: d_hid_attn = 512
+12/15 11:04:31 PM: dropout = 0.4
+12/15 11:04:31 PM: cls_loss_fn = 
+12/15 11:04:31 PM: cls_span_pooling = x,y
+12/15 11:04:31 PM: edgeprobe_cnn_context = 0
+12/15 11:04:31 PM: use_classifier = wnli
+12/15 11:04:31 PM: 	Task 'wnli' params: {
+  "cls_type": "mlp",
+  "d_hid": 128,
+  "d_proj": 128,
+  "shared_pair_attn": 0,
+  "attn": 0,
+  "d_hid_attn": 512,
+  "dropout": 0.4,
+  "cls_loss_fn": "",
+  "cls_span_pooling": "x,y",
+  "edgeprobe_cnn_context": 0,
+  "use_classifier": "wnli"
+}
+12/15 11:04:31 PM: Converting Params object to dict; logging of default values will not occur when dictionary parameters are used subsequently.
+12/15 11:04:31 PM: CURRENTLY DEFINED PARAMETERS: 
+12/15 11:04:31 PM: cls_type = mlp
+12/15 11:04:31 PM: d_hid = 32
+12/15 11:04:31 PM: d_proj = 512
+12/15 11:04:31 PM: shared_pair_attn = 0
+12/15 11:04:31 PM: attn = 1
+12/15 11:04:31 PM: d_hid_attn = 512
+12/15 11:04:31 PM: dropout = 0.2
+12/15 11:04:31 PM: cls_loss_fn = 
+12/15 11:04:31 PM: cls_span_pooling = x,y
+12/15 11:04:31 PM: edgeprobe_cnn_context = 0
+12/15 11:04:31 PM: use_classifier = wmt14_en_de
+12/15 11:04:31 PM: 	Task 'wmt14_en_de' params: {
+  "cls_type": "mlp",
+  "d_hid": 32,
+  "d_proj": 512,
+  "shared_pair_attn": 0,
+  "attn": 1,
+  "d_hid_attn": 512,
+  "dropout": 0.2,
+  "cls_loss_fn": "",
+  "cls_span_pooling": "x,y",
+  "edgeprobe_cnn_context": 0,
+  "use_classifier": "wmt14_en_de"
+}
+12/15 11:04:31 PM: Converting Params object to dict; logging of default values will not occur when dictionary parameters are used subsequently.
+12/15 11:04:31 PM: CURRENTLY DEFINED PARAMETERS: 
+12/15 11:04:31 PM: cls_type = mlp
+12/15 11:04:31 PM: d_hid = 256
+12/15 11:04:31 PM: d_proj = 256
+12/15 11:04:31 PM: shared_pair_attn = 0
+12/15 11:04:31 PM: attn = 1
+12/15 11:04:31 PM: d_hid_attn = 512
+12/15 11:04:31 PM: dropout = 0.2
+12/15 11:04:31 PM: cls_loss_fn = 
+12/15 11:04:31 PM: cls_span_pooling = x,y
+12/15 11:04:31 PM: edgeprobe_cnn_context = 0
+12/15 11:04:31 PM: use_classifier = sst
+12/15 11:04:31 PM: 	Task 'sst' params: {
+  "cls_type": "mlp",
+  "d_hid": 256,
+  "d_proj": 256,
+  "shared_pair_attn": 0,
+  "attn": 1,
+  "d_hid_attn": 512,
+  "dropout": 0.2,
+  "cls_loss_fn": "",
+  "cls_span_pooling": "x,y",
+  "edgeprobe_cnn_context": 0,
+  "use_classifier": "sst"
+}
+12/15 11:04:31 PM: Converting Params object to dict; logging of default values will not occur when dictionary parameters are used subsequently.
+12/15 11:04:31 PM: CURRENTLY DEFINED PARAMETERS: 
+12/15 11:04:31 PM: cls_type = mlp
+12/15 11:04:31 PM: d_hid = 256
+12/15 11:04:31 PM: d_proj = 256
+12/15 11:04:31 PM: shared_pair_attn = 0
+12/15 11:04:31 PM: attn = 0
+12/15 11:04:31 PM: d_hid_attn = 512
+12/15 11:04:31 PM: dropout = 0.1
+12/15 11:04:31 PM: cls_loss_fn = 
+12/15 11:04:31 PM: cls_span_pooling = x,y
+12/15 11:04:31 PM: edgeprobe_cnn_context = 0
+12/15 11:04:31 PM: use_classifier = mrpc
+12/15 11:04:31 PM: 	Task 'mrpc' params: {
+  "cls_type": "mlp",
+  "d_hid": 256,
+  "d_proj": 256,
+  "shared_pair_attn": 0,
+  "attn": 0,
+  "d_hid_attn": 512,
+  "dropout": 0.1,
+  "cls_loss_fn": "",
+  "cls_span_pooling": "x,y",
+  "edgeprobe_cnn_context": 0,
+  "use_classifier": "mrpc"
+}
+12/15 11:04:31 PM: using bilinear attention
+12/15 11:04:41 PM: MultiTaskModel(
+  (sent_encoder): SentenceEncoder(
+    (_text_field_embedder): ElmoTextFieldEmbedder(
+      (token_embedder_elmo): ElmoCharacterEncoder(
+        (char_conv_0): Conv1d(16, 32, kernel_size=(1,), stride=(1,))
+        (char_conv_1): Conv1d(16, 32, kernel_size=(2,), stride=(1,))
+        (char_conv_2): Conv1d(16, 64, kernel_size=(3,), stride=(1,))
+        (char_conv_3): Conv1d(16, 128, kernel_size=(4,), stride=(1,))
+        (char_conv_4): Conv1d(16, 256, kernel_size=(5,), stride=(1,))
+        (char_conv_5): Conv1d(16, 512, kernel_size=(6,), stride=(1,))
+        (char_conv_6): Conv1d(16, 1024, kernel_size=(7,), stride=(1,))
+        (_highways): Highway(
+          (_layers): ModuleList(
+            (0): Linear(in_features=2048, out_features=4096, bias=True)
+            (1): Linear(in_features=2048, out_features=4096, bias=True)
+          )
+        )
+        (_projection): Linear(in_features=2048, out_features=512, bias=True)
+      )
+    )
+    (_highway_layer): TimeDistributed(
+      (_module): Highway(
+        (_layers): ModuleList()
+      )
+    )
+    (_phrase_layer): PytorchSeq2SeqWrapper(
+      (_module): LSTM(512, 256, batch_first=True, bidirectional=True)
+    )
+    (_dropout): Dropout(p=0.2)
+  )
+  (mrpc_mdl): PairClassifier(
+    (pooler): Pooler(
+      (project): Linear(in_features=1024, out_features=256, bias=True)
+    )
+    (classifier): Classifier(
+      (classifier): Sequential(
+        (0): Linear(in_features=1024, out_features=256, bias=True)
+        (1): Tanh()
+        (2): LayerNorm(torch.Size([256]), eps=1e-05, elementwise_affine=True)
+        (3): Dropout(p=0.1)
+        (4): Linear(in_features=256, out_features=2, bias=True)
+      )
+    )
+  )
+  (sst_mdl): SingleClassifier(
+    (pooler): Pooler(
+      (project): Linear(in_features=1024, out_features=256, bias=True)
+    )
+    (classifier): Classifier(
+      (classifier): Sequential(
+        (0): Linear(in_features=256, out_features=256, bias=True)
+        (1): Tanh()
+        (2): LayerNorm(torch.Size([256]), eps=1e-05, elementwise_affine=True)
+        (3): Dropout(p=0.2)
+        (4): Linear(in_features=256, out_features=2, bias=True)
+      )
+    )
+  )
+  (wmt14_en_de_decoder): Seq2SeqDecoder(
+    (_target_embedder): Embedding()
+    (_sent_pooler): Pooler(
+      (project): Linear(in_features=1024, out_features=1024, bias=True)
+    )
+    (_decoder_attention): BilinearAttention()
+    (_decoder_cell): LSTMCell(1324, 1024)
+    (_output_projection_layer): Linear(in_features=1024, out_features=20002, bias=True)
+    (_dropout): Dropout(p=0.2)
+  )
+  (wnli_mdl): PairClassifier(
+    (pooler): Pooler(
+      (project): Linear(in_features=1024, out_features=128, bias=True)
+    )
+    (classifier): Classifier(
+      (classifier): Sequential(
+        (0): Linear(in_features=512, out_features=128, bias=True)
+        (1): Tanh()
+        (2): LayerNorm(torch.Size([128]), eps=1e-05, elementwise_affine=True)
+        (3): Dropout(p=0.4)
+        (4): Linear(in_features=128, out_features=2, bias=True)
+      )
+    )
+  )
+)
+12/15 11:04:41 PM: >> Trainable param sent_encoder._phrase_layer._module.weight_ih_l0: torch.Size([1024, 512]) = 524288
+12/15 11:04:41 PM: >> Trainable param sent_encoder._phrase_layer._module.weight_hh_l0: torch.Size([1024, 256]) = 262144
+12/15 11:04:41 PM: >> Trainable param sent_encoder._phrase_layer._module.bias_ih_l0: torch.Size([1024]) = 1024
+12/15 11:04:41 PM: >> Trainable param sent_encoder._phrase_layer._module.bias_hh_l0: torch.Size([1024]) = 1024
+12/15 11:04:41 PM: >> Trainable param sent_encoder._phrase_layer._module.weight_ih_l0_reverse: torch.Size([1024, 512]) = 524288
+12/15 11:04:41 PM: >> Trainable param sent_encoder._phrase_layer._module.weight_hh_l0_reverse: torch.Size([1024, 256]) = 262144
+12/15 11:04:41 PM: >> Trainable param sent_encoder._phrase_layer._module.bias_ih_l0_reverse: torch.Size([1024]) = 1024
+12/15 11:04:41 PM: >> Trainable param sent_encoder._phrase_layer._module.bias_hh_l0_reverse: torch.Size([1024]) = 1024
+12/15 11:04:41 PM: >> Trainable param mrpc_mdl.pooler.project.weight: torch.Size([256, 1024]) = 262144
+12/15 11:04:41 PM: >> Trainable param mrpc_mdl.pooler.project.bias: torch.Size([256]) = 256
+12/15 11:04:41 PM: >> Trainable param mrpc_mdl.classifier.classifier.0.weight: torch.Size([256, 1024]) = 262144
+12/15 11:04:41 PM: >> Trainable param mrpc_mdl.classifier.classifier.0.bias: torch.Size([256]) = 256
+12/15 11:04:41 PM: >> Trainable param mrpc_mdl.classifier.classifier.2.weight: torch.Size([256]) = 256
+12/15 11:04:41 PM: >> Trainable param mrpc_mdl.classifier.classifier.2.bias: torch.Size([256]) = 256
+12/15 11:04:41 PM: >> Trainable param mrpc_mdl.classifier.classifier.4.weight: torch.Size([2, 256]) = 512
+12/15 11:04:41 PM: >> Trainable param mrpc_mdl.classifier.classifier.4.bias: torch.Size([2]) = 2
+12/15 11:04:41 PM: >> Trainable param sst_mdl.pooler.project.weight: torch.Size([256, 1024]) = 262144
+12/15 11:04:41 PM: >> Trainable param sst_mdl.pooler.project.bias: torch.Size([256]) = 256
+12/15 11:04:41 PM: >> Trainable param sst_mdl.classifier.classifier.0.weight: torch.Size([256, 256]) = 65536
+12/15 11:04:41 PM: >> Trainable param sst_mdl.classifier.classifier.0.bias: torch.Size([256]) = 256
+12/15 11:04:41 PM: >> Trainable param sst_mdl.classifier.classifier.2.weight: torch.Size([256]) = 256
+12/15 11:04:41 PM: >> Trainable param sst_mdl.classifier.classifier.2.bias: torch.Size([256]) = 256
+12/15 11:04:41 PM: >> Trainable param sst_mdl.classifier.classifier.4.weight: torch.Size([2, 256]) = 512
+12/15 11:04:41 PM: >> Trainable param sst_mdl.classifier.classifier.4.bias: torch.Size([2]) = 2
+12/15 11:04:41 PM: >> Trainable param wmt14_en_de_decoder._target_embedder.weight: torch.Size([20002, 300]) = 6000600
+12/15 11:04:41 PM: >> Trainable param wmt14_en_de_decoder._sent_pooler.project.weight: torch.Size([1024, 1024]) = 1048576
+12/15 11:04:41 PM: >> Trainable param wmt14_en_de_decoder._sent_pooler.project.bias: torch.Size([1024]) = 1024
+12/15 11:04:41 PM: >> Trainable param wmt14_en_de_decoder._decoder_attention._weight_matrix: torch.Size([1024, 1024]) = 1048576
+12/15 11:04:41 PM: >> Trainable param wmt14_en_de_decoder._decoder_attention._bias: torch.Size([1]) = 1
+12/15 11:04:41 PM: >> Trainable param wmt14_en_de_decoder._decoder_cell.weight_ih: torch.Size([4096, 1324]) = 5423104
+12/15 11:04:41 PM: >> Trainable param wmt14_en_de_decoder._decoder_cell.weight_hh: torch.Size([4096, 1024]) = 4194304
+12/15 11:04:41 PM: >> Trainable param wmt14_en_de_decoder._decoder_cell.bias_ih: torch.Size([4096]) = 4096
+12/15 11:04:41 PM: >> Trainable param wmt14_en_de_decoder._decoder_cell.bias_hh: torch.Size([4096]) = 4096
+12/15 11:04:41 PM: >> Trainable param wmt14_en_de_decoder._output_projection_layer.weight: torch.Size([20002, 1024]) = 20482048
+12/15 11:04:41 PM: >> Trainable param wmt14_en_de_decoder._output_projection_layer.bias: torch.Size([20002]) = 20002
+12/15 11:04:41 PM: >> Trainable param wnli_mdl.pooler.project.weight: torch.Size([128, 1024]) = 131072
+12/15 11:04:41 PM: >> Trainable param wnli_mdl.pooler.project.bias: torch.Size([128]) = 128
+12/15 11:04:41 PM: >> Trainable param wnli_mdl.classifier.classifier.0.weight: torch.Size([128, 512]) = 65536
+12/15 11:04:41 PM: >> Trainable param wnli_mdl.classifier.classifier.0.bias: torch.Size([128]) = 128
+12/15 11:04:41 PM: >> Trainable param wnli_mdl.classifier.classifier.2.weight: torch.Size([128]) = 128
+12/15 11:04:41 PM: >> Trainable param wnli_mdl.classifier.classifier.2.bias: torch.Size([128]) = 128
+12/15 11:04:41 PM: >> Trainable param wnli_mdl.classifier.classifier.4.weight: torch.Size([2, 128]) = 256
+12/15 11:04:41 PM: >> Trainable param wnli_mdl.classifier.classifier.4.bias: torch.Size([2]) = 2
+12/15 11:04:41 PM: Total number of parameters: 58893665 (5.88937e+07)
+12/15 11:04:41 PM: Number of trainable parameters: 40855809 (4.08558e+07)
+12/15 11:04:41 PM: 	Finished building model in 15.862s
+12/15 11:04:41 PM: Will run the following steps:
+Training model on tasks: sst,mrpc,wnli
+Re-training model for individual eval tasks
+Evaluating model on tasks: wmt14_en_de
+12/15 11:04:41 PM: Training...
+12/15 11:04:41 PM: 	Using ReduceLROnPlateau scheduler!
+12/15 11:04:41 PM: patience = 5
+12/15 11:04:41 PM: val_interval = 100
+12/15 11:04:41 PM: max_vals = 10
+12/15 11:04:41 PM: cuda_device = 0
+12/15 11:04:41 PM: grad_norm = 5.0
+12/15 11:04:41 PM: grad_clipping = None
+12/15 11:04:41 PM: lr_decay = 0.99
+12/15 11:04:41 PM: min_lr = 1e-06
+12/15 11:04:41 PM: keep_all_checkpoints = 0
+12/15 11:04:41 PM: val_data_limit = 5000
+12/15 11:04:41 PM: dec_val_scale = 250
+12/15 11:04:41 PM: training_data_fraction = 1
+12/15 11:04:41 PM: type = adam
+12/15 11:04:41 PM: parameter_groups = None
+12/15 11:04:41 PM: Converting Params object to dict; logging of default values will not occur when dictionary parameters are used subsequently.
+12/15 11:04:41 PM: CURRENTLY DEFINED PARAMETERS: 
+12/15 11:04:41 PM: lr = 0.0001
+12/15 11:04:41 PM: weight_decay = 0
+12/15 11:04:41 PM: amsgrad = True
+12/15 11:04:41 PM: type = reduce_on_plateau
+12/15 11:04:41 PM: Converting Params object to dict; logging of default values will not occur when dictionary parameters are used subsequently.
+12/15 11:04:41 PM: CURRENTLY DEFINED PARAMETERS: 
+12/15 11:04:41 PM: mode = max
+12/15 11:04:41 PM: factor = 0.5
+12/15 11:04:41 PM: patience = 1
+12/15 11:04:41 PM: threshold = 0.0001
+12/15 11:04:41 PM: threshold_mode = abs
+12/15 11:04:41 PM: verbose = True
+12/15 11:04:41 PM: type = adam
+12/15 11:04:41 PM: parameter_groups = None
+12/15 11:04:41 PM: Converting Params object to dict; logging of default values will not occur when dictionary parameters are used subsequently.
+12/15 11:04:41 PM: CURRENTLY DEFINED PARAMETERS: 
+12/15 11:04:41 PM: lr = 0.0001
+12/15 11:04:41 PM: weight_decay = 0
+12/15 11:04:41 PM: amsgrad = True
+12/15 11:04:41 PM: type = reduce_on_plateau
+12/15 11:04:41 PM: Converting Params object to dict; logging of default values will not occur when dictionary parameters are used subsequently.
+12/15 11:04:41 PM: CURRENTLY DEFINED PARAMETERS: 
+12/15 11:04:41 PM: mode = max
+12/15 11:04:41 PM: factor = 0.5
+12/15 11:04:41 PM: patience = 1
+12/15 11:04:41 PM: threshold = 0.0001
+12/15 11:04:41 PM: threshold_mode = abs
+12/15 11:04:41 PM: verbose = True
+12/15 11:04:41 PM: type = adam
+12/15 11:04:41 PM: parameter_groups = None
+12/15 11:04:41 PM: Converting Params object to dict; logging of default values will not occur when dictionary parameters are used subsequently.
+12/15 11:04:41 PM: CURRENTLY DEFINED PARAMETERS: 
+12/15 11:04:41 PM: lr = 0.0001
+12/15 11:04:41 PM: weight_decay = 0
+12/15 11:04:41 PM: amsgrad = True
+12/15 11:04:41 PM: type = reduce_on_plateau
+12/15 11:04:41 PM: Converting Params object to dict; logging of default values will not occur when dictionary parameters are used subsequently.
+12/15 11:04:41 PM: CURRENTLY DEFINED PARAMETERS: 
+12/15 11:04:41 PM: mode = max
+12/15 11:04:41 PM: factor = 0.5
+12/15 11:04:41 PM: patience = 1
+12/15 11:04:41 PM: threshold = 0.0001
+12/15 11:04:41 PM: threshold_mode = abs
+12/15 11:04:41 PM: verbose = True
+12/15 11:04:41 PM: type = adam
+12/15 11:04:41 PM: parameter_groups = None
+12/15 11:04:41 PM: Converting Params object to dict; logging of default values will not occur when dictionary parameters are used subsequently.
+12/15 11:04:41 PM: CURRENTLY DEFINED PARAMETERS: 
+12/15 11:04:41 PM: lr = 0.0001
+12/15 11:04:41 PM: weight_decay = 0
+12/15 11:04:41 PM: amsgrad = True
+12/15 11:04:41 PM: type = reduce_on_plateau
+12/15 11:04:41 PM: Converting Params object to dict; logging of default values will not occur when dictionary parameters are used subsequently.
+12/15 11:04:41 PM: CURRENTLY DEFINED PARAMETERS: 
+12/15 11:04:41 PM: mode = max
+12/15 11:04:41 PM: factor = 0.5
+12/15 11:04:41 PM: patience = 1
+12/15 11:04:41 PM: threshold = 0.0001
+12/15 11:04:41 PM: threshold_mode = abs
+12/15 11:04:41 PM: verbose = True
+12/15 11:04:41 PM: Not loading.
+12/15 11:04:41 PM: Training examples per task: {'mrpc': 3668, 'sst': 67349, 'wnli': 635}
+12/15 11:04:41 PM: Sampling tasks uniformly.
+12/15 11:04:41 PM: Using weighting method: uniform, with normalized sample weights [0.3333 0.3333 0.3333] 
+12/15 11:04:41 PM: Using loss scaling method: uniform, with weights {'mrpc': 1.0, 'sst': 1.0, 'wnli': 1.0}
+12/15 11:04:41 PM: Beginning training. Stopping metric: macro_avg
+12/15 11:04:41 PM: Beginning training. Stopping metric: macro_avg
+12/15 11:04:45 PM: ***** Pass 100 / Epoch 1 *****
+12/15 11:04:45 PM: mrpc: trained on 38 batches, 0.083 epochs
+12/15 11:04:45 PM: sst: trained on 33 batches, 0.004 epochs
+12/15 11:04:45 PM: wnli: trained on 29 batches, 0.362 epochs
+12/15 11:04:45 PM: Validating...
+12/15 11:04:46 PM: Best model found for mrpc.
+12/15 11:04:46 PM: Best model found for sst.
+12/15 11:04:46 PM: Best model found for wnli.
+12/15 11:04:46 PM: Best model found for micro.
+12/15 11:04:46 PM: Best model found for macro.
+12/15 11:04:46 PM: Advancing scheduler.
+12/15 11:04:46 PM: 	Best macro_avg: 0.608
+12/15 11:04:46 PM: 	# bad epochs: 0
+12/15 11:04:46 PM: Statistic: mrpc_loss
+12/15 11:04:46 PM: 	training: 0.693027
+12/15 11:04:46 PM: 	validation: 0.607393
+12/15 11:04:46 PM: Statistic: sst_loss
+12/15 11:04:46 PM: 	training: 0.739706
+12/15 11:04:46 PM: 	validation: 0.717820
+12/15 11:04:46 PM: Statistic: wnli_loss
+12/15 11:04:46 PM: 	training: 0.754113
+12/15 11:04:46 PM: 	validation: 0.707199
+12/15 11:04:46 PM: Statistic: macro_avg
+12/15 11:04:46 PM: 	validation: 0.607599
+12/15 11:04:46 PM: Statistic: micro_avg
+12/15 11:04:46 PM: 	validation: 0.584432
+12/15 11:04:46 PM: Statistic: mrpc_acc_f1
+12/15 11:04:46 PM: 	training: 0.701631
+12/15 11:04:46 PM: 	validation: 0.751391
+12/15 11:04:46 PM: Statistic: mrpc_accuracy
+12/15 11:04:46 PM: 	training: 0.636667
+12/15 11:04:46 PM: 	validation: 0.688725
+12/15 11:04:46 PM: Statistic: mrpc_f1
+12/15 11:04:46 PM: 	training: 0.766595
+12/15 11:04:46 PM: 	validation: 0.814056
+12/15 11:04:46 PM: Statistic: mrpc_precision
+12/15 11:04:46 PM: 	training: 0.680608
+12/15 11:04:46 PM: 	validation: 0.688119
+12/15 11:04:46 PM: Statistic: mrpc_recall
+12/15 11:04:46 PM: 	training: 0.877451
+12/15 11:04:46 PM: 	validation: 0.996416
+12/15 11:04:46 PM: Statistic: sst_accuracy
+12/15 11:04:46 PM: 	training: 0.549242
+12/15 11:04:46 PM: 	validation: 0.508028
+12/15 11:04:46 PM: Statistic: wnli_accuracy
+12/15 11:04:46 PM: 	training: 0.546256
+12/15 11:04:46 PM: 	validation: 0.563380
+12/15 11:04:46 PM: global_lr: 0.000100
+12/15 11:04:49 PM: Saved files to outputs/wmt/foobar
+12/15 11:04:51 PM: ***** Pass 200 / Epoch 2 *****
+12/15 11:04:51 PM: mrpc: trained on 39 batches, 0.085 epochs
+12/15 11:04:51 PM: sst: trained on 25 batches, 0.003 epochs
+12/15 11:04:51 PM: wnli: trained on 36 batches, 0.450 epochs
+12/15 11:04:51 PM: Validating...
+12/15 11:04:51 PM: Batch 46/51: acc_f1: 0.7465, accuracy: 0.6821, f1: 0.8110, precision: 0.6821, recall: 1.0000, mrpc_loss: 0.7081 ||
+12/15 11:04:51 PM: Batch 1/109: accuracy: 0.7500, sst_loss: 0.6151 ||
+12/15 11:04:52 PM: Batch 1/9: accuracy: 0.3750, wnli_loss: 0.7549 ||
+12/15 11:04:52 PM: Best model found for sst.
+12/15 11:04:52 PM: Best model found for micro.
+12/15 11:04:52 PM: Best model found for macro.
+12/15 11:04:52 PM: Advancing scheduler.
+12/15 11:04:52 PM: 	Best macro_avg: 0.650
+12/15 11:04:52 PM: 	# bad epochs: 0
+12/15 11:04:52 PM: Statistic: mrpc_loss
+12/15 11:04:52 PM: 	training: 0.655843
+12/15 11:04:52 PM: 	validation: 0.700261
+12/15 11:04:52 PM: Statistic: sst_loss
+12/15 11:04:52 PM: 	training: 0.727686
+12/15 11:04:52 PM: 	validation: 0.646396
+12/15 11:04:52 PM: Statistic: wnli_loss
+12/15 11:04:52 PM: 	training: 0.784486
+12/15 11:04:52 PM: 	validation: 0.695114
+12/15 11:04:52 PM: Statistic: macro_avg
+12/15 11:04:52 PM: 	validation: 0.650056
+12/15 11:04:52 PM: Statistic: micro_avg
+12/15 11:04:52 PM: 	validation: 0.667797
+12/15 11:04:52 PM: Statistic: mrpc_acc_f1
+12/15 11:04:52 PM: 	training: 0.714453
+12/15 11:04:52 PM: 	validation: 0.748025
+12/15 11:04:52 PM: Statistic: mrpc_accuracy
+12/15 11:04:52 PM: 	training: 0.657051
+12/15 11:04:52 PM: 	validation: 0.683824
+12/15 11:04:52 PM: Statistic: mrpc_f1
+12/15 11:04:52 PM: 	training: 0.771855
+12/15 11:04:52 PM: 	validation: 0.812227
+12/15 11:04:52 PM: Statistic: mrpc_precision
+12/15 11:04:52 PM: 	training: 0.698842
+12/15 11:04:52 PM: 	validation: 0.683824
+12/15 11:04:52 PM: Statistic: mrpc_recall
+12/15 11:04:52 PM: 	training: 0.861905
+12/15 11:04:52 PM: 	validation: 1.000000
+12/15 11:04:52 PM: Statistic: sst_accuracy
+12/15 11:04:52 PM: 	training: 0.485000
+12/15 11:04:52 PM: 	validation: 0.638761
+12/15 11:04:52 PM: Statistic: wnli_accuracy
+12/15 11:04:52 PM: 	training: 0.420139
+12/15 11:04:52 PM: 	validation: 0.563380
+12/15 11:04:52 PM: global_lr: 0.000100
+12/15 11:04:52 PM: Saved files to outputs/wmt/foobar
+12/15 11:04:54 PM: ***** Pass 300 / Epoch 3 *****
+12/15 11:04:54 PM: mrpc: trained on 39 batches, 0.085 epochs
+12/15 11:04:54 PM: sst: trained on 28 batches, 0.003 epochs
+12/15 11:04:54 PM: wnli: trained on 33 batches, 0.412 epochs
+12/15 11:04:54 PM: Validating...
+12/15 11:04:56 PM: Advancing scheduler.
+12/15 11:04:56 PM: 	Best macro_avg: 0.650
+12/15 11:04:56 PM: 	# bad epochs: 1
+12/15 11:04:56 PM: Statistic: mrpc_loss
+12/15 11:04:56 PM: 	training: 0.676668
+12/15 11:04:56 PM: 	validation: 0.695024
+12/15 11:04:56 PM: Statistic: sst_loss
+12/15 11:04:56 PM: 	training: 0.605244
+12/15 11:04:56 PM: 	validation: 0.644453
+12/15 11:04:56 PM: Statistic: wnli_loss
+12/15 11:04:56 PM: 	training: 0.732655
+12/15 11:04:56 PM: 	validation: 0.721443
+12/15 11:04:56 PM: Statistic: macro_avg
+12/15 11:04:56 PM: 	validation: 0.517872
+12/15 11:04:56 PM: Statistic: micro_avg
+12/15 11:04:56 PM: 	validation: 0.574082
+12/15 11:04:56 PM: Statistic: mrpc_acc_f1
+12/15 11:04:56 PM: 	training: 0.691740
+12/15 11:04:56 PM: 	validation: 0.543100
+12/15 11:04:56 PM: Statistic: mrpc_accuracy
+12/15 11:04:56 PM: 	training: 0.628205
+12/15 11:04:56 PM: 	validation: 0.534314
+12/15 11:04:56 PM: Statistic: mrpc_f1
+12/15 11:04:56 PM: 	training: 0.755274
+12/15 11:04:56 PM: 	validation: 0.551887
+12/15 11:04:56 PM: Statistic: mrpc_precision
+12/15 11:04:56 PM: 	training: 0.675472
+12/15 11:04:56 PM: 	validation: 0.806897
+12/15 11:04:56 PM: Statistic: mrpc_recall
+12/15 11:04:56 PM: 	training: 0.856459
+12/15 11:04:56 PM: 	validation: 0.419355
+12/15 11:04:56 PM: Statistic: sst_accuracy
+12/15 11:04:56 PM: 	training: 0.660714
+12/15 11:04:56 PM: 	validation: 0.602064
+12/15 11:04:56 PM: Statistic: wnli_accuracy
+12/15 11:04:56 PM: 	training: 0.509653
+12/15 11:04:56 PM: 	validation: 0.408451
+12/15 11:04:56 PM: global_lr: 0.000100
+12/15 11:04:56 PM: Saved files to outputs/wmt/foobar
+12/15 11:04:58 PM: ***** Pass 400 / Epoch 4 *****
+12/15 11:04:58 PM: mrpc: trained on 33 batches, 0.072 epochs
+12/15 11:04:58 PM: sst: trained on 28 batches, 0.003 epochs
+12/15 11:04:58 PM: wnli: trained on 39 batches, 0.487 epochs
+12/15 11:04:58 PM: Validating...
+12/15 11:04:59 PM: Advancing scheduler.
+12/15 11:04:59 PM: 	Best macro_avg: 0.650
+12/15 11:04:59 PM: 	# bad epochs: 0
+12/15 11:04:59 PM: Statistic: mrpc_loss
+12/15 11:04:59 PM: 	training: 0.639717
+12/15 11:04:59 PM: 	validation: 0.651665
+12/15 11:04:59 PM: Statistic: sst_loss
+12/15 11:04:59 PM: 	training: 0.601777
+12/15 11:04:59 PM: 	validation: 0.649138
+12/15 11:04:59 PM: Statistic: wnli_loss
+12/15 11:04:59 PM: 	training: 0.729492
+12/15 11:04:59 PM: 	validation: 0.707297
+12/15 11:04:59 PM: Statistic: macro_avg
+12/15 11:04:59 PM: 	validation: 0.648119
+12/15 11:04:59 PM: Statistic: micro_avg
+12/15 11:04:59 PM: 	validation: 0.662892
+12/15 11:04:59 PM: Statistic: mrpc_acc_f1
+12/15 11:04:59 PM: 	training: 0.697968
+12/15 11:04:59 PM: 	validation: 0.751391
+12/15 11:04:59 PM: Statistic: mrpc_accuracy
+12/15 11:04:59 PM: 	training: 0.640152
+12/15 11:04:59 PM: 	validation: 0.688725
+12/15 11:04:59 PM: Statistic: mrpc_f1
+12/15 11:04:59 PM: 	training: 0.755784
+12/15 11:04:59 PM: 	validation: 0.814056
+12/15 11:04:59 PM: Statistic: mrpc_precision
+12/15 11:04:59 PM: 	training: 0.693396
+12/15 11:04:59 PM: 	validation: 0.688119
+12/15 11:04:59 PM: Statistic: mrpc_recall
+12/15 11:04:59 PM: 	training: 0.830508
+12/15 11:04:59 PM: 	validation: 0.996416
+12/15 11:04:59 PM: Statistic: sst_accuracy
+12/15 11:04:59 PM: 	training: 0.651786
+12/15 11:04:59 PM: 	validation: 0.629587
+12/15 11:04:59 PM: Statistic: wnli_accuracy
+12/15 11:04:59 PM: 	training: 0.509615
+12/15 11:04:59 PM: 	validation: 0.563380
+12/15 11:04:59 PM: global_lr: 0.000050
+12/15 11:05:00 PM: Saved files to outputs/wmt/foobar
+12/15 11:05:01 PM: Update 478: task mrpc, batch 21 (170): acc_f1: 0.7696, accuracy: 0.7143, f1: 0.8248, precision: 0.7107, recall: 0.9826, mrpc_loss: 0.6249 ||
+12/15 11:05:02 PM: Update 481: task sst, batch 34 (148): accuracy: 0.7022, sst_loss: 0.5521 ||
+12/15 11:05:02 PM: ***** Pass 500 / Epoch 5 *****
+12/15 11:05:02 PM: mrpc: trained on 33 batches, 0.072 epochs
+12/15 11:05:02 PM: sst: trained on 40 batches, 0.005 epochs
+12/15 11:05:02 PM: wnli: trained on 27 batches, 0.338 epochs
+12/15 11:05:02 PM: Validating...
+12/15 11:05:03 PM: Batch 1/9: accuracy: 0.6250, wnli_loss: 0.6910 ||
+12/15 11:05:03 PM: Best model found for mrpc.
+12/15 11:05:03 PM: Best model found for sst.
+12/15 11:05:03 PM: Best model found for micro.
+12/15 11:05:03 PM: Advancing scheduler.
+12/15 11:05:03 PM: 	Best macro_avg: 0.650
+12/15 11:05:03 PM: 	# bad epochs: 1
+12/15 11:05:03 PM: Statistic: mrpc_loss
+12/15 11:05:03 PM: 	training: 0.642977
+12/15 11:05:03 PM: 	validation: 0.590240
+12/15 11:05:03 PM: Statistic: sst_loss
+12/15 11:05:03 PM: 	training: 0.545595
+12/15 11:05:03 PM: 	validation: 0.586615
+12/15 11:05:03 PM: Statistic: wnli_loss
+12/15 11:05:03 PM: 	training: 0.721511
+12/15 11:05:03 PM: 	validation: 0.750183
+12/15 11:05:03 PM: Statistic: macro_avg
+12/15 11:05:03 PM: 	validation: 0.626301
+12/15 11:05:03 PM: Statistic: micro_avg
+12/15 11:05:03 PM: 	validation: 0.694832
+12/15 11:05:03 PM: Statistic: mrpc_acc_f1
+12/15 11:05:03 PM: 	training: 0.747999
+12/15 11:05:03 PM: 	validation: 0.754211
+12/15 11:05:03 PM: Statistic: mrpc_accuracy
+12/15 11:05:03 PM: 	training: 0.689394
+12/15 11:05:03 PM: 	validation: 0.698529
+12/15 11:05:03 PM: Statistic: mrpc_f1
+12/15 11:05:03 PM: 	training: 0.806604
+12/15 11:05:03 PM: 	validation: 0.809892
+12/15 11:05:03 PM: Statistic: mrpc_precision
+12/15 11:05:03 PM: 	training: 0.689516
+12/15 11:05:03 PM: 	validation: 0.711957
+12/15 11:05:03 PM: Statistic: mrpc_recall
+12/15 11:05:03 PM: 	training: 0.971591
+12/15 11:05:03 PM: 	validation: 0.939068
+12/15 11:05:03 PM: Statistic: sst_accuracy
+12/15 11:05:03 PM: 	training: 0.703125
+12/15 11:05:03 PM: 	validation: 0.688073
+12/15 11:05:03 PM: Statistic: wnli_accuracy
+12/15 11:05:03 PM: 	training: 0.469194
+12/15 11:05:03 PM: 	validation: 0.436620
+12/15 11:05:03 PM: global_lr: 0.000050
+12/15 11:05:04 PM: Saved files to outputs/wmt/foobar
+12/15 11:05:05 PM: ***** Pass 600 / Epoch 6 *****
+12/15 11:05:05 PM: mrpc: trained on 39 batches, 0.085 epochs
+12/15 11:05:05 PM: sst: trained on 36 batches, 0.004 epochs
+12/15 11:05:05 PM: wnli: trained on 25 batches, 0.312 epochs
+12/15 11:05:05 PM: Validating...
+12/15 11:05:07 PM: Best model found for mrpc.
+12/15 11:05:07 PM: Advancing scheduler.
+12/15 11:05:07 PM: 	Best macro_avg: 0.650
+12/15 11:05:07 PM: 	# bad epochs: 0
+12/15 11:05:07 PM: Statistic: mrpc_loss
+12/15 11:05:07 PM: 	training: 0.612038
+12/15 11:05:07 PM: 	validation: 0.587648
+12/15 11:05:07 PM: Statistic: sst_loss
+12/15 11:05:07 PM: 	training: 0.476702
+12/15 11:05:07 PM: 	validation: 0.652988
+12/15 11:05:07 PM: Statistic: wnli_loss
+12/15 11:05:07 PM: 	training: 0.723424
+12/15 11:05:07 PM: 	validation: 0.737339
+12/15 11:05:07 PM: Statistic: macro_avg
+12/15 11:05:07 PM: 	validation: 0.607402
+12/15 11:05:07 PM: Statistic: micro_avg
+12/15 11:05:07 PM: 	validation: 0.674101
+12/15 11:05:07 PM: Statistic: mrpc_acc_f1
+12/15 11:05:07 PM: 	training: 0.747246
+12/15 11:05:07 PM: 	validation: 0.756644
+12/15 11:05:07 PM: Statistic: mrpc_accuracy
+12/15 11:05:07 PM: 	training: 0.685897
+12/15 11:05:07 PM: 	validation: 0.700980
+12/15 11:05:07 PM: Statistic: mrpc_f1
+12/15 11:05:07 PM: 	training: 0.808594
+12/15 11:05:07 PM: 	validation: 0.812308
+12/15 11:05:07 PM: Statistic: mrpc_precision
+12/15 11:05:07 PM: 	training: 0.692308
+12/15 11:05:07 PM: 	validation: 0.711590
+12/15 11:05:07 PM: Statistic: mrpc_recall
+12/15 11:05:07 PM: 	training: 0.971831
+12/15 11:05:07 PM: 	validation: 0.946237
+12/15 11:05:07 PM: Statistic: sst_accuracy
+12/15 11:05:07 PM: 	training: 0.795139
+12/15 11:05:07 PM: 	validation: 0.657110
+12/15 11:05:07 PM: Statistic: wnli_accuracy
+12/15 11:05:07 PM: 	training: 0.480000
+12/15 11:05:07 PM: 	validation: 0.408451
+12/15 11:05:07 PM: global_lr: 0.000025
+12/15 11:05:08 PM: Saved files to outputs/wmt/foobar
+12/15 11:05:09 PM: ***** Pass 700 / Epoch 7 *****
+12/15 11:05:09 PM: mrpc: trained on 32 batches, 0.070 epochs
+12/15 11:05:09 PM: sst: trained on 38 batches, 0.005 epochs
+12/15 11:05:09 PM: wnli: trained on 30 batches, 0.375 epochs
+12/15 11:05:09 PM: Validating...
+12/15 11:05:11 PM: Best model found for sst.
+12/15 11:05:11 PM: Out of patience. Stopped tracking wnli
+12/15 11:05:11 PM: Best model found for micro.
+12/15 11:05:11 PM: Advancing scheduler.
+12/15 11:05:11 PM: 	Best macro_avg: 0.650
+12/15 11:05:11 PM: 	# bad epochs: 1
+12/15 11:05:11 PM: Statistic: mrpc_loss
+12/15 11:05:11 PM: 	training: 0.562109
+12/15 11:05:11 PM: 	validation: 0.668794
+12/15 11:05:11 PM: Statistic: sst_loss
+12/15 11:05:11 PM: 	training: 0.541285
+12/15 11:05:11 PM: 	validation: 0.581046
+12/15 11:05:11 PM: Statistic: wnli_loss
+12/15 11:05:11 PM: 	training: 0.703642
+12/15 11:05:11 PM: 	validation: 0.736592
+12/15 11:05:11 PM: Statistic: macro_avg
+12/15 11:05:11 PM: 	validation: 0.600633
+12/15 11:05:11 PM: Statistic: micro_avg
+12/15 11:05:11 PM: 	validation: 0.696201
+12/15 11:05:11 PM: Statistic: mrpc_acc_f1
+12/15 11:05:11 PM: 	training: 0.779948
+12/15 11:05:11 PM: 	validation: 0.751391
+12/15 11:05:11 PM: Statistic: mrpc_accuracy
+12/15 11:05:11 PM: 	training: 0.726562
+12/15 11:05:11 PM: 	validation: 0.688725
+12/15 11:05:11 PM: Statistic: mrpc_f1
+12/15 11:05:11 PM: 	training: 0.833333
+12/15 11:05:11 PM: 	validation: 0.814056
+12/15 11:05:11 PM: Statistic: mrpc_precision
+12/15 11:05:11 PM: 	training: 0.747863
+12/15 11:05:11 PM: 	validation: 0.688119
+12/15 11:05:11 PM: Statistic: mrpc_recall
+12/15 11:05:11 PM: 	training: 0.940860
+12/15 11:05:11 PM: 	validation: 0.996416
+12/15 11:05:11 PM: Statistic: sst_accuracy
+12/15 11:05:11 PM: 	training: 0.720395
+12/15 11:05:11 PM: 	validation: 0.698394
+12/15 11:05:11 PM: Statistic: wnli_accuracy
+12/15 11:05:11 PM: 	training: 0.508333
+12/15 11:05:11 PM: 	validation: 0.352113
+12/15 11:05:11 PM: global_lr: 0.000025
+12/15 11:05:11 PM: Saved files to outputs/wmt/foobar
+12/15 11:05:11 PM: Update 730: task mrpc, batch 7 (260): acc_f1: 0.7435, accuracy: 0.6786, f1: 0.8085, precision: 0.6786, recall: 1.0000, mrpc_loss: 0.6657 ||
+12/15 11:05:12 PM: Update 736: task sst, batch 11 (239): accuracy: 0.7500, sst_loss: 0.4813 ||
+12/15 11:05:13 PM: ***** Pass 800 / Epoch 8 *****
+12/15 11:05:13 PM: mrpc: trained on 28 batches, 0.061 epochs
+12/15 11:05:13 PM: sst: trained on 30 batches, 0.004 epochs
+12/15 11:05:13 PM: wnli: trained on 42 batches, 0.525 epochs
+12/15 11:05:13 PM: Validating...
+12/15 11:05:14 PM: Batch 1/9: accuracy: 0.2500, wnli_loss: 0.7506 ||
+12/15 11:05:14 PM: Best model found for micro.
+12/15 11:05:14 PM: Out of patience. Stopped tracking macro
+12/15 11:05:14 PM: Advancing scheduler.
+12/15 11:05:14 PM: 	Best macro_avg: 0.650
+12/15 11:05:14 PM: 	# bad epochs: 0
+12/15 11:05:14 PM: All metrics ran out of patience. Stopping training.
+12/15 11:05:14 PM: Statistic: mrpc_loss
+12/15 11:05:14 PM: 	training: 0.667298
+12/15 11:05:14 PM: 	validation: 0.587257
+12/15 11:05:14 PM: Statistic: sst_loss
+12/15 11:05:14 PM: 	training: 0.475860
+12/15 11:05:14 PM: 	validation: 0.569238
+12/15 11:05:14 PM: Statistic: wnli_loss
+12/15 11:05:14 PM: 	training: 0.733455
+12/15 11:05:14 PM: 	validation: 0.719191
+12/15 11:05:14 PM: Statistic: macro_avg
+12/15 11:05:14 PM: 	validation: 0.624680
+12/15 11:05:14 PM: Statistic: micro_avg
+12/15 11:05:14 PM: 	validation: 0.700421
+12/15 11:05:14 PM: Statistic: mrpc_acc_f1
+12/15 11:05:14 PM: 	training: 0.711763
+12/15 11:05:14 PM: 	validation: 0.753111
+12/15 11:05:14 PM: Statistic: mrpc_accuracy
+12/15 11:05:14 PM: 	training: 0.647321
+12/15 11:05:14 PM: 	validation: 0.693627
+12/15 11:05:14 PM: Statistic: mrpc_f1
+12/15 11:05:14 PM: 	training: 0.776204
+12/15 11:05:14 PM: 	validation: 0.812594
+12/15 11:05:14 PM: Statistic: mrpc_precision
+12/15 11:05:14 PM: 	training: 0.658654
+12/15 11:05:14 PM: 	validation: 0.698454
+12/15 11:05:14 PM: Statistic: mrpc_recall
+12/15 11:05:14 PM: 	training: 0.944828
+12/15 11:05:14 PM: 	validation: 0.971326
+12/15 11:05:14 PM: Statistic: sst_accuracy
+12/15 11:05:14 PM: 	training: 0.770833
+12/15 11:05:14 PM: 	validation: 0.698394
+12/15 11:05:14 PM: Statistic: wnli_accuracy
+12/15 11:05:14 PM: 	training: 0.465257
+12/15 11:05:14 PM: 	validation: 0.422535
+12/15 11:05:14 PM: global_lr: 0.000013
+12/15 11:05:15 PM: Saved files to outputs/wmt/foobar
+12/15 11:05:15 PM: Stopped training after 8 validation checks
+12/15 11:05:15 PM: Trained mrpc for 281 batches or 0.612 epochs
+12/15 11:05:15 PM: Trained sst for 258 batches or 0.031 epochs
+12/15 11:05:15 PM: Trained wnli for 261 batches or 3.263 epochs
+12/15 11:05:15 PM: ***** VALIDATION RESULTS *****
+12/15 11:05:15 PM: mrpc_acc_f1, 6, mrpc_loss: 0.58765, sst_loss: 0.65299, wnli_loss: 0.73734, macro_avg: 0.60740, micro_avg: 0.67410, mrpc_acc_f1: 0.75664, mrpc_accuracy: 0.70098, mrpc_f1: 0.81231, mrpc_precision: 0.71159, mrpc_recall: 0.94624, sst_accuracy: 0.65711, wnli_accuracy: 0.40845
+12/15 11:05:15 PM: sst_accuracy, 7, mrpc_loss: 0.66879, sst_loss: 0.58105, wnli_loss: 0.73659, macro_avg: 0.60063, micro_avg: 0.69620, mrpc_acc_f1: 0.75139, mrpc_accuracy: 0.68873, mrpc_f1: 0.81406, mrpc_precision: 0.68812, mrpc_recall: 0.99642, sst_accuracy: 0.69839, wnli_accuracy: 0.35211
+12/15 11:05:15 PM: wnli_accuracy, 1, mrpc_loss: 0.60739, sst_loss: 0.71782, wnli_loss: 0.70720, macro_avg: 0.60760, micro_avg: 0.58443, mrpc_acc_f1: 0.75139, mrpc_accuracy: 0.68873, mrpc_f1: 0.81406, mrpc_precision: 0.68812, mrpc_recall: 0.99642, sst_accuracy: 0.50803, wnli_accuracy: 0.56338
+12/15 11:05:15 PM: micro_avg, 8, mrpc_loss: 0.58726, sst_loss: 0.56924, wnli_loss: 0.71919, macro_avg: 0.62468, micro_avg: 0.70042, mrpc_acc_f1: 0.75311, mrpc_accuracy: 0.69363, mrpc_f1: 0.81259, mrpc_precision: 0.69845, mrpc_recall: 0.97133, sst_accuracy: 0.69839, wnli_accuracy: 0.42254
+12/15 11:05:15 PM: macro_avg, 2, mrpc_loss: 0.70026, sst_loss: 0.64640, wnli_loss: 0.69511, macro_avg: 0.65006, micro_avg: 0.66780, mrpc_acc_f1: 0.74803, mrpc_accuracy: 0.68382, mrpc_f1: 0.81223, mrpc_precision: 0.68382, mrpc_recall: 1.00000, sst_accuracy: 0.63876, wnli_accuracy: 0.56338
+12/15 11:05:15 PM: Found no task-specific parameters to skip for task: wmt14_en_de
+12/15 11:05:15 PM: Loaded model state from outputs/wmt/foobar/model_state_main_epoch_2.best_macro.th
+12/15 11:05:15 PM: Fatal error in main():
+Traceback (most recent call last):
+  File "main.py", line 343, in <module>
+    main(sys.argv[1:])
+  File "main.py", line 288, in main
+    pred_module = getattr(model, "%s_mdl" % task.name)
+  File "/home/pm2758/anaconda3/envs/jiant/lib/python3.6/site-packages/torch/nn/modules/module.py", line 532, in __getattr__
+    type(self).__name__, name))
+AttributeError: 'MultiTaskModel' object has no attribute 'wmt14_en_de_mdl'
+Epoch     4: reducing learning rate of group 0 to 5.0000e-05.
+Epoch     6: reducing learning rate of group 0 to 2.5000e-05.
+Epoch     8: reducing learning rate of group 0 to 1.2500e-05.
+Traceback (most recent call last):
+  File "main.py", line 353, in <module>
+    raise e  # re-raise exception, in case debugger is attached.
+  File "main.py", line 343, in <module>
+    main(sys.argv[1:])
+  File "main.py", line 288, in main
+    pred_module = getattr(model, "%s_mdl" % task.name)
+  File "/home/pm2758/anaconda3/envs/jiant/lib/python3.6/site-packages/torch/nn/modules/module.py", line 532, in __getattr__
+    type(self).__name__, name))
+AttributeError: 'MultiTaskModel' object has no attribute 'wmt14_en_de_mdl'

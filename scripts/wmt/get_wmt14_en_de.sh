@@ -2,18 +2,18 @@
 # Download data / tools #
 #########################
 
-git clone https://github.com/moses-smt/mosesdecoder.git
-git clone https://github.com/rsennrich/subword-nmt.git
+#git clone https://github.com/moses-smt/mosesdecoder.git
+#git clone https://github.com/rsennrich/subword-nmt.git
 
-wget http://statmt.org/wmt13/training-parallel-europarl-v7.tgz
-wget http://statmt.org/wmt13/training-parallel-commoncrawl.tgz
-wget http://data.statmt.org/wmt17/translation-task/training-parallel-nc-v12.tgz
-wget http://statmt.org/wmt14/test-full.tgz
+#wget http://statmt.org/wmt13/training-parallel-europarl-v7.tgz
+#wget http://statmt.org/wmt13/training-parallel-commoncrawl.tgz
+#wget http://data.statmt.org/wmt17/translation-task/training-parallel-nc-v12.tgz
+#wget http://statmt.org/wmt14/test-full.tgz
 
-tar xvzf training-parallel-europarl-v7.tgz
-tar xvzf training-parallel-commoncrawl.tgz
-tar xvzf training-parallel-nc-v12.tgz
-tar xvzf test-full.tgz
+#tar xvzf training-parallel-europarl-v7.tgz
+#tar xvzf training-parallel-commoncrawl.tgz
+#tar xvzf training-parallel-nc-v12.tgz
+#tar xvzf test-full.tgz
 
 ########################
 # Source Preprocessing #

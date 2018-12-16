@@ -1,0 +1,1986 @@
+12/15 02:43:54 PM: fastText library not found!
+12/15 02:43:55 PM: Loading config from config/demo.conf
+12/15 02:43:55 PM: Config overrides: exp_name = my_exp, run_name = foobar, d_hid = 256
+12/15 02:43:55 PM: Waiting on git info....
+12/15 02:43:55 PM: Git branch: master
+12/15 02:43:55 PM: Git SHA: 58e9079f6a11a6ebd29edc0fe3d4fec403c7819c
+12/15 02:43:55 PM: Parsed args: 
+{
+  "allow_missing_task_map": 0,
+  "allow_reuse_of_pretraining_parameters": 0,
+  "allow_untrained_encoder_parameters": 0,
+  "batch_size": 8,
+  "bidirectional": 1,
+  "bpp_base": 1,
+  "char_embs": 0,
+  "char_filter_sizes": "2,3,4,5",
+  "classifier": "mlp",
+  "classifier_dropout": 0.2,
+  "classifier_hid_dim": 32,
+  "classifier_loss_fn": "",
+  "classifier_span_pooling": "x,y",
+  "cola": {},
+  "cola_classifier_dropout": 0.2,
+  "cola_classifier_hid_dim": 256,
+  "cola_d_proj": 256,
+  "cola_lr": 0.0003,
+  "cola_val_interval": 100,
+  "cove": 0,
+  "cove_fine_tune": 0,
+  "cuda": 0,
+  "d_char": 100,
+  "d_ff": 2048,
+  "d_hid": 256,
+  "d_hid_attn": 512,
+  "d_proj": 512,
+  "d_tproj": 64,
+  "d_word": 300,
+  "data_dir": "data",
+  "dec_val_scale": 250,
+  "do_full_eval": 1,
+  "do_pretrain": 1,
+  "do_target_task_training": 1,
+  "dropout": 0.2,
+  "dropout_embs": 0.2,
+  "edgeprobe_cnn_context": 0,
+  "edges-ccg-parse": {
+    "classifier_dropout": 0.3,
+    "classifier_hid_dim": 256,
+    "classifier_loss_fn": "sigmoid",
+    "classifier_span_pooling": "attn",
+    "max_vals": 100,
+    "pair_attn": 0,
+    "val_interval": 500
+  },
+  "edges-ccg-tag": {
+    "classifier_dropout": 0.3,
+    "classifier_hid_dim": 256,
+    "classifier_loss_fn": "sigmoid",
+    "classifier_span_pooling": "attn",
+    "max_vals": 100,
+    "pair_attn": 0,
+    "val_interval": 500
+  },
+  "edges-constituent-ontonotes": {
+    "classifier_dropout": 0.3,
+    "classifier_hid_dim": 256,
+    "classifier_loss_fn": "sigmoid",
+    "classifier_span_pooling": "attn",
+    "max_vals": 250,
+    "pair_attn": 0,
+    "val_interval": 1000
+  },
+  "edges-constituent-ontonotes-openai": {
+    "classifier_dropout": 0.3,
+    "classifier_hid_dim": 256,
+    "classifier_loss_fn": "sigmoid",
+    "classifier_span_pooling": "attn",
+    "max_vals": 250,
+    "pair_attn": 0,
+    "val_interval": 1000
+  },
+  "edges-constituent-ptb": {
+    "classifier_dropout": 0.3,
+    "classifier_hid_dim": 256,
+    "classifier_loss_fn": "sigmoid",
+    "classifier_span_pooling": "attn",
+    "max_vals": 100,
+    "pair_attn": 0,
+    "val_interval": 500
+  },
+  "edges-coref-ontonotes": {
+    "classifier_dropout": 0.3,
+    "classifier_hid_dim": 256,
+    "classifier_loss_fn": "sigmoid",
+    "classifier_span_pooling": "attn",
+    "max_vals": 100,
+    "pair_attn": 0,
+    "val_interval": 500
+  },
+  "edges-coref-ontonotes-conll": {
+    "classifier_dropout": 0.3,
+    "classifier_hid_dim": 256,
+    "classifier_loss_fn": "sigmoid",
+    "classifier_span_pooling": "attn",
+    "max_vals": 250,
+    "pair_attn": 0,
+    "val_interval": 1000
+  },
+  "edges-coref-ontonotes-conll-openai": {
+    "classifier_dropout": 0.3,
+    "classifier_hid_dim": 256,
+    "classifier_loss_fn": "sigmoid",
+    "classifier_span_pooling": "attn",
+    "max_vals": 250,
+    "pair_attn": 0,
+    "val_interval": 1000
+  },
+  "edges-dep-labeling": {
+    "classifier_dropout": 0.3,
+    "classifier_hid_dim": 256,
+    "classifier_loss_fn": "sigmoid",
+    "classifier_span_pooling": "attn",
+    "max_vals": 100,
+    "pair_attn": 0,
+    "val_interval": 500
+  },
+  "edges-dep-labeling-ewt": {
+    "classifier_dropout": 0.3,
+    "classifier_hid_dim": 256,
+    "classifier_loss_fn": "sigmoid",
+    "classifier_span_pooling": "attn",
+    "max_vals": 250,
+    "pair_attn": 0,
+    "val_interval": 1000
+  },
+  "edges-dep-labeling-ewt-openai": {
+    "classifier_dropout": 0.3,
+    "classifier_hid_dim": 256,
+    "classifier_loss_fn": "sigmoid",
+    "classifier_span_pooling": "attn",
+    "max_vals": 250,
+    "pair_attn": 0,
+    "val_interval": 1000
+  },
+  "edges-dpr": {
+    "classifier_dropout": 0.3,
+    "classifier_hid_dim": 256,
+    "classifier_loss_fn": "sigmoid",
+    "classifier_span_pooling": "attn",
+    "max_vals": 100,
+    "pair_attn": 0,
+    "val_interval": 100
+  },
+  "edges-dpr-openai": {
+    "classifier_dropout": 0.3,
+    "classifier_hid_dim": 256,
+    "classifier_loss_fn": "sigmoid",
+    "classifier_span_pooling": "attn",
+    "max_vals": 100,
+    "pair_attn": 0,
+    "val_interval": 100
+  },
+  "edges-ner-conll2003": {
+    "classifier_dropout": 0.3,
+    "classifier_hid_dim": 256,
+    "classifier_loss_fn": "sigmoid",
+    "classifier_span_pooling": "attn",
+    "max_vals": 100,
+    "pair_attn": 0,
+    "val_interval": 250
+  },
+  "edges-ner-ontonotes": {
+    "classifier_dropout": 0.3,
+    "classifier_hid_dim": 256,
+    "classifier_loss_fn": "sigmoid",
+    "classifier_span_pooling": "attn",
+    "max_vals": 250,
+    "pair_attn": 0,
+    "val_interval": 1000
+  },
+  "edges-ner-ontonotes-openai": {
+    "classifier_dropout": 0.3,
+    "classifier_hid_dim": 256,
+    "classifier_loss_fn": "sigmoid",
+    "classifier_span_pooling": "attn",
+    "max_vals": 250,
+    "pair_attn": 0,
+    "val_interval": 1000
+  },
+  "edges-nonterminal-ontonotes": {
+    "classifier_dropout": 0.3,
+    "classifier_hid_dim": 256,
+    "classifier_loss_fn": "sigmoid",
+    "classifier_span_pooling": "attn",
+    "max_vals": 250,
+    "pair_attn": 0,
+    "val_interval": 1000
+  },
+  "edges-pos-ontonotes": {
+    "classifier_dropout": 0.3,
+    "classifier_hid_dim": 256,
+    "classifier_loss_fn": "sigmoid",
+    "classifier_span_pooling": "attn",
+    "max_vals": 250,
+    "pair_attn": 0,
+    "val_interval": 1000
+  },
+  "edges-spr1": {
+    "classifier_dropout": 0.3,
+    "classifier_hid_dim": 256,
+    "classifier_loss_fn": "sigmoid",
+    "classifier_span_pooling": "attn",
+    "max_vals": 100,
+    "pair_attn": 0,
+    "val_interval": 100
+  },
+  "edges-spr1-openai": {
+    "classifier_dropout": 0.3,
+    "classifier_hid_dim": 256,
+    "classifier_loss_fn": "sigmoid",
+    "classifier_span_pooling": "attn",
+    "max_vals": 100,
+    "pair_attn": 0,
+    "val_interval": 100
+  },
+  "edges-spr2": {
+    "classifier_dropout": 0.3,
+    "classifier_hid_dim": 256,
+    "classifier_loss_fn": "sigmoid",
+    "classifier_span_pooling": "attn",
+    "max_vals": 100,
+    "pair_attn": 0,
+    "val_interval": 100
+  },
+  "edges-spr2-openai": {
+    "classifier_dropout": 0.3,
+    "classifier_hid_dim": 256,
+    "classifier_loss_fn": "sigmoid",
+    "classifier_span_pooling": "attn",
+    "max_vals": 100,
+    "pair_attn": 0,
+    "val_interval": 100
+  },
+  "edges-srl-conll2005": {
+    "classifier_dropout": 0.3,
+    "classifier_hid_dim": 256,
+    "classifier_loss_fn": "sigmoid",
+    "classifier_span_pooling": "attn",
+    "max_vals": 100,
+    "pair_attn": 0,
+    "val_interval": 500
+  },
+  "edges-srl-conll2012": {
+    "classifier_dropout": 0.3,
+    "classifier_hid_dim": 256,
+    "classifier_loss_fn": "sigmoid",
+    "classifier_span_pooling": "attn",
+    "max_vals": 100,
+    "pair_attn": 0,
+    "val_interval": 1000
+  },
+  "edges-srl-conll2012-openai": {
+    "classifier_dropout": 0.3,
+    "classifier_hid_dim": 256,
+    "classifier_loss_fn": "sigmoid",
+    "classifier_span_pooling": "attn",
+    "max_vals": 100,
+    "pair_attn": 0,
+    "val_interval": 1000
+  },
+  "edges-tmpl": {
+    "classifier_dropout": 0.3,
+    "classifier_hid_dim": 256,
+    "classifier_loss_fn": "sigmoid",
+    "classifier_span_pooling": "attn",
+    "max_vals": 100,
+    "pair_attn": 0,
+    "val_interval": 500
+  },
+  "elmo": 1,
+  "elmo_chars_only": 1,
+  "elmo_weight_file_path": "none",
+  "eval_data_fraction": 1,
+  "eval_max_vals": 10,
+  "eval_val_interval": 10,
+  "exp_dir": "outputs/my_exp/",
+  "exp_name": "my_exp",
+  "fastText": 0,
+  "fastText_model_file": ".",
+  "global_ro_exp_dir": "/nfs/jsalt/share/exp/demo",
+  "grounded": {},
+  "grounded_d_proj": 2048,
+  "groundedsw": {},
+  "groundedsw_d_proj": 2048,
+  "is_probing_task": 0,
+  "keep_all_checkpoints": 0,
+  "load_eval_checkpoint": "none",
+  "load_model": 0,
+  "local_log_path": "outputs/my_exp/foobar/log.log",
+  "lr": 0.0001,
+  "lr_decay_factor": 0.5,
+  "lr_patience": 1,
+  "max_char_v_size": 250,
+  "max_grad_norm": 5.0,
+  "max_seq_len": 10,
+  "max_targ_word_v_size": 20000,
+  "max_vals": 10,
+  "max_word_v_size": 5000,
+  "min_lr": 1e-06,
+  "mnli": {},
+  "mnli-alt": {},
+  "mnli-alt_classifier_dropout": 0.2,
+  "mnli-alt_classifier_hid_dim": 512,
+  "mnli-alt_lr": 0.0003,
+  "mnli-alt_pair_attn": 1,
+  "mnli-alt_val_interval": 1000,
+  "mnli-diagnostic": {
+    "use_classifier": "mnli"
+  },
+  "mnli_classifier_dropout": 0.2,
+  "mnli_classifier_hid_dim": 512,
+  "mnli_lr": 0.0003,
+  "mnli_pair_attn": 1,
+  "mnli_val_interval": 1000,
+  "mrpc": {
+    "classifier_dropout": 0.1,
+    "classifier_hid_dim": 256,
+    "max_vals": 8,
+    "val_interval": 1
+  },
+  "mrpc_classifier_dropout": 0.2,
+  "mrpc_classifier_hid_dim": 256,
+  "mrpc_d_proj": 256,
+  "mrpc_lr": 0.0003,
+  "mrpc_pair_attn": 0,
+  "mrpc_val_interval": 100,
+  "n_char_filters": 100,
+  "n_heads": 8,
+  "n_layers_enc": 1,
+  "n_layers_highway": 0,
+  "nli-prob": {
+    "probe_path": ""
+  },
+  "openai_embeddings_mode": "none",
+  "openai_transformer": 0,
+  "openai_transformer_ckpt": "",
+  "openai_transformer_fine_tune": 0,
+  "optimizer": "adam",
+  "pair_attn": 1,
+  "patience": 5,
+  "pretrain_tasks": "sst,mrpc",
+  "project_dir": "outputs",
+  "qnli": {},
+  "qnli-alt": {},
+  "qnli-alt_classifier_dropout": 0.2,
+  "qnli-alt_classifier_hid_dim": 512,
+  "qnli-alt_lr": 0.0003,
+  "qnli-alt_pair_attn": 1,
+  "qnli-alt_val_interval": 1000,
+  "qnli_classifier_dropout": 0.2,
+  "qnli_classifier_hid_dim": 512,
+  "qnli_lr": 0.0003,
+  "qnli_pair_attn": 1,
+  "qnli_val_interval": 1000,
+  "qqp": {},
+  "qqp-alt": {},
+  "qqp-alt_classifier_dropout": 0.2,
+  "qqp-alt_classifier_hid_dim": 512,
+  "qqp-alt_lr": 0.0003,
+  "qqp-alt_pair_attn": 1,
+  "qqp-alt_val_interval": 1000,
+  "qqp_classifier_dropout": 0.2,
+  "qqp_classifier_hid_dim": 512,
+  "qqp_lr": 0.0003,
+  "qqp_pair_attn": 1,
+  "qqp_val_interval": 1000,
+  "random_seed": 42,
+  "reindex_tasks": "",
+  "reload_indexing": 0,
+  "reload_tasks": 0,
+  "reload_vocab": 0,
+  "remote_log_name": "my_exp__foobar",
+  "rte": {},
+  "rte_classifier_dropout": 0.4,
+  "rte_classifier_hid_dim": 128,
+  "rte_d_proj": 128,
+  "rte_lr": 0.0003,
+  "rte_pair_attn": 0,
+  "rte_val_interval": 100,
+  "run_dir": "outputs/my_exp/foobar",
+  "run_name": "foobar",
+  "s2s": {
+    "attention": "bilinear",
+    "d_hid_dec": 1024,
+    "n_layers_dec": 1,
+    "output_proj_input_dim": 1024,
+    "target_embedding_dim": 300
+  },
+  "scaling_method": "uniform",
+  "scheduler_threshold": 0.0001,
+  "sent_enc": "rnn",
+  "sep_embs_for_skip": 0,
+  "shared_optimizer": 1,
+  "shared_pair_attn": 0,
+  "skip_embs": 1,
+  "sst": {},
+  "sst_classifier_dropout": 0.2,
+  "sst_classifier_hid_dim": 256,
+  "sst_d_proj": 256,
+  "sst_lr": 0.0003,
+  "sst_val_interval": 100,
+  "sts-b": {
+    "classifier_dropout": 0.3,
+    "classifier_hid_dim": 512,
+    "max_vals": 16,
+    "pair_attn": 0,
+    "val_interval": 100
+  },
+  "sts-b-alt": {},
+  "sts-b-alt_classifier_dropout": 0.2,
+  "sts-b-alt_classifier_hid_dim": 512,
+  "sts-b-alt_lr": 0.0003,
+  "sts-b-alt_pair_attn": 1,
+  "sts-b-alt_val_interval": 1000,
+  "sts-b_classifier_dropout": 0.2,
+  "sts-b_classifier_hid_dim": 512,
+  "sts-b_lr": 0.0003,
+  "sts-b_pair_attn": 1,
+  "sts-b_val_interval": 1000,
+  "target_tasks": "sts-b,wnli",
+  "track_batch_utilization": 0,
+  "trainer_type": "sampling",
+  "training_data_fraction": 1,
+  "use_classifier": "",
+  "val_data_limit": 5000,
+  "val_interval": 100,
+  "warmup": 4000,
+  "weighting_method": "uniform",
+  "wnli": {},
+  "wnli_classifier_dropout": 0.4,
+  "wnli_classifier_hid_dim": 128,
+  "wnli_d_proj": 128,
+  "wnli_lr": 0.0003,
+  "wnli_pair_attn": 0,
+  "wnli_val_interval": 100,
+  "word_embs": "none",
+  "word_embs_file": "embeddings/glove.840B.300d.txt",
+  "write_preds": 0,
+  "write_strict_glue_format": 0
+}
+12/15 02:43:55 PM: Saved config to outputs/my_exp/foobar/params.conf
+12/15 02:43:55 PM: Using random seed 42
+12/15 02:43:55 PM: Using GPU 0
+12/15 02:43:55 PM: Loading tasks...
+12/15 02:43:55 PM: Writing pre-preprocessed tasks to outputs/my_exp/
+12/15 02:43:55 PM: 	Creating task mrpc from scratch
+12/15 02:43:57 PM: 	Finished loading MRPC data.
+12/15 02:43:57 PM: 	Task 'mrpc': train=3668 val=408 test=1725
+12/15 02:43:57 PM: 	Creating task sst from scratch
+12/15 02:44:03 PM: 	Finished loading SST data.
+12/15 02:44:03 PM: 	Task 'sst': train=67349 val=872 test=1821
+12/15 02:44:03 PM: 	Creating task sts-b from scratch
+12/15 02:44:05 PM: 	Finished loading STS Benchmark data.
+12/15 02:44:05 PM: 	Task 'sts-b': train=5749 val=1500 test=1379
+12/15 02:44:05 PM: 	Creating task wnli from scratch
+12/15 02:44:05 PM: 	Finished loading Winograd.
+12/15 02:44:05 PM: 	Task 'wnli': train=635 val=71 test=146
+12/15 02:44:05 PM: 	Finished loading tasks: mrpc sst sts-b wnli.
+12/15 02:44:05 PM: 	Building vocab from scratch
+12/15 02:44:05 PM: 	Counting words for task: 'mrpc'
+12/15 02:44:05 PM: 	Counting words for task: 'sst'
+12/15 02:44:06 PM: 	Counting words for task: 'sts-b'
+12/15 02:44:06 PM: 	Counting words for task: 'wnli'
+12/15 02:44:06 PM: 	Finished counting words
+12/15 02:44:06 PM: 	Saved vocab to outputs/my_exp/vocab
+12/15 02:44:06 PM: Loading token dictionary from outputs/my_exp/vocab.
+12/15 02:44:06 PM: 	Loaded vocab from outputs/my_exp/vocab
+12/15 02:44:06 PM: 	Vocab namespace chars: size 129
+12/15 02:44:06 PM: 	Vocab namespace tokens: size 5002
+12/15 02:44:06 PM: 	Finished building vocab.
+12/15 02:44:06 PM: 	Task 'mrpc', split 'train': indexing from scratch
+12/15 02:44:06 PM: Your label namespace was 'idxs'. We recommend you use a namespace ending with 'labels' or 'tags', so we don't add UNK and PAD tokens by default to your vocabulary.  See documentation for `non_padded_namespaces` parameter in Vocabulary.
+12/15 02:44:07 PM: 	Task 'mrpc', split 'train': saved 3668 instances to outputs/my_exp/preproc/mrpc__train_data
+12/15 02:44:07 PM: 	Task 'mrpc', split 'val': indexing from scratch
+12/15 02:44:07 PM: 	Task 'mrpc', split 'val': saved 408 instances to outputs/my_exp/preproc/mrpc__val_data
+12/15 02:44:07 PM: 	Task 'mrpc', split 'test': indexing from scratch
+12/15 02:44:07 PM: 	Task 'mrpc', split 'test': saved 1725 instances to outputs/my_exp/preproc/mrpc__test_data
+12/15 02:44:07 PM: 	Task 'mrpc': cleared in-memory data.
+12/15 02:44:07 PM: 	Task 'sst', split 'train': indexing from scratch
+12/15 02:44:13 PM: 	Task 'sst', split 'train': saved 67349 instances to outputs/my_exp/preproc/sst__train_data
+12/15 02:44:13 PM: 	Task 'sst', split 'val': indexing from scratch
+12/15 02:44:13 PM: 	Task 'sst', split 'val': saved 872 instances to outputs/my_exp/preproc/sst__val_data
+12/15 02:44:13 PM: 	Task 'sst', split 'test': indexing from scratch
+12/15 02:44:13 PM: 	Task 'sst', split 'test': saved 1821 instances to outputs/my_exp/preproc/sst__test_data
+12/15 02:44:13 PM: 	Task 'sst': cleared in-memory data.
+12/15 02:44:13 PM: 	Task 'sts-b', split 'train': indexing from scratch
+12/15 02:44:14 PM: 	Task 'sts-b', split 'train': saved 5749 instances to outputs/my_exp/preproc/sts-b__train_data
+12/15 02:44:14 PM: 	Task 'sts-b', split 'val': indexing from scratch
+12/15 02:44:15 PM: 	Task 'sts-b', split 'val': saved 1500 instances to outputs/my_exp/preproc/sts-b__val_data
+12/15 02:44:15 PM: 	Task 'sts-b', split 'test': indexing from scratch
+12/15 02:44:15 PM: 	Task 'sts-b', split 'test': saved 1379 instances to outputs/my_exp/preproc/sts-b__test_data
+12/15 02:44:15 PM: 	Task 'sts-b': cleared in-memory data.
+12/15 02:44:15 PM: 	Task 'wnli', split 'train': indexing from scratch
+12/15 02:44:15 PM: 	Task 'wnli', split 'train': saved 635 instances to outputs/my_exp/preproc/wnli__train_data
+12/15 02:44:15 PM: 	Task 'wnli', split 'val': indexing from scratch
+12/15 02:44:15 PM: 	Task 'wnli', split 'val': saved 71 instances to outputs/my_exp/preproc/wnli__val_data
+12/15 02:44:15 PM: 	Task 'wnli', split 'test': indexing from scratch
+12/15 02:44:15 PM: 	Task 'wnli', split 'test': saved 146 instances to outputs/my_exp/preproc/wnli__test_data
+12/15 02:44:15 PM: 	Task 'wnli': cleared in-memory data.
+12/15 02:44:15 PM: 	Finished indexing tasks
+12/15 02:44:15 PM: 	Lazy-loading indexed data for task='mrpc' from outputs/my_exp/preproc
+12/15 02:44:15 PM: 	Lazy-loading indexed data for task='sst' from outputs/my_exp/preproc
+12/15 02:44:15 PM: 	Lazy-loading indexed data for task='sts-b' from outputs/my_exp/preproc
+12/15 02:44:15 PM: 	Lazy-loading indexed data for task='wnli' from outputs/my_exp/preproc
+12/15 02:44:15 PM: All tasks initialized with data iterators.
+12/15 02:44:15 PM: 	  Training on sst, mrpc
+12/15 02:44:15 PM: 	  Evaluating on sts-b, wnli
+12/15 02:44:15 PM: 	Finished loading tasks in 19.990s
+12/15 02:44:15 PM: 	 Tasks: ['mrpc', 'sst', 'sts-b', 'wnli']
+12/15 02:44:15 PM: Building model...
+12/15 02:44:15 PM: 	Not using word embeddings!
+12/15 02:44:15 PM: 	Not using character embeddings!
+12/15 02:44:15 PM: Loading ELMo from files:
+12/15 02:44:15 PM: ELMO_OPT_PATH = https://s3-us-west-2.amazonaws.com/allennlp/models/elmo/2x4096_512_2048cnn_2xhighway/elmo_2x4096_512_2048cnn_2xhighway_options.json
+12/15 02:44:15 PM: 	Using ELMo character CNN only!
+12/15 02:44:15 PM: ELMO_WEIGHTS_PATH = https://s3-us-west-2.amazonaws.com/allennlp/models/elmo/2x4096_512_2048cnn_2xhighway/elmo_2x4096_512_2048cnn_2xhighway_weights.hdf5
+12/15 02:44:16 PM: https://s3-us-west-2.amazonaws.com/allennlp/models/elmo/2x4096_512_2048cnn_2xhighway/elmo_2x4096_512_2048cnn_2xhighway_options.json not found in cache, downloading to /state/partition1/job-10915824/tmp6xpmb86a
+  0%|          | 0/336 [00:00<?, ?B/s]100%|██████████| 336/336 [00:00<00:00, 263368.74B/s]
+12/15 02:44:16 PM: copying /state/partition1/job-10915824/tmp6xpmb86a to cache at /home/pm2758/.allennlp/datasets/1b18dd09179ba1bd92d0f4aa8a4089152c7ec97f14abfbad7052a443c5695047.15c465f454169b1ddb0b7f0d48dca2484f5b3350e81e870a0c3a797233eaac66
+12/15 02:44:16 PM: creating metadata file for /home/pm2758/.allennlp/datasets/1b18dd09179ba1bd92d0f4aa8a4089152c7ec97f14abfbad7052a443c5695047.15c465f454169b1ddb0b7f0d48dca2484f5b3350e81e870a0c3a797233eaac66
+12/15 02:44:16 PM: removing temp file /state/partition1/job-10915824/tmp6xpmb86a
+12/15 02:44:16 PM: https://s3-us-west-2.amazonaws.com/allennlp/models/elmo/2x4096_512_2048cnn_2xhighway/elmo_2x4096_512_2048cnn_2xhighway_weights.hdf5 not found in cache, downloading to /state/partition1/job-10915824/tmpby7xqq_e
+  0%|          | 0/374434792 [00:00<?, ?B/s]  0%|          | 53248/374434792 [00:00<16:51, 370285.88B/s]  0%|          | 105472/374434792 [00:00<16:58, 367552.30B/s]  0%|          | 157696/374434792 [00:00<17:03, 365725.15B/s]  0%|          | 227328/374434792 [00:00<15:49, 394086.74B/s]  0%|          | 296960/374434792 [00:00<14:58, 416184.36B/s]  0%|          | 366592/374434792 [00:00<14:22, 433871.25B/s]  0%|          | 436224/374434792 [00:01<13:56, 447218.55B/s]  0%|          | 505856/374434792 [00:01<13:38, 456611.48B/s]  0%|          | 575488/374434792 [00:01<13:25, 463901.35B/s]  0%|          | 645120/374434792 [00:01<13:15, 470003.65B/s]  0%|          | 732160/374434792 [00:01<12:26, 500421.84B/s]  0%|          | 801792/374434792 [00:01<12:30, 497882.83B/s]  0%|          | 888832/374434792 [00:01<11:52, 524338.76B/s]  0%|          | 975872/374434792 [00:02<11:24, 545369.60B/s]  0%|          | 1062912/374434792 [00:02<11:05, 561188.17B/s]  0%|          | 1149952/374434792 [00:02<10:25, 596581.24B/s]  0%|          | 1236992/374434792 [00:02<09:33, 651191.34B/s]  0%|          | 1304576/374434792 [00:02<09:47, 635233.48B/s]  0%|          | 1376256/374434792 [00:02<09:32, 651318.00B/s]  0%|          | 1445888/374434792 [00:02<10:16, 605368.23B/s]  0%|          | 1550336/374434792 [00:02<09:46, 636121.62B/s]  0%|          | 1654784/374434792 [00:03<09:24, 660919.74B/s]  0%|          | 1759232/374434792 [00:03<08:47, 705894.18B/s]  0%|          | 1863680/374434792 [00:03<08:03, 771184.75B/s]  1%|          | 1944576/374434792 [00:03<08:40, 716184.36B/s]  1%|          | 2037760/374434792 [00:03<08:32, 727204.69B/s]  1%|          | 2142208/374434792 [00:03<07:50, 791227.80B/s]  1%|          | 2229248/374434792 [00:03<08:19, 745458.93B/s]  1%|          | 2351104/374434792 [00:03<08:01, 772023.19B/s]  1%|          | 2472960/374434792 [00:04<07:31, 822991.22B/s]  1%|          | 2577408/374434792 [00:04<07:07, 870543.39B/s]  1%|          | 2667520/374434792 [00:04<07:18, 846863.47B/s]  1%|          | 2786304/374434792 [00:04<06:47, 911496.42B/s]  1%|          | 2880512/374434792 [00:04<07:18, 847777.31B/s]  1%|          | 2995200/374434792 [00:04<07:07, 869429.74B/s]  1%|          | 3117056/374434792 [00:04<06:34, 942036.94B/s]  1%|          | 3220480/374434792 [00:04<06:37, 934589.58B/s]  1%|          | 3338240/374434792 [00:04<06:12, 996257.88B/s]  1%|          | 3440640/374434792 [00:05<06:28, 954231.50B/s]  1%|          | 3552256/374434792 [00:05<06:15, 988437.81B/s]  1%|          | 3656704/374434792 [00:05<06:23, 966344.46B/s]  1%|          | 3778560/374434792 [00:05<06:02, 1021656.64B/s]  1%|          | 3883008/374434792 [00:05<06:13, 991288.48B/s]   1%|          | 4016128/374434792 [00:05<05:45, 1073453.49B/s]  1%|          | 4126720/374434792 [00:05<06:00, 1027200.54B/s]  1%|          | 4265984/374434792 [00:05<05:39, 1090270.22B/s]  1%|          | 4378624/374434792 [00:05<05:43, 1077022.22B/s]  1%|          | 4509696/374434792 [00:06<05:32, 1112307.20B/s]  1%|          | 4623360/374434792 [00:06<05:37, 1096267.67B/s]  1%|▏         | 4753408/374434792 [00:06<05:24, 1139848.75B/s]  1%|▏         | 4875264/374434792 [00:06<05:30, 1118465.51B/s]  1%|▏         | 5014528/374434792 [00:06<05:13, 1178934.69B/s]  1%|▏         | 5136384/374434792 [00:06<05:22, 1146155.12B/s]  1%|▏         | 5275648/374434792 [00:06<05:07, 1201233.76B/s]  1%|▏         | 5414912/374434792 [00:06<05:06, 1203741.70B/s]  1%|▏         | 5554176/374434792 [00:06<04:55, 1246813.95B/s]  2%|▏         | 5680128/374434792 [00:06<05:05, 1205543.46B/s]  2%|▏         | 5832704/374434792 [00:07<04:49, 1272130.15B/s]  2%|▏         | 5971968/374434792 [00:07<04:53, 1257202.98B/s]  2%|▏         | 6128640/374434792 [00:07<04:42, 1304963.61B/s]  2%|▏         | 6260736/374434792 [00:07<04:46, 1285261.86B/s]  2%|▏         | 6407168/374434792 [00:07<04:35, 1334142.18B/s]  2%|▏         | 6546432/374434792 [00:07<04:45, 1289424.23B/s]  2%|▏         | 6703104/374434792 [00:07<04:30, 1361578.11B/s]  2%|▏         | 6859776/374434792 [00:07<04:32, 1350576.02B/s]  2%|▏         | 7033856/374434792 [00:07<04:16, 1432816.50B/s]  2%|▏         | 7190528/374434792 [00:08<04:18, 1417999.99B/s]  2%|▏         | 7364608/374434792 [00:08<04:06, 1489308.59B/s]  2%|▏         | 7538688/374434792 [00:08<04:03, 1505200.06B/s]  2%|▏         | 7741440/374434792 [00:08<03:44, 1631239.73B/s]  2%|▏         | 7921664/374434792 [00:08<03:48, 1603303.58B/s]  2%|▏         | 8137728/374434792 [00:08<03:30, 1737757.06B/s]  2%|▏         | 8339456/374434792 [00:08<03:31, 1734859.11B/s]  2%|▏         | 8568832/374434792 [00:08<03:15, 1871641.15B/s]  2%|▏         | 8791040/374434792 [00:08<03:14, 1884531.77B/s]  2%|▏         | 9035776/374434792 [00:09<03:00, 2022154.89B/s]  2%|▏         | 9279488/374434792 [00:09<02:59, 2038344.80B/s]  3%|▎         | 9558016/374434792 [00:09<02:45, 2202892.35B/s]  3%|▎         | 9801728/374434792 [00:09<02:46, 2185454.46B/s]  3%|▎         | 10101760/374434792 [00:09<02:33, 2379288.24B/s]  3%|▎         | 10376192/374434792 [00:09<02:33, 2367340.92B/s]  3%|▎         | 10711040/374434792 [00:09<02:20, 2595453.02B/s]  3%|▎         | 11002880/374434792 [00:09<02:21, 2564177.34B/s]  3%|▎         | 11368448/374434792 [00:09<02:08, 2816155.77B/s]  3%|▎         | 11681792/374434792 [00:10<02:10, 2772565.98B/s]  3%|▎         | 12078080/374434792 [00:10<01:58, 3047083.71B/s]  3%|▎         | 12412928/374434792 [00:10<02:01, 2989974.45B/s]  3%|▎         | 12835840/374434792 [00:10<01:50, 3277981.88B/s]  4%|▎         | 13196288/374434792 [00:10<01:52, 3217274.05B/s]  4%|▎         | 13662208/374434792 [00:10<01:41, 3546403.14B/s]  4%|▍         | 14049280/374434792 [00:10<01:43, 3471435.56B/s]  4%|▍         | 14553088/374434792 [00:10<01:34, 3828447.49B/s]  4%|▍         | 14970880/374434792 [00:10<01:35, 3747736.96B/s]  4%|▍         | 15494144/374434792 [00:11<01:27, 4080392.19B/s]  4%|▍         | 15946752/374434792 [00:11<01:28, 4028686.77B/s]  4%|▍         | 16521216/374434792 [00:11<01:21, 4411104.82B/s]  5%|▍         | 16991232/374434792 [00:11<01:23, 4305209.09B/s]  5%|▍         | 17617920/374434792 [00:11<01:15, 4732002.81B/s]  5%|▍         | 18122752/374434792 [00:11<01:17, 4620957.99B/s]  5%|▌         | 18784256/374434792 [00:11<01:10, 5061509.94B/s]  5%|▌         | 19341312/374434792 [00:11<01:11, 4988243.53B/s]  5%|▌         | 20037632/374434792 [00:11<01:05, 5434868.13B/s]  6%|▌         | 20629504/374434792 [00:11<01:06, 5339381.53B/s]  6%|▌         | 21378048/374434792 [00:12<01:00, 5821168.72B/s]  6%|▌         | 22004736/374434792 [00:12<01:01, 5695005.94B/s]  6%|▌         | 22822912/374434792 [00:12<00:56, 6246546.16B/s]  6%|▋         | 23484416/374434792 [00:12<00:58, 6030023.56B/s]  7%|▋         | 24389632/374434792 [00:12<00:52, 6680090.41B/s]  7%|▋         | 25095168/374434792 [00:12<00:54, 6462991.15B/s]  7%|▋         | 26025984/374434792 [00:12<00:49, 7052555.94B/s]  7%|▋         | 26767360/374434792 [00:12<00:50, 6895981.07B/s]  7%|▋         | 27766784/374434792 [00:12<00:46, 7527955.31B/s]  8%|▊         | 28555264/374434792 [00:13<00:47, 7250866.34B/s]  8%|▊         | 29455360/374434792 [00:13<00:44, 7682027.65B/s]  8%|▊         | 30249984/374434792 [00:13<00:46, 7375612.66B/s]  8%|▊         | 31323136/374434792 [00:13<00:42, 8123790.20B/s]  9%|▊         | 32174080/374434792 [00:13<00:43, 7807842.12B/s]  9%|▉         | 33206272/374434792 [00:13<00:40, 8417800.36B/s]  9%|▉         | 34082816/374434792 [00:13<00:42, 8092033.09B/s]  9%|▉         | 35106816/374434792 [00:13<00:39, 8631444.17B/s] 10%|▉         | 35998720/374434792 [00:13<00:44, 7660499.75B/s] 10%|▉         | 36805632/374434792 [00:14<00:44, 7579955.12B/s] 10%|█         | 37610496/374434792 [00:14<00:43, 7714449.11B/s] 10%|█         | 38403072/374434792 [00:14<00:46, 7204454.97B/s] 10%|█         | 39145472/374434792 [00:14<00:51, 6514103.73B/s] 11%|█         | 39957504/374434792 [00:14<00:48, 6897697.68B/s] 11%|█         | 40673280/374434792 [00:14<00:50, 6606191.47B/s] 11%|█         | 41432064/374434792 [00:14<00:52, 6368190.25B/s] 11%|█▏        | 42338304/374434792 [00:14<00:47, 6991423.79B/s] 12%|█▏        | 43067392/374434792 [00:15<00:50, 6504364.95B/s] 12%|█▏        | 43933696/374434792 [00:15<00:47, 7029731.92B/s] 12%|█▏        | 44668928/374434792 [00:15<00:48, 6740529.08B/s] 12%|█▏        | 45495296/374434792 [00:15<00:49, 6644547.94B/s] 12%|█▏        | 46461952/374434792 [00:15<00:44, 7321123.31B/s] 13%|█▎        | 47227904/374434792 [00:15<00:47, 6824737.89B/s] 13%|█▎        | 48133120/374434792 [00:15<00:44, 7351080.83B/s] 13%|█▎        | 48901120/374434792 [00:15<00:46, 7065550.98B/s] 13%|█▎        | 49803264/374434792 [00:15<00:46, 7018845.73B/s] 14%|█▎        | 50830336/374434792 [00:16<00:41, 7755393.15B/s] 14%|█▍        | 51642368/374434792 [00:16<00:44, 7218090.25B/s] 14%|█▍        | 52573184/374434792 [00:16<00:41, 7728583.56B/s] 14%|█▍        | 53380096/374434792 [00:16<00:43, 7422395.15B/s] 15%|█▍        | 54309888/374434792 [00:16<00:43, 7361360.80B/s] 15%|█▍        | 55358464/374434792 [00:16<00:39, 8073166.14B/s] 15%|█▌        | 56200192/374434792 [00:16<00:42, 7473582.19B/s] 15%|█▌        | 57193472/374434792 [00:16<00:42, 7540008.21B/s] 16%|█▌        | 58258432/374434792 [00:17<00:38, 8263365.65B/s] 16%|█▌        | 59121664/374434792 [00:17<00:41, 7648877.62B/s] 16%|█▌        | 60126208/374434792 [00:17<00:38, 8237717.20B/s] 16%|█▋        | 60987392/374434792 [00:17<00:40, 7802206.27B/s] 17%|█▋        | 61928448/374434792 [00:17<00:40, 7770861.93B/s] 17%|█▋        | 62830592/374434792 [00:17<00:38, 8107484.33B/s] 17%|█▋        | 63730688/374434792 [00:17<00:38, 7982272.77B/s] 17%|█▋        | 64631808/374434792 [00:17<00:37, 8259504.91B/s] 18%|█▊        | 65549312/374434792 [00:17<00:38, 8117847.70B/s] 18%|█▊        | 66450432/374434792 [00:18<00:36, 8363804.10B/s] 18%|█▊        | 67295232/374434792 [00:18<00:38, 7956247.44B/s] 18%|█▊        | 68154368/374434792 [00:18<00:37, 8136375.02B/s] 18%|█▊        | 69088256/374434792 [00:18<00:37, 8146434.48B/s] 19%|█▊        | 69908480/374434792 [00:18<00:37, 8135272.65B/s] 19%|█▉        | 70923264/374434792 [00:18<00:36, 8295730.65B/s] 19%|█▉        | 71756800/374434792 [00:18<00:36, 8276982.57B/s] 19%|█▉        | 72741888/374434792 [00:18<00:36, 8351133.85B/s] 20%|█▉        | 73579520/374434792 [00:18<00:36, 8316176.81B/s] 20%|█▉        | 74576896/374434792 [00:19<00:35, 8402581.41B/s] 20%|██        | 75418624/374434792 [00:19<00:35, 8361632.02B/s] 20%|██        | 76395520/374434792 [00:19<00:35, 8407772.04B/s] 21%|██        | 77237248/374434792 [00:19<00:35, 8366882.86B/s] 21%|██        | 78230528/374434792 [00:19<00:35, 8422839.52B/s] 21%|██        | 79073280/374434792 [00:19<00:35, 8384852.49B/s] 21%|██▏       | 80049152/374434792 [00:19<00:35, 8406408.84B/s] 22%|██▏       | 80890880/374434792 [00:19<00:35, 8361378.75B/s] 22%|██▏       | 81867776/374434792 [00:19<00:34, 8422602.74B/s] 22%|██▏       | 82710528/374434792 [00:19<00:34, 8355641.80B/s] 22%|██▏       | 83547136/374434792 [00:20<00:40, 7228316.85B/s] 23%|██▎       | 84635648/374434792 [00:20<00:36, 7908256.67B/s] 23%|██▎       | 85465088/374434792 [00:20<00:37, 7663571.44B/s] 23%|██▎       | 86260736/374434792 [00:20<00:41, 6890512.74B/s] 23%|██▎       | 86984704/374434792 [00:20<00:45, 6259795.67B/s] 23%|██▎       | 87814144/374434792 [00:20<00:43, 6556235.57B/s] 24%|██▎       | 88498176/374434792 [00:20<00:44, 6487567.52B/s] 24%|██▍       | 89256960/374434792 [00:20<00:43, 6607787.43B/s] 24%|██▍       | 89932800/374434792 [00:21<00:43, 6504807.06B/s] 24%|██▍       | 90731520/374434792 [00:21<00:42, 6726262.51B/s] 24%|██▍       | 91413504/374434792 [00:21<00:42, 6595755.67B/s] 25%|██▍       | 92237824/374434792 [00:21<00:41, 6875450.54B/s] 25%|██▍       | 92934144/374434792 [00:21<00:41, 6717082.86B/s] 25%|██▌       | 93777920/374434792 [00:21<00:39, 7057569.14B/s] 25%|██▌       | 94493696/374434792 [00:21<00:40, 6843631.52B/s] 25%|██▌       | 95367168/374434792 [00:21<00:38, 7174105.91B/s] 26%|██▌       | 96094208/374434792 [00:21<00:39, 6990486.97B/s] 26%|██▌       | 96956416/374434792 [00:22<00:37, 7341987.20B/s] 26%|██▌       | 97700864/374434792 [00:22<00:39, 7093384.60B/s] 26%|██▋       | 98595840/374434792 [00:22<00:37, 7444805.13B/s] 27%|██▋       | 99351552/374434792 [00:22<00:38, 7236049.21B/s] 27%|██▋       | 100250624/374434792 [00:22<00:36, 7578364.43B/s] 27%|██▋       | 101019648/374434792 [00:22<00:37, 7350424.61B/s] 27%|██▋       | 101937152/374434792 [00:22<00:35, 7702643.31B/s] 27%|██▋       | 102718464/374434792 [00:22<00:36, 7466097.74B/s] 28%|██▊       | 103625728/374434792 [00:22<00:34, 7848884.62B/s] 28%|██▊       | 104422400/374434792 [00:23<00:35, 7545623.77B/s] 28%|██▊       | 105345024/374434792 [00:23<00:33, 7941843.28B/s] 28%|██▊       | 106152960/374434792 [00:23<00:35, 7630024.80B/s] 29%|██▊       | 107082752/374434792 [00:23<00:33, 7988896.25B/s] 29%|██▉       | 107894784/374434792 [00:23<00:34, 7716940.27B/s] 29%|██▉       | 108835840/374434792 [00:23<00:32, 8073909.01B/s] 29%|██▉       | 109656064/374434792 [00:23<00:33, 7790921.88B/s] 30%|██▉       | 110587904/374434792 [00:23<00:32, 8174192.14B/s] 30%|██▉       | 111418368/374434792 [00:23<00:33, 7803915.44B/s] 30%|███       | 112373760/374434792 [00:24<00:32, 8159421.75B/s] 30%|███       | 113203200/374434792 [00:24<00:33, 7796694.72B/s] 30%|███       | 114160640/374434792 [00:24<00:31, 8248001.74B/s] 31%|███       | 115001344/374434792 [00:24<00:32, 7870476.94B/s] 31%|███       | 115946496/374434792 [00:24<00:31, 8243320.16B/s] 31%|███       | 116786176/374434792 [00:24<00:32, 7934797.96B/s] 31%|███▏      | 117748736/374434792 [00:24<00:30, 8333744.88B/s] 32%|███▏      | 118596608/374434792 [00:24<00:32, 7875924.69B/s] 32%|███▏      | 119600128/374434792 [00:24<00:32, 7752059.61B/s] 32%|███▏      | 120747008/374434792 [00:25<00:29, 8457405.58B/s] 32%|███▏      | 121620480/374434792 [00:25<00:32, 7890213.61B/s] 33%|███▎      | 122630144/374434792 [00:25<00:31, 7875103.54B/s] 33%|███▎      | 123778048/374434792 [00:25<00:29, 8593990.05B/s] 33%|███▎      | 124669952/374434792 [00:25<00:31, 8004257.42B/s] 34%|███▎      | 125562880/374434792 [00:25<00:33, 7540066.77B/s] 34%|███▍      | 126383104/374434792 [00:25<00:32, 7725352.45B/s] 34%|███▍      | 127176704/374434792 [00:25<00:35, 6917938.92B/s] 34%|███▍      | 127898624/374434792 [00:26<00:38, 6354934.40B/s] 34%|███▍      | 128626688/374434792 [00:26<00:40, 6122513.93B/s] 35%|███▍      | 129443840/374434792 [00:26<00:37, 6620165.44B/s] 35%|███▍      | 130134016/374434792 [00:26<00:39, 6128630.05B/s] 35%|███▍      | 130888704/374434792 [00:26<00:40, 6076242.10B/s] 35%|███▌      | 131515392/374434792 [00:26<00:40, 6042566.11B/s] 35%|███▌      | 132132864/374434792 [00:26<00:43, 5567329.31B/s] 35%|███▌      | 132707328/374434792 [00:26<00:46, 5232342.71B/s] 36%|███▌      | 133264384/374434792 [00:26<00:45, 5321562.29B/s] 36%|███▌      | 133808128/374434792 [00:27<00:49, 4826141.05B/s] 36%|███▌      | 134410240/374434792 [00:27<00:49, 4823231.16B/s] 36%|███▌      | 135000064/374434792 [00:27<00:47, 5087541.16B/s] 36%|███▌      | 135521280/374434792 [00:27<00:51, 4684025.64B/s] 36%|███▋      | 136164352/374434792 [00:27<00:49, 4775108.85B/s] 37%|███▋      | 136697856/374434792 [00:27<00:48, 4930135.46B/s] 37%|███▋      | 137245696/374434792 [00:27<00:49, 4832714.39B/s] 37%|███▋      | 137816064/374434792 [00:27<00:46, 5064618.96B/s] 37%|███▋      | 138342400/374434792 [00:28<00:48, 4877653.20B/s] 37%|███▋      | 138897408/374434792 [00:28<00:46, 5061344.91B/s] 37%|███▋      | 139440128/374434792 [00:28<00:47, 4930423.50B/s] 37%|███▋      | 139938816/374434792 [00:28<00:47, 4911152.54B/s] 38%|███▊      | 140571648/374434792 [00:28<00:46, 5072598.43B/s] 38%|███▊      | 141083648/374434792 [00:28<00:46, 5046951.15B/s] 38%|███▊      | 141702144/374434792 [00:28<00:45, 5155232.21B/s] 38%|███▊      | 142220288/374434792 [00:28<00:45, 5113961.47B/s] 38%|███▊      | 142848000/374434792 [00:28<00:44, 5224233.06B/s] 38%|███▊      | 143373312/374434792 [00:29<00:44, 5174843.85B/s] 38%|███▊      | 143995904/374434792 [00:29<00:43, 5273170.75B/s] 39%|███▊      | 144525312/374434792 [00:29<00:44, 5222998.43B/s] 39%|███▉      | 145158144/374434792 [00:29<00:43, 5326767.23B/s] 39%|███▉      | 145692672/374434792 [00:29<00:43, 5266933.84B/s] 39%|███▉      | 146322432/374434792 [00:29<00:42, 5352604.61B/s] 39%|███▉      | 146859008/374434792 [00:29<00:43, 5290084.98B/s] 39%|███▉      | 147485696/374434792 [00:29<00:42, 5372636.63B/s] 40%|███▉      | 148024320/374434792 [00:29<00:42, 5300980.89B/s] 40%|███▉      | 148665344/374434792 [00:29<00:41, 5412869.77B/s] 40%|███▉      | 149208064/374434792 [00:30<00:42, 5325169.94B/s] 40%|████      | 149844992/374434792 [00:30<00:41, 5442767.26B/s] 40%|████      | 150390784/374434792 [00:30<00:41, 5346113.89B/s] 40%|████      | 151024640/374434792 [00:30<00:40, 5456867.88B/s] 40%|████      | 151572480/374434792 [00:30<00:41, 5354507.24B/s] 41%|████      | 152204288/374434792 [00:30<00:40, 5461554.10B/s] 41%|████      | 152752128/374434792 [00:30<00:41, 5357616.11B/s] 41%|████      | 153383936/374434792 [00:30<00:40, 5465562.26B/s] 41%|████      | 153932800/374434792 [00:30<00:41, 5363602.20B/s] 41%|████▏     | 154563584/374434792 [00:31<00:40, 5468016.06B/s] 41%|████▏     | 155112448/374434792 [00:31<00:40, 5364329.74B/s] 42%|████▏     | 155743232/374434792 [00:31<00:39, 5468168.97B/s] 42%|████▏     | 156292096/374434792 [00:31<00:40, 5365036.59B/s] 42%|████▏     | 156922880/374434792 [00:31<00:39, 5469463.16B/s] 42%|████▏     | 157471744/374434792 [00:31<00:40, 5369648.38B/s] 42%|████▏     | 158118912/374434792 [00:31<00:39, 5493633.96B/s] 42%|████▏     | 158670848/374434792 [00:31<00:40, 5387267.45B/s] 43%|████▎     | 159297536/374434792 [00:31<00:39, 5415512.15B/s] 43%|████▎     | 159841280/374434792 [00:32<00:40, 5362185.69B/s] 43%|████▎     | 160478208/374434792 [00:32<00:39, 5428349.48B/s] 43%|████▎     | 161021952/374434792 [00:32<00:40, 5290300.39B/s] 43%|████▎     | 161656832/374434792 [00:32<00:39, 5396170.53B/s] 43%|████▎     | 162198528/374434792 [00:32<00:40, 5251700.94B/s] 43%|████▎     | 162837504/374434792 [00:32<00:39, 5382881.87B/s] 44%|████▎     | 163378176/374434792 [00:32<00:39, 5279929.12B/s] 44%|████▍     | 164016128/374434792 [00:32<00:38, 5407592.09B/s] 44%|████▍     | 164559872/374434792 [00:32<00:39, 5278454.13B/s] 44%|████▍     | 165196800/374434792 [00:33<00:38, 5448695.91B/s] 44%|████▍     | 165744640/374434792 [00:33<00:39, 5323463.71B/s] 44%|████▍     | 166391808/374434792 [00:33<00:37, 5476502.29B/s] 45%|████▍     | 166942720/374434792 [00:33<00:38, 5352866.29B/s] 45%|████▍     | 167572480/374434792 [00:33<00:37, 5491317.08B/s] 45%|████▍     | 168124416/374434792 [00:33<00:38, 5361795.05B/s] 45%|████▌     | 168767488/374434792 [00:33<00:37, 5515514.76B/s] 45%|████▌     | 169322496/374434792 [00:33<00:38, 5393251.73B/s] 45%|████▌     | 169964544/374434792 [00:33<00:36, 5537862.47B/s] 46%|████▌     | 170521600/374434792 [00:34<00:37, 5397085.89B/s] 46%|████▌     | 171159552/374434792 [00:34<00:36, 5553953.52B/s] 46%|████▌     | 171718656/374434792 [00:34<00:37, 5419423.16B/s] 46%|████▌     | 172372992/374434792 [00:34<00:36, 5592795.15B/s] 46%|████▌     | 172936192/374434792 [00:34<00:36, 5458159.79B/s] 46%|████▋     | 173585408/374434792 [00:34<00:35, 5618748.39B/s] 47%|████▋     | 174150656/374434792 [00:34<00:36, 5488538.65B/s] 47%|████▋     | 174813184/374434792 [00:34<00:35, 5651367.21B/s] 47%|████▋     | 175382528/374434792 [00:34<00:35, 5529798.61B/s] 47%|████▋     | 176043008/374434792 [00:34<00:34, 5706645.12B/s] 47%|████▋     | 176617472/374434792 [00:35<00:35, 5553731.03B/s] 47%|████▋     | 177288192/374434792 [00:35<00:34, 5752557.29B/s] 48%|████▊     | 177867776/374434792 [00:35<00:34, 5617514.13B/s] 48%|████▊     | 178549760/374434792 [00:35<00:33, 5799044.96B/s] 48%|████▊     | 179134464/374434792 [00:35<00:34, 5682311.87B/s] 48%|████▊     | 179826688/374434792 [00:35<00:33, 5863314.11B/s] 48%|████▊     | 180417536/374434792 [00:35<00:33, 5732732.28B/s] 48%|████▊     | 181121024/374434792 [00:35<00:32, 5938182.10B/s] 49%|████▊     | 181719040/374434792 [00:35<00:33, 5802318.26B/s] 49%|████▊     | 182431744/374434792 [00:36<00:31, 6010790.58B/s] 49%|████▉     | 183037952/374434792 [00:36<00:32, 5884266.43B/s] 49%|████▉     | 183758848/374434792 [00:36<00:31, 6089715.76B/s] 49%|████▉     | 184373248/374434792 [00:36<00:31, 5954159.73B/s] 49%|████▉     | 185119744/374434792 [00:36<00:30, 6196310.01B/s] 50%|████▉     | 185745408/374434792 [00:36<00:31, 6064219.65B/s] 50%|████▉     | 186496000/374434792 [00:36<00:29, 6285408.78B/s] 50%|████▉     | 187129856/374434792 [00:36<00:30, 6199643.41B/s] 50%|█████     | 187904000/374434792 [00:36<00:29, 6403701.86B/s] 50%|█████     | 188549120/374434792 [00:37<00:29, 6308891.60B/s] 51%|█████     | 189346816/374434792 [00:37<00:28, 6536608.22B/s] 51%|█████     | 190005248/374434792 [00:37<00:28, 6399382.64B/s] 51%|█████     | 190803968/374434792 [00:37<00:27, 6698193.83B/s] 51%|█████     | 191480832/374434792 [00:37<00:27, 6598863.88B/s] 51%|█████▏    | 192312320/374434792 [00:37<00:26, 6812432.22B/s] 52%|█████▏    | 192999424/374434792 [00:37<00:26, 6819758.12B/s] 52%|█████▏    | 193852416/374434792 [00:37<00:25, 6966539.67B/s] 52%|█████▏    | 194552832/374434792 [00:37<00:25, 6965550.50B/s] 52%|█████▏    | 195425280/374434792 [00:38<00:24, 7396372.00B/s] 52%|█████▏    | 196173824/374434792 [00:38<00:25, 7011604.85B/s] 53%|█████▎    | 197062656/374434792 [00:38<00:24, 7244514.17B/s] 53%|█████▎    | 197800960/374434792 [00:38<00:24, 7257531.00B/s] 53%|█████▎    | 198734848/374434792 [00:38<00:23, 7477628.48B/s] 53%|█████▎    | 199489536/374434792 [00:38<00:23, 7481710.21B/s] 54%|█████▎    | 200454144/374434792 [00:38<00:22, 7706483.03B/s] 54%|█████▎    | 201230336/374434792 [00:38<00:22, 7613533.73B/s] 54%|█████▍    | 202241024/374434792 [00:38<00:21, 7970841.94B/s] 54%|█████▍    | 203045888/374434792 [00:39<00:21, 7867526.94B/s] 55%|█████▍    | 204076032/374434792 [00:39<00:20, 8234038.67B/s] 55%|█████▍    | 204907520/374434792 [00:39<00:20, 8117824.30B/s] 55%|█████▌    | 205959168/374434792 [00:39<00:19, 8500733.65B/s] 55%|█████▌    | 206818304/374434792 [00:39<00:20, 8355869.38B/s] 56%|█████▌    | 207926272/374434792 [00:39<00:18, 8786946.18B/s] 56%|█████▌    | 208816128/374434792 [00:39<00:19, 8645827.60B/s] 56%|█████▌    | 209868800/374434792 [00:39<00:18, 9135229.84B/s] 56%|█████▋    | 210795520/374434792 [00:39<00:18, 8805302.99B/s] 57%|█████▋    | 211808256/374434792 [00:39<00:17, 9163668.50B/s] 57%|█████▋    | 212856832/374434792 [00:40<00:17, 9496905.62B/s] 57%|█████▋    | 213818368/374434792 [00:40<00:17, 9446387.94B/s] 57%|█████▋    | 214987776/374434792 [00:40<00:15, 10007143.36B/s] 58%|█████▊    | 216003584/374434792 [00:40<00:16, 9605463.81B/s]  58%|█████▊    | 217247744/374434792 [00:40<00:15, 10281259.95B/s] 58%|█████▊    | 218299392/374434792 [00:40<00:15, 10177162.85B/s] 59%|█████▊    | 219460608/374434792 [00:40<00:14, 10536430.34B/s] 59%|█████▉    | 220574720/374434792 [00:40<00:14, 10369260.26B/s] 59%|█████▉    | 221787136/374434792 [00:40<00:14, 10808367.91B/s] 60%|█████▉    | 223006720/374434792 [00:41<00:13, 11189793.89B/s] 60%|█████▉    | 224138240/374434792 [00:41<00:14, 10063694.33B/s] 60%|██████    | 225423360/374434792 [00:41<00:14, 10546899.26B/s] 60%|██████    | 226505728/374434792 [00:41<00:14, 10219330.67B/s] 61%|██████    | 227549184/374434792 [00:41<00:15, 9688384.05B/s]  61%|██████    | 228539392/374434792 [00:41<00:15, 9281411.85B/s] 61%|██████▏   | 229485568/374434792 [00:41<00:15, 9319686.65B/s] 62%|██████▏   | 230430720/374434792 [00:41<00:16, 8983776.92B/s] 62%|██████▏   | 231392256/374434792 [00:41<00:15, 9163986.21B/s] 62%|██████▏   | 232371200/374434792 [00:42<00:15, 9342150.83B/s] 62%|██████▏   | 233313280/374434792 [00:42<00:15, 9188688.86B/s] 63%|██████▎   | 234386432/374434792 [00:42<00:14, 9381431.24B/s] 63%|██████▎   | 235329536/374434792 [00:42<00:15, 9220682.63B/s] 63%|██████▎   | 236467200/374434792 [00:42<00:14, 9771083.37B/s] 63%|██████▎   | 237456384/374434792 [00:42<00:14, 9330391.52B/s] 64%|██████▎   | 238629888/374434792 [00:42<00:13, 9705738.27B/s] 64%|██████▍   | 239613952/374434792 [00:42<00:14, 9540482.45B/s] 64%|██████▍   | 240809984/374434792 [00:42<00:13, 10155967.61B/s] 65%|██████▍   | 241843200/374434792 [00:43<00:13, 9691517.90B/s]  65%|██████▍   | 243053568/374434792 [00:43<00:13, 10079462.15B/s] 65%|██████▌   | 244077568/374434792 [00:43<00:13, 9929563.05B/s]  66%|██████▌   | 245313536/374434792 [00:43<00:12, 10297162.36B/s] 66%|██████▌   | 246354944/374434792 [00:43<00:12, 10118432.03B/s] 66%|██████▌   | 247608320/374434792 [00:43<00:11, 10723998.01B/s] 66%|██████▋   | 248696832/374434792 [00:43<00:12, 10226065.13B/s] 67%|██████▋   | 249951232/374434792 [00:43<00:11, 10597631.76B/s] 67%|██████▋   | 251026432/374434792 [00:43<00:11, 10413228.09B/s] 67%|██████▋   | 252310528/374434792 [00:43<00:11, 11029559.64B/s] 68%|██████▊   | 253431808/374434792 [00:44<00:11, 10503998.17B/s] 68%|██████▊   | 254702592/374434792 [00:44<00:11, 10868975.59B/s] 68%|██████▊   | 255805440/374434792 [00:44<00:11, 10659040.69B/s] 69%|██████▊   | 257126400/374434792 [00:44<00:10, 11032662.58B/s] 69%|██████▉   | 258241536/374434792 [00:44<00:10, 10824377.14B/s] 69%|██████▉   | 259552256/374434792 [00:44<00:10, 11185369.31B/s] 70%|██████▉   | 260680704/374434792 [00:44<00:10, 10942968.66B/s] 70%|██████▉   | 262009856/374434792 [00:44<00:09, 11301759.14B/s] 70%|███████   | 263148544/374434792 [00:44<00:10, 11035539.54B/s] 71%|███████   | 264482816/374434792 [00:45<00:09, 11397196.68B/s] 71%|███████   | 265630720/374434792 [00:45<00:09, 11117489.81B/s] 71%|███████▏  | 266974208/374434792 [00:45<00:09, 11491564.62B/s] 72%|███████▏  | 268132352/374434792 [00:45<00:09, 11193694.10B/s] 72%|███████▏  | 269259776/374434792 [00:45<00:10, 9622880.80B/s]  72%|███████▏  | 270840832/374434792 [00:45<00:09, 10886760.52B/s] 73%|███████▎  | 272016384/374434792 [00:45<00:10, 9913804.85B/s]  73%|███████▎  | 273085440/374434792 [00:45<00:10, 9415775.82B/s] 73%|███████▎  | 274086912/374434792 [00:46<00:11, 8859290.25B/s] 73%|███████▎  | 275021824/374434792 [00:46<00:11, 8929720.10B/s] 74%|███████▎  | 275949568/374434792 [00:46<00:11, 8669162.66B/s] 74%|███████▍  | 276886528/374434792 [00:46<00:11, 8806966.87B/s] 74%|███████▍  | 277785600/374434792 [00:46<00:11, 8573353.66B/s] 74%|███████▍  | 278787072/374434792 [00:46<00:10, 8822487.22B/s] 75%|███████▍  | 279682048/374434792 [00:46<00:11, 8610590.98B/s] 75%|███████▍  | 280719360/374434792 [00:46<00:10, 8894005.06B/s] 75%|███████▌  | 281618432/374434792 [00:46<00:10, 8687909.05B/s] 75%|███████▌  | 282670080/374434792 [00:47<00:10, 8981393.12B/s] 76%|███████▌  | 283576320/374434792 [00:47<00:10, 8776721.26B/s] 76%|███████▌  | 284641280/374434792 [00:47<00:09, 9265359.10B/s] 76%|███████▋  | 285580288/374434792 [00:47<00:10, 8847775.49B/s] 77%|███████▋  | 286651392/374434792 [00:47<00:09, 9143114.82B/s] 77%|███████▋  | 287577088/374434792 [00:47<00:09, 8948963.31B/s] 77%|███████▋  | 288666624/374434792 [00:47<00:09, 9257963.38B/s] 77%|███████▋  | 289601536/374434792 [00:47<00:09, 9038235.75B/s] 78%|███████▊  | 290713600/374434792 [00:47<00:08, 9371269.94B/s] 78%|███████▊  | 291659776/374434792 [00:47<00:09, 9162164.78B/s] 78%|███████▊  | 292745216/374434792 [00:48<00:08, 9608405.57B/s] 78%|███████▊  | 293716992/374434792 [00:48<00:08, 9173845.68B/s] 79%|███████▊  | 294825984/374434792 [00:48<00:08, 9467219.02B/s] 79%|███████▉  | 295783424/374434792 [00:48<00:08, 9234209.42B/s] 79%|███████▉  | 296907776/374434792 [00:48<00:08, 9566746.05B/s] 80%|███████▉  | 297874432/374434792 [00:48<00:08, 9319050.64B/s] 80%|███████▉  | 298988544/374434792 [00:48<00:07, 9635814.14B/s] 80%|████████  | 299960320/374434792 [00:48<00:07, 9374706.09B/s] 80%|████████  | 301085696/374434792 [00:48<00:07, 9698073.35B/s] 81%|████████  | 302063616/374434792 [00:49<00:07, 9442643.39B/s] 81%|████████  | 303199232/374434792 [00:49<00:07, 9731866.17B/s] 81%|████████  | 304180224/374434792 [00:49<00:07, 9503972.92B/s] 82%|████████▏ | 305311744/374434792 [00:49<00:07, 9764541.34B/s] 82%|████████▏ | 306294784/374434792 [00:49<00:07, 9545679.32B/s] 82%|████████▏ | 307425280/374434792 [00:49<00:06, 9801548.69B/s] 82%|████████▏ | 308411392/374434792 [00:49<00:06, 9561356.20B/s] 83%|████████▎ | 309555200/374434792 [00:49<00:06, 9831594.01B/s] 83%|████████▎ | 310544384/374434792 [00:49<00:06, 9604650.87B/s] 83%|████████▎ | 311685120/374434792 [00:50<00:06, 9862351.91B/s] 84%|████████▎ | 312677376/374434792 [00:50<00:06, 9622079.49B/s] 84%|████████▍ | 313816064/374434792 [00:50<00:06, 9878429.17B/s] 84%|████████▍ | 314809344/374434792 [00:50<00:06, 9634208.05B/s] 84%|████████▍ | 315945984/374434792 [00:50<00:05, 9891587.03B/s] 85%|████████▍ | 316941312/374434792 [00:50<00:05, 9640647.19B/s] 85%|████████▍ | 318075904/374434792 [00:50<00:05, 9893083.22B/s] 85%|████████▌ | 319071232/374434792 [00:50<00:05, 9643760.14B/s] 86%|████████▌ | 320205824/374434792 [00:50<00:05, 9897489.26B/s] 86%|████████▌ | 321201152/374434792 [00:51<00:05, 9637170.43B/s] 86%|████████▌ | 322335744/374434792 [00:51<00:05, 9900440.10B/s] 86%|████████▋ | 323332096/374434792 [00:51<00:05, 9648976.99B/s] 87%|████████▋ | 324464640/374434792 [00:51<00:05, 9908760.51B/s] 87%|████████▋ | 325460992/374434792 [00:51<00:05, 9638882.13B/s] 87%|████████▋ | 326594560/374434792 [00:51<00:04, 9897758.26B/s] 87%|████████▋ | 327589888/374434792 [00:51<00:04, 9639919.28B/s] 88%|████████▊ | 328724480/374434792 [00:51<00:04, 9902167.80B/s] 88%|████████▊ | 329720832/374434792 [00:51<00:04, 9645294.68B/s] 88%|████████▊ | 330691584/374434792 [00:52<00:04, 9332181.47B/s] 89%|████████▊ | 331631616/374434792 [00:52<00:04, 8720001.35B/s] 89%|████████▉ | 332516352/374434792 [00:52<00:05, 8159020.66B/s] 89%|████████▉ | 333361152/374434792 [00:52<00:05, 8052469.57B/s] 89%|████████▉ | 334178304/374434792 [00:52<00:05, 7470485.51B/s] 89%|████████▉ | 335033344/374434792 [00:52<00:05, 7619232.70B/s] 90%|████████▉ | 335807488/374434792 [00:52<00:05, 7429539.83B/s] 90%|████████▉ | 336688128/374434792 [00:52<00:04, 7659634.97B/s] 90%|█████████ | 337463296/374434792 [00:52<00:04, 7479778.28B/s] 90%|█████████ | 338391040/374434792 [00:53<00:04, 7788011.71B/s] 91%|█████████ | 339178496/374434792 [00:53<00:04, 7338722.07B/s] 91%|█████████ | 339959808/374434792 [00:53<00:04, 7474826.05B/s] 91%|█████████ | 340716544/374434792 [00:53<00:04, 6989309.18B/s] 91%|█████████ | 341428224/374434792 [00:53<00:05, 6463706.14B/s] 91%|█████████▏| 342091776/374434792 [00:53<00:05, 6175381.56B/s] 92%|█████████▏| 342750208/374434792 [00:53<00:05, 6292444.94B/s] 92%|█████████▏| 343390208/374434792 [00:53<00:05, 5994553.35B/s] 92%|█████████▏| 344000512/374434792 [00:54<00:05, 5253282.99B/s] 92%|█████████▏| 344781824/374434792 [00:54<00:05, 5755131.94B/s] 92%|█████████▏| 345389056/374434792 [00:54<00:05, 5317455.68B/s] 92%|█████████▏| 345949184/374434792 [00:54<00:05, 4822766.33B/s] 93%|█████████▎| 346460160/374434792 [00:54<00:05, 4776353.53B/s] 93%|█████████▎| 346958848/374434792 [00:54<00:05, 4714365.89B/s] 93%|█████████▎| 347445248/374434792 [00:54<00:05, 4653857.15B/s] 93%|█████████▎| 347921408/374434792 [00:54<00:05, 4573252.87B/s] 93%|█████████▎| 348402688/374434792 [00:54<00:05, 4599160.42B/s] 93%|█████████▎| 348868608/374434792 [00:55<00:05, 4428613.23B/s] 93%|█████████▎| 349317120/374434792 [00:55<00:06, 3952959.77B/s] 93%|█████████▎| 349725696/374434792 [00:55<00:06, 3885300.30B/s] 94%|█████████▎| 350124032/374434792 [00:55<00:06, 3775388.63B/s] 94%|█████████▎| 350509056/374434792 [00:55<00:06, 3623056.46B/s] 94%|█████████▎| 350878720/374434792 [00:55<00:06, 3629353.32B/s] 94%|█████████▍| 351246336/374434792 [00:55<00:06, 3591390.26B/s] 94%|█████████▍| 351608832/374434792 [00:55<00:06, 3505041.34B/s] 94%|█████████▍| 351989760/374434792 [00:55<00:06, 3568097.33B/s] 94%|█████████▍| 352349184/374434792 [00:56<00:06, 3493539.14B/s] 94%|█████████▍| 352776192/374434792 [00:56<00:05, 3642976.54B/s] 94%|█████████▍| 353143808/374434792 [00:56<00:06, 3522329.50B/s] 94%|█████████▍| 353595392/374434792 [00:56<00:05, 3692148.72B/s] 95%|█████████▍| 353969152/374434792 [00:56<00:05, 3602631.48B/s] 95%|█████████▍| 354414592/374434792 [00:56<00:05, 3751296.65B/s] 95%|█████████▍| 354794496/374434792 [00:56<00:05, 3648456.06B/s] 95%|█████████▍| 355234816/374434792 [00:56<00:05, 3817771.61B/s] 95%|█████████▍| 355621888/374434792 [00:56<00:05, 3689192.90B/s] 95%|█████████▌| 356086784/374434792 [00:57<00:04, 3857333.84B/s] 95%|█████████▌| 356477952/374434792 [00:57<00:04, 3756559.47B/s] 95%|█████████▌| 356922368/374434792 [00:57<00:04, 3887212.58B/s] 95%|█████████▌| 357315584/374434792 [00:57<00:04, 3757646.72B/s] 96%|█████████▌| 357773312/374434792 [00:57<00:04, 3920343.86B/s] 96%|█████████▌| 358170624/374434792 [00:57<00:04, 3794224.72B/s] 96%|█████████▌| 358626304/374434792 [00:57<00:04, 3951327.10B/s] 96%|█████████▌| 359026688/374434792 [00:57<00:04, 3832935.60B/s] 96%|█████████▌| 359478272/374434792 [00:57<00:03, 3960893.55B/s] 96%|█████████▌| 359878656/374434792 [00:57<00:03, 3849862.30B/s] 96%|█████████▌| 360346624/374434792 [00:58<00:03, 3992273.46B/s] 96%|█████████▋| 360750080/374434792 [00:58<00:03, 3879830.97B/s] 96%|█████████▋| 361197568/374434792 [00:58<00:03, 3977864.50B/s] 97%|█████████▋| 361598976/374434792 [00:58<00:03, 3874412.64B/s] 97%|█████████▋| 362066944/374434792 [00:58<00:03, 4006278.67B/s] 97%|█████████▋| 362471424/374434792 [00:58<00:03, 3894070.95B/s] 97%|█████████▋| 362935296/374434792 [00:58<00:02, 4017841.04B/s] 97%|█████████▋| 363340800/374434792 [00:58<00:02, 3903174.60B/s] 97%|█████████▋| 363786240/374434792 [00:58<00:02, 3999732.87B/s] 97%|█████████▋| 364189696/374434792 [00:59<00:02, 3894347.89B/s] 97%|█████████▋| 364655616/374434792 [00:59<00:02, 4017532.93B/s] 97%|█████████▋| 365060096/374434792 [00:59<00:02, 3893354.86B/s] 98%|█████████▊| 365523968/374434792 [00:59<00:02, 4022819.44B/s] 98%|█████████▊| 365929472/374434792 [00:59<00:02, 3896881.52B/s] 98%|█████████▊| 366375936/374434792 [00:59<00:01, 4039030.83B/s] 98%|█████████▊| 366783488/374434792 [00:59<00:01, 3900274.11B/s] 98%|█████████▊| 367243264/374434792 [00:59<00:01, 4011122.01B/s] 98%|█████████▊| 367647744/374434792 [00:59<00:01, 3888619.36B/s] 98%|█████████▊| 368112640/374434792 [01:00<00:01, 4022037.05B/s] 98%|█████████▊| 368518144/374434792 [01:00<00:01, 3896391.67B/s] 99%|█████████▊| 368980992/374434792 [01:00<00:01, 4023234.56B/s] 99%|█████████▊| 369387520/374434792 [01:00<00:01, 3904459.34B/s] 99%|█████████▉| 369848320/374434792 [01:00<00:01, 4038215.71B/s] 99%|█████████▉| 370255872/374434792 [01:00<00:01, 3928890.33B/s] 99%|█████████▉| 370717696/374434792 [01:00<00:00, 4052888.90B/s] 99%|█████████▉| 371126272/374434792 [01:00<00:00, 3924900.85B/s] 99%|█████████▉| 371602432/374434792 [01:00<00:00, 4087127.11B/s] 99%|█████████▉| 372015104/374434792 [01:01<00:00, 3958835.09B/s] 99%|█████████▉| 372486144/374434792 [01:01<00:00, 4106212.69B/s]100%|█████████▉| 372900864/374434792 [01:01<00:00, 3986419.02B/s]100%|█████████▉| 373388288/374434792 [01:01<00:00, 4144709.11B/s]100%|█████████▉| 373807104/374434792 [01:01<00:00, 4029669.82B/s]100%|█████████▉| 374288384/374434792 [01:01<00:00, 4169049.11B/s]100%|██████████| 374434792/374434792 [01:01<00:00, 6076616.91B/s]
+12/15 02:45:18 PM: copying /state/partition1/job-10915824/tmpby7xqq_e to cache at /home/pm2758/.allennlp/datasets/c80e0cc2f7021815b01b9b2f47526804cedc186e3f2f1622b4537169ff759ce9.e6623c55f61b49e14a2ef0881ac5dbe85b2bfe9fb014760bc706855d4f7f48b7
+12/15 02:45:20 PM: creating metadata file for /home/pm2758/.allennlp/datasets/c80e0cc2f7021815b01b9b2f47526804cedc186e3f2f1622b4537169ff759ce9.e6623c55f61b49e14a2ef0881ac5dbe85b2bfe9fb014760bc706855d4f7f48b7
+12/15 02:45:20 PM: removing temp file /state/partition1/job-10915824/tmpby7xqq_e
+12/15 02:45:26 PM: batch_first = True
+12/15 02:45:26 PM: Converting Params object to dict; logging of default values will not occur when dictionary parameters are used subsequently.
+12/15 02:45:26 PM: CURRENTLY DEFINED PARAMETERS: 
+12/15 02:45:26 PM: input_size = 512
+12/15 02:45:26 PM: bidirectional = True
+12/15 02:45:26 PM: hidden_size = 256
+12/15 02:45:26 PM: num_layers = 1
+12/15 02:45:26 PM: batch_first = True
+12/15 02:45:26 PM: Initializing parameters
+12/15 02:45:26 PM: Done initializing parameters; the following parameters are using their default initialization from their code
+12/15 02:45:26 PM:    _phrase_layer._module.bias_hh_l0
+12/15 02:45:26 PM:    _phrase_layer._module.bias_hh_l0_reverse
+12/15 02:45:26 PM:    _phrase_layer._module.bias_ih_l0
+12/15 02:45:26 PM:    _phrase_layer._module.bias_ih_l0_reverse
+12/15 02:45:26 PM:    _phrase_layer._module.weight_hh_l0
+12/15 02:45:26 PM:    _phrase_layer._module.weight_hh_l0_reverse
+12/15 02:45:26 PM:    _phrase_layer._module.weight_ih_l0
+12/15 02:45:26 PM:    _phrase_layer._module.weight_ih_l0_reverse
+12/15 02:45:26 PM:    _text_field_embedder.token_embedder_elmo._char_embedding_weights
+12/15 02:45:26 PM:    _text_field_embedder.token_embedder_elmo._highways._layers.0.bias
+12/15 02:45:26 PM:    _text_field_embedder.token_embedder_elmo._highways._layers.0.weight
+12/15 02:45:26 PM:    _text_field_embedder.token_embedder_elmo._highways._layers.1.bias
+12/15 02:45:26 PM:    _text_field_embedder.token_embedder_elmo._highways._layers.1.weight
+12/15 02:45:26 PM:    _text_field_embedder.token_embedder_elmo._projection.bias
+12/15 02:45:26 PM:    _text_field_embedder.token_embedder_elmo._projection.weight
+12/15 02:45:26 PM:    _text_field_embedder.token_embedder_elmo.char_conv_0.bias
+12/15 02:45:26 PM:    _text_field_embedder.token_embedder_elmo.char_conv_0.weight
+12/15 02:45:26 PM:    _text_field_embedder.token_embedder_elmo.char_conv_1.bias
+12/15 02:45:26 PM:    _text_field_embedder.token_embedder_elmo.char_conv_1.weight
+12/15 02:45:26 PM:    _text_field_embedder.token_embedder_elmo.char_conv_2.bias
+12/15 02:45:26 PM:    _text_field_embedder.token_embedder_elmo.char_conv_2.weight
+12/15 02:45:26 PM:    _text_field_embedder.token_embedder_elmo.char_conv_3.bias
+12/15 02:45:26 PM:    _text_field_embedder.token_embedder_elmo.char_conv_3.weight
+12/15 02:45:26 PM:    _text_field_embedder.token_embedder_elmo.char_conv_4.bias
+12/15 02:45:26 PM:    _text_field_embedder.token_embedder_elmo.char_conv_4.weight
+12/15 02:45:26 PM:    _text_field_embedder.token_embedder_elmo.char_conv_5.bias
+12/15 02:45:26 PM:    _text_field_embedder.token_embedder_elmo.char_conv_5.weight
+12/15 02:45:26 PM:    _text_field_embedder.token_embedder_elmo.char_conv_6.bias
+12/15 02:45:26 PM:    _text_field_embedder.token_embedder_elmo.char_conv_6.weight
+12/15 02:45:26 PM: Using BiLSTM architecture for shared encoder!
+12/15 02:45:26 PM: Converting Params object to dict; logging of default values will not occur when dictionary parameters are used subsequently.
+12/15 02:45:26 PM: CURRENTLY DEFINED PARAMETERS: 
+12/15 02:45:26 PM: cls_type = mlp
+12/15 02:45:26 PM: d_hid = 256
+12/15 02:45:26 PM: d_proj = 256
+12/15 02:45:26 PM: shared_pair_attn = 0
+12/15 02:45:26 PM: attn = 0
+12/15 02:45:26 PM: d_hid_attn = 512
+12/15 02:45:26 PM: dropout = 0.1
+12/15 02:45:26 PM: cls_loss_fn = 
+12/15 02:45:26 PM: cls_span_pooling = x,y
+12/15 02:45:26 PM: edgeprobe_cnn_context = 0
+12/15 02:45:26 PM: use_classifier = mrpc
+12/15 02:45:26 PM: 	Task 'mrpc' params: {
+  "cls_type": "mlp",
+  "d_hid": 256,
+  "d_proj": 256,
+  "shared_pair_attn": 0,
+  "attn": 0,
+  "d_hid_attn": 512,
+  "dropout": 0.1,
+  "cls_loss_fn": "",
+  "cls_span_pooling": "x,y",
+  "edgeprobe_cnn_context": 0,
+  "use_classifier": "mrpc"
+}
+12/15 02:45:26 PM: Converting Params object to dict; logging of default values will not occur when dictionary parameters are used subsequently.
+12/15 02:45:26 PM: CURRENTLY DEFINED PARAMETERS: 
+12/15 02:45:26 PM: cls_type = mlp
+12/15 02:45:26 PM: d_hid = 128
+12/15 02:45:26 PM: d_proj = 128
+12/15 02:45:26 PM: shared_pair_attn = 0
+12/15 02:45:26 PM: attn = 0
+12/15 02:45:26 PM: d_hid_attn = 512
+12/15 02:45:26 PM: dropout = 0.4
+12/15 02:45:26 PM: cls_loss_fn = 
+12/15 02:45:26 PM: cls_span_pooling = x,y
+12/15 02:45:26 PM: edgeprobe_cnn_context = 0
+12/15 02:45:26 PM: use_classifier = wnli
+12/15 02:45:26 PM: 	Task 'wnli' params: {
+  "cls_type": "mlp",
+  "d_hid": 128,
+  "d_proj": 128,
+  "shared_pair_attn": 0,
+  "attn": 0,
+  "d_hid_attn": 512,
+  "dropout": 0.4,
+  "cls_loss_fn": "",
+  "cls_span_pooling": "x,y",
+  "edgeprobe_cnn_context": 0,
+  "use_classifier": "wnli"
+}
+12/15 02:45:26 PM: Converting Params object to dict; logging of default values will not occur when dictionary parameters are used subsequently.
+12/15 02:45:26 PM: CURRENTLY DEFINED PARAMETERS: 
+12/15 02:45:26 PM: cls_type = mlp
+12/15 02:45:26 PM: d_hid = 512
+12/15 02:45:26 PM: d_proj = 512
+12/15 02:45:26 PM: shared_pair_attn = 0
+12/15 02:45:26 PM: attn = 0
+12/15 02:45:26 PM: d_hid_attn = 512
+12/15 02:45:26 PM: dropout = 0.3
+12/15 02:45:26 PM: cls_loss_fn = 
+12/15 02:45:26 PM: cls_span_pooling = x,y
+12/15 02:45:26 PM: edgeprobe_cnn_context = 0
+12/15 02:45:26 PM: use_classifier = sts-b
+12/15 02:45:26 PM: 	Task 'sts-b' params: {
+  "cls_type": "mlp",
+  "d_hid": 512,
+  "d_proj": 512,
+  "shared_pair_attn": 0,
+  "attn": 0,
+  "d_hid_attn": 512,
+  "dropout": 0.3,
+  "cls_loss_fn": "",
+  "cls_span_pooling": "x,y",
+  "edgeprobe_cnn_context": 0,
+  "use_classifier": "sts-b"
+}
+12/15 02:45:26 PM: Converting Params object to dict; logging of default values will not occur when dictionary parameters are used subsequently.
+12/15 02:45:26 PM: CURRENTLY DEFINED PARAMETERS: 
+12/15 02:45:26 PM: cls_type = mlp
+12/15 02:45:26 PM: d_hid = 256
+12/15 02:45:26 PM: d_proj = 256
+12/15 02:45:26 PM: shared_pair_attn = 0
+12/15 02:45:26 PM: attn = 1
+12/15 02:45:26 PM: d_hid_attn = 512
+12/15 02:45:26 PM: dropout = 0.2
+12/15 02:45:26 PM: cls_loss_fn = 
+12/15 02:45:26 PM: cls_span_pooling = x,y
+12/15 02:45:26 PM: edgeprobe_cnn_context = 0
+12/15 02:45:26 PM: use_classifier = sst
+12/15 02:45:26 PM: 	Task 'sst' params: {
+  "cls_type": "mlp",
+  "d_hid": 256,
+  "d_proj": 256,
+  "shared_pair_attn": 0,
+  "attn": 1,
+  "d_hid_attn": 512,
+  "dropout": 0.2,
+  "cls_loss_fn": "",
+  "cls_span_pooling": "x,y",
+  "edgeprobe_cnn_context": 0,
+  "use_classifier": "sst"
+}
+12/15 02:45:36 PM: MultiTaskModel(
+  (sent_encoder): SentenceEncoder(
+    (_text_field_embedder): ElmoTextFieldEmbedder(
+      (token_embedder_elmo): ElmoCharacterEncoder(
+        (char_conv_0): Conv1d(16, 32, kernel_size=(1,), stride=(1,))
+        (char_conv_1): Conv1d(16, 32, kernel_size=(2,), stride=(1,))
+        (char_conv_2): Conv1d(16, 64, kernel_size=(3,), stride=(1,))
+        (char_conv_3): Conv1d(16, 128, kernel_size=(4,), stride=(1,))
+        (char_conv_4): Conv1d(16, 256, kernel_size=(5,), stride=(1,))
+        (char_conv_5): Conv1d(16, 512, kernel_size=(6,), stride=(1,))
+        (char_conv_6): Conv1d(16, 1024, kernel_size=(7,), stride=(1,))
+        (_highways): Highway(
+          (_layers): ModuleList(
+            (0): Linear(in_features=2048, out_features=4096, bias=True)
+            (1): Linear(in_features=2048, out_features=4096, bias=True)
+          )
+        )
+        (_projection): Linear(in_features=2048, out_features=512, bias=True)
+      )
+    )
+    (_highway_layer): TimeDistributed(
+      (_module): Highway(
+        (_layers): ModuleList()
+      )
+    )
+    (_phrase_layer): PytorchSeq2SeqWrapper(
+      (_module): LSTM(512, 256, batch_first=True, bidirectional=True)
+    )
+    (_dropout): Dropout(p=0.2)
+  )
+  (mrpc_mdl): PairClassifier(
+    (pooler): Pooler(
+      (project): Linear(in_features=1024, out_features=256, bias=True)
+    )
+    (classifier): Classifier(
+      (classifier): Sequential(
+        (0): Linear(in_features=1024, out_features=256, bias=True)
+        (1): Tanh()
+        (2): LayerNorm(torch.Size([256]), eps=1e-05, elementwise_affine=True)
+        (3): Dropout(p=0.1)
+        (4): Linear(in_features=256, out_features=2, bias=True)
+      )
+    )
+  )
+  (sst_mdl): SingleClassifier(
+    (pooler): Pooler(
+      (project): Linear(in_features=1024, out_features=256, bias=True)
+    )
+    (classifier): Classifier(
+      (classifier): Sequential(
+        (0): Linear(in_features=256, out_features=256, bias=True)
+        (1): Tanh()
+        (2): LayerNorm(torch.Size([256]), eps=1e-05, elementwise_affine=True)
+        (3): Dropout(p=0.2)
+        (4): Linear(in_features=256, out_features=2, bias=True)
+      )
+    )
+  )
+  (sts-b_mdl): PairClassifier(
+    (pooler): Pooler(
+      (project): Linear(in_features=1024, out_features=512, bias=True)
+    )
+    (classifier): Classifier(
+      (classifier): Sequential(
+        (0): Linear(in_features=2048, out_features=512, bias=True)
+        (1): Tanh()
+        (2): LayerNorm(torch.Size([512]), eps=1e-05, elementwise_affine=True)
+        (3): Dropout(p=0.3)
+        (4): Linear(in_features=512, out_features=1, bias=True)
+      )
+    )
+  )
+  (wnli_mdl): PairClassifier(
+    (pooler): Pooler(
+      (project): Linear(in_features=1024, out_features=128, bias=True)
+    )
+    (classifier): Classifier(
+      (classifier): Sequential(
+        (0): Linear(in_features=512, out_features=128, bias=True)
+        (1): Tanh()
+        (2): LayerNorm(torch.Size([128]), eps=1e-05, elementwise_affine=True)
+        (3): Dropout(p=0.4)
+        (4): Linear(in_features=128, out_features=2, bias=True)
+      )
+    )
+  )
+)
+12/15 02:45:36 PM: >> Trainable param sent_encoder._phrase_layer._module.weight_ih_l0: torch.Size([1024, 512]) = 524288
+12/15 02:45:36 PM: >> Trainable param sent_encoder._phrase_layer._module.weight_hh_l0: torch.Size([1024, 256]) = 262144
+12/15 02:45:36 PM: >> Trainable param sent_encoder._phrase_layer._module.bias_ih_l0: torch.Size([1024]) = 1024
+12/15 02:45:36 PM: >> Trainable param sent_encoder._phrase_layer._module.bias_hh_l0: torch.Size([1024]) = 1024
+12/15 02:45:36 PM: >> Trainable param sent_encoder._phrase_layer._module.weight_ih_l0_reverse: torch.Size([1024, 512]) = 524288
+12/15 02:45:36 PM: >> Trainable param sent_encoder._phrase_layer._module.weight_hh_l0_reverse: torch.Size([1024, 256]) = 262144
+12/15 02:45:36 PM: >> Trainable param sent_encoder._phrase_layer._module.bias_ih_l0_reverse: torch.Size([1024]) = 1024
+12/15 02:45:36 PM: >> Trainable param sent_encoder._phrase_layer._module.bias_hh_l0_reverse: torch.Size([1024]) = 1024
+12/15 02:45:36 PM: >> Trainable param mrpc_mdl.pooler.project.weight: torch.Size([256, 1024]) = 262144
+12/15 02:45:36 PM: >> Trainable param mrpc_mdl.pooler.project.bias: torch.Size([256]) = 256
+12/15 02:45:36 PM: >> Trainable param mrpc_mdl.classifier.classifier.0.weight: torch.Size([256, 1024]) = 262144
+12/15 02:45:36 PM: >> Trainable param mrpc_mdl.classifier.classifier.0.bias: torch.Size([256]) = 256
+12/15 02:45:36 PM: >> Trainable param mrpc_mdl.classifier.classifier.2.weight: torch.Size([256]) = 256
+12/15 02:45:36 PM: >> Trainable param mrpc_mdl.classifier.classifier.2.bias: torch.Size([256]) = 256
+12/15 02:45:36 PM: >> Trainable param mrpc_mdl.classifier.classifier.4.weight: torch.Size([2, 256]) = 512
+12/15 02:45:36 PM: >> Trainable param mrpc_mdl.classifier.classifier.4.bias: torch.Size([2]) = 2
+12/15 02:45:36 PM: >> Trainable param sst_mdl.pooler.project.weight: torch.Size([256, 1024]) = 262144
+12/15 02:45:36 PM: >> Trainable param sst_mdl.pooler.project.bias: torch.Size([256]) = 256
+12/15 02:45:36 PM: >> Trainable param sst_mdl.classifier.classifier.0.weight: torch.Size([256, 256]) = 65536
+12/15 02:45:36 PM: >> Trainable param sst_mdl.classifier.classifier.0.bias: torch.Size([256]) = 256
+12/15 02:45:36 PM: >> Trainable param sst_mdl.classifier.classifier.2.weight: torch.Size([256]) = 256
+12/15 02:45:36 PM: >> Trainable param sst_mdl.classifier.classifier.2.bias: torch.Size([256]) = 256
+12/15 02:45:36 PM: >> Trainable param sst_mdl.classifier.classifier.4.weight: torch.Size([2, 256]) = 512
+12/15 02:45:36 PM: >> Trainable param sst_mdl.classifier.classifier.4.bias: torch.Size([2]) = 2
+12/15 02:45:36 PM: >> Trainable param sts-b_mdl.pooler.project.weight: torch.Size([512, 1024]) = 524288
+12/15 02:45:36 PM: >> Trainable param sts-b_mdl.pooler.project.bias: torch.Size([512]) = 512
+12/15 02:45:36 PM: >> Trainable param sts-b_mdl.classifier.classifier.0.weight: torch.Size([512, 2048]) = 1048576
+12/15 02:45:36 PM: >> Trainable param sts-b_mdl.classifier.classifier.0.bias: torch.Size([512]) = 512
+12/15 02:45:36 PM: >> Trainable param sts-b_mdl.classifier.classifier.2.weight: torch.Size([512]) = 512
+12/15 02:45:36 PM: >> Trainable param sts-b_mdl.classifier.classifier.2.bias: torch.Size([512]) = 512
+12/15 02:45:36 PM: >> Trainable param sts-b_mdl.classifier.classifier.4.weight: torch.Size([1, 512]) = 512
+12/15 02:45:36 PM: >> Trainable param sts-b_mdl.classifier.classifier.4.bias: torch.Size([1]) = 1
+12/15 02:45:36 PM: >> Trainable param wnli_mdl.pooler.project.weight: torch.Size([128, 1024]) = 131072
+12/15 02:45:36 PM: >> Trainable param wnli_mdl.pooler.project.bias: torch.Size([128]) = 128
+12/15 02:45:36 PM: >> Trainable param wnli_mdl.classifier.classifier.0.weight: torch.Size([128, 512]) = 65536
+12/15 02:45:36 PM: >> Trainable param wnli_mdl.classifier.classifier.0.bias: torch.Size([128]) = 128
+12/15 02:45:36 PM: >> Trainable param wnli_mdl.classifier.classifier.2.weight: torch.Size([128]) = 128
+12/15 02:45:36 PM: >> Trainable param wnli_mdl.classifier.classifier.2.bias: torch.Size([128]) = 128
+12/15 02:45:36 PM: >> Trainable param wnli_mdl.classifier.classifier.4.weight: torch.Size([2, 128]) = 256
+12/15 02:45:36 PM: >> Trainable param wnli_mdl.classifier.classifier.4.bias: torch.Size([2]) = 2
+12/15 02:45:36 PM: Total number of parameters: 22242663 (2.22427e+07)
+12/15 02:45:36 PM: Number of trainable parameters: 4204807 (4.20481e+06)
+12/15 02:45:36 PM: 	Finished building model in 80.749s
+12/15 02:45:36 PM: Will run the following steps:
+Training model on tasks: sst,mrpc
+Re-training model for individual eval tasks
+Evaluating model on tasks: sts-b,wnli
+12/15 02:45:36 PM: Training...
+12/15 02:45:36 PM: 	Using ReduceLROnPlateau scheduler!
+12/15 02:45:36 PM: patience = 5
+12/15 02:45:36 PM: val_interval = 100
+12/15 02:45:36 PM: max_vals = 10
+12/15 02:45:36 PM: cuda_device = 0
+12/15 02:45:36 PM: grad_norm = 5.0
+12/15 02:45:36 PM: grad_clipping = None
+12/15 02:45:36 PM: lr_decay = 0.99
+12/15 02:45:36 PM: min_lr = 1e-06
+12/15 02:45:36 PM: keep_all_checkpoints = 0
+12/15 02:45:36 PM: val_data_limit = 5000
+12/15 02:45:36 PM: dec_val_scale = 250
+12/15 02:45:36 PM: training_data_fraction = 1
+12/15 02:45:36 PM: type = adam
+12/15 02:45:36 PM: parameter_groups = None
+12/15 02:45:36 PM: Converting Params object to dict; logging of default values will not occur when dictionary parameters are used subsequently.
+12/15 02:45:36 PM: CURRENTLY DEFINED PARAMETERS: 
+12/15 02:45:36 PM: lr = 0.0001
+12/15 02:45:36 PM: weight_decay = 0
+12/15 02:45:36 PM: amsgrad = True
+12/15 02:45:36 PM: type = reduce_on_plateau
+12/15 02:45:36 PM: Converting Params object to dict; logging of default values will not occur when dictionary parameters are used subsequently.
+12/15 02:45:36 PM: CURRENTLY DEFINED PARAMETERS: 
+12/15 02:45:36 PM: mode = max
+12/15 02:45:36 PM: factor = 0.5
+12/15 02:45:36 PM: patience = 1
+12/15 02:45:36 PM: threshold = 0.0001
+12/15 02:45:36 PM: threshold_mode = abs
+12/15 02:45:36 PM: verbose = True
+12/15 02:45:36 PM: type = adam
+12/15 02:45:36 PM: parameter_groups = None
+12/15 02:45:36 PM: Converting Params object to dict; logging of default values will not occur when dictionary parameters are used subsequently.
+12/15 02:45:36 PM: CURRENTLY DEFINED PARAMETERS: 
+12/15 02:45:36 PM: lr = 0.0001
+12/15 02:45:36 PM: weight_decay = 0
+12/15 02:45:36 PM: amsgrad = True
+12/15 02:45:36 PM: type = reduce_on_plateau
+12/15 02:45:36 PM: Converting Params object to dict; logging of default values will not occur when dictionary parameters are used subsequently.
+12/15 02:45:36 PM: CURRENTLY DEFINED PARAMETERS: 
+12/15 02:45:36 PM: mode = max
+12/15 02:45:36 PM: factor = 0.5
+12/15 02:45:36 PM: patience = 1
+12/15 02:45:36 PM: threshold = 0.0001
+12/15 02:45:36 PM: threshold_mode = abs
+12/15 02:45:36 PM: verbose = True
+12/15 02:45:36 PM: type = adam
+12/15 02:45:36 PM: parameter_groups = None
+12/15 02:45:36 PM: Converting Params object to dict; logging of default values will not occur when dictionary parameters are used subsequently.
+12/15 02:45:36 PM: CURRENTLY DEFINED PARAMETERS: 
+12/15 02:45:36 PM: lr = 0.0001
+12/15 02:45:36 PM: weight_decay = 0
+12/15 02:45:36 PM: amsgrad = True
+12/15 02:45:36 PM: type = reduce_on_plateau
+12/15 02:45:36 PM: Converting Params object to dict; logging of default values will not occur when dictionary parameters are used subsequently.
+12/15 02:45:36 PM: CURRENTLY DEFINED PARAMETERS: 
+12/15 02:45:36 PM: mode = max
+12/15 02:45:36 PM: factor = 0.5
+12/15 02:45:36 PM: patience = 1
+12/15 02:45:36 PM: threshold = 0.0001
+12/15 02:45:36 PM: threshold_mode = abs
+12/15 02:45:36 PM: verbose = True
+12/15 02:45:36 PM: Not loading.
+12/15 02:45:36 PM: Training examples per task: {'mrpc': 3668, 'sst': 67349}
+12/15 02:45:36 PM: Sampling tasks uniformly.
+12/15 02:45:36 PM: Using weighting method: uniform, with normalized sample weights [0.5 0.5] 
+12/15 02:45:36 PM: Using loss scaling method: uniform, with weights {'mrpc': 1.0, 'sst': 1.0}
+12/15 02:45:36 PM: Beginning training. Stopping metric: macro_avg
+12/15 02:45:36 PM: Beginning training. Stopping metric: macro_avg
+12/15 02:45:39 PM: ***** Pass 100 / Epoch 1 *****
+12/15 02:45:39 PM: mrpc: trained on 50 batches, 0.109 epochs
+12/15 02:45:39 PM: sst: trained on 50 batches, 0.006 epochs
+12/15 02:45:39 PM: Validating...
+12/15 02:45:40 PM: Best model found for mrpc.
+12/15 02:45:40 PM: Best model found for sst.
+12/15 02:45:40 PM: Best model found for micro.
+12/15 02:45:40 PM: Best model found for macro.
+12/15 02:45:40 PM: Advancing scheduler.
+12/15 02:45:40 PM: 	Best macro_avg: 0.668
+12/15 02:45:40 PM: 	# bad epochs: 0
+12/15 02:45:40 PM: Statistic: mrpc_loss
+12/15 02:45:40 PM: 	training: 0.666952
+12/15 02:45:40 PM: 	validation: 0.650069
+12/15 02:45:40 PM: Statistic: sst_loss
+12/15 02:45:40 PM: 	training: 0.752440
+12/15 02:45:40 PM: 	validation: 0.664497
+12/15 02:45:40 PM: Statistic: macro_avg
+12/15 02:45:40 PM: 	validation: 0.667689
+12/15 02:45:40 PM: Statistic: micro_avg
+12/15 02:45:40 PM: 	validation: 0.637249
+12/15 02:45:40 PM: Statistic: mrpc_acc_f1
+12/15 02:45:40 PM: 	training: 0.698669
+12/15 02:45:40 PM: 	validation: 0.751662
+12/15 02:45:40 PM: Statistic: mrpc_accuracy
+12/15 02:45:40 PM: 	training: 0.631313
+12/15 02:45:40 PM: 	validation: 0.688725
+12/15 02:45:40 PM: Statistic: mrpc_f1
+12/15 02:45:40 PM: 	training: 0.766026
+12/15 02:45:40 PM: 	validation: 0.814599
+12/15 02:45:40 PM: Statistic: mrpc_precision
+12/15 02:45:40 PM: 	training: 0.678977
+12/15 02:45:40 PM: 	validation: 0.687192
+12/15 02:45:40 PM: Statistic: mrpc_recall
+12/15 02:45:40 PM: 	training: 0.878676
+12/15 02:45:40 PM: 	validation: 1.000000
+12/15 02:45:40 PM: Statistic: sst_accuracy
+12/15 02:45:40 PM: 	training: 0.505000
+12/15 02:45:40 PM: 	validation: 0.583716
+12/15 02:45:40 PM: global_lr: 0.000100
+12/15 02:45:41 PM: Saved files to outputs/my_exp/foobar
+12/15 02:45:42 PM: ***** Pass 200 / Epoch 2 *****
+12/15 02:45:42 PM: mrpc: trained on 58 batches, 0.126 epochs
+12/15 02:45:42 PM: sst: trained on 42 batches, 0.005 epochs
+12/15 02:45:42 PM: Validating...
+12/15 02:45:44 PM: Best model found for sst.
+12/15 02:45:44 PM: Best model found for micro.
+12/15 02:45:44 PM: Best model found for macro.
+12/15 02:45:44 PM: Advancing scheduler.
+12/15 02:45:44 PM: 	Best macro_avg: 0.719
+12/15 02:45:44 PM: 	# bad epochs: 0
+12/15 02:45:44 PM: Statistic: mrpc_loss
+12/15 02:45:44 PM: 	training: 0.659197
+12/15 02:45:44 PM: 	validation: 0.598062
+12/15 02:45:44 PM: Statistic: sst_loss
+12/15 02:45:44 PM: 	training: 0.628328
+12/15 02:45:44 PM: 	validation: 0.616593
+12/15 02:45:44 PM: Statistic: macro_avg
+12/15 02:45:44 PM: 	validation: 0.718623
+12/15 02:45:44 PM: Statistic: micro_avg
+12/15 02:45:44 PM: 	validation: 0.706717
+12/15 02:45:44 PM: Statistic: mrpc_acc_f1
+12/15 02:45:44 PM: 	training: 0.720625
+12/15 02:45:44 PM: 	validation: 0.751466
+12/15 02:45:44 PM: Statistic: mrpc_accuracy
+12/15 02:45:44 PM: 	training: 0.659483
+12/15 02:45:44 PM: 	validation: 0.696078
+12/15 02:45:44 PM: Statistic: mrpc_f1
+12/15 02:45:44 PM: 	training: 0.781768
+12/15 02:45:44 PM: 	validation: 0.806854
+12/15 02:45:44 PM: Statistic: mrpc_precision
+12/15 02:45:44 PM: 	training: 0.691932
+12/15 02:45:44 PM: 	validation: 0.713499
+12/15 02:45:44 PM: Statistic: mrpc_recall
+12/15 02:45:44 PM: 	training: 0.898413
+12/15 02:45:44 PM: 	validation: 0.928315
+12/15 02:45:44 PM: Statistic: sst_accuracy
+12/15 02:45:44 PM: 	training: 0.648810
+12/15 02:45:44 PM: 	validation: 0.685780
+12/15 02:45:44 PM: global_lr: 0.000100
+12/15 02:45:44 PM: Saved files to outputs/my_exp/foobar
+12/15 02:45:45 PM: ***** Pass 300 / Epoch 3 *****
+12/15 02:45:45 PM: mrpc: trained on 43 batches, 0.094 epochs
+12/15 02:45:45 PM: sst: trained on 57 batches, 0.007 epochs
+12/15 02:45:45 PM: Validating...
+12/15 02:45:46 PM: Batch 54/109: accuracy: 0.6782, sst_loss: 0.6131 ||
+12/15 02:45:46 PM: Best model found for mrpc.
+12/15 02:45:46 PM: Best model found for macro.
+12/15 02:45:46 PM: Advancing scheduler.
+12/15 02:45:46 PM: 	Best macro_avg: 0.719
+12/15 02:45:46 PM: 	# bad epochs: 0
+12/15 02:45:46 PM: Statistic: mrpc_loss
+12/15 02:45:46 PM: 	training: 0.648452
+12/15 02:45:46 PM: 	validation: 0.609500
+12/15 02:45:46 PM: Statistic: sst_loss
+12/15 02:45:46 PM: 	training: 0.579001
+12/15 02:45:46 PM: 	validation: 0.602035
+12/15 02:45:46 PM: Statistic: macro_avg
+12/15 02:45:46 PM: 	validation: 0.718923
+12/15 02:45:46 PM: Statistic: micro_avg
+12/15 02:45:46 PM: 	validation: 0.706493
+12/15 02:45:46 PM: Statistic: mrpc_acc_f1
+12/15 02:45:46 PM: 	training: 0.684269
+12/15 02:45:46 PM: 	validation: 0.753213
+12/15 02:45:46 PM: Statistic: mrpc_accuracy
+12/15 02:45:46 PM: 	training: 0.625000
+12/15 02:45:46 PM: 	validation: 0.691176
+12/15 02:45:46 PM: Statistic: mrpc_f1
+12/15 02:45:46 PM: 	training: 0.743539
+12/15 02:45:46 PM: 	validation: 0.815249
+12/15 02:45:46 PM: Statistic: mrpc_precision
+12/15 02:45:46 PM: 	training: 0.670251
+12/15 02:45:46 PM: 	validation: 0.689826
+12/15 02:45:46 PM: Statistic: mrpc_recall
+12/15 02:45:46 PM: 	training: 0.834821
+12/15 02:45:46 PM: 	validation: 0.996416
+12/15 02:45:46 PM: Statistic: sst_accuracy
+12/15 02:45:46 PM: 	training: 0.668860
+12/15 02:45:46 PM: 	validation: 0.684633
+12/15 02:45:46 PM: global_lr: 0.000100
+12/15 02:45:46 PM: Saved files to outputs/my_exp/foobar
+12/15 02:45:46 PM: Update 301: task mrpc, batch 1 (152): acc_f1: 0.6971, accuracy: 0.6250, f1: 0.7692, precision: 0.6250, recall: 1.0000, mrpc_loss: 0.6294 ||
+12/15 02:45:48 PM: ***** Pass 400 / Epoch 4 *****
+12/15 02:45:48 PM: mrpc: trained on 40 batches, 0.087 epochs
+12/15 02:45:48 PM: sst: trained on 60 batches, 0.007 epochs
+12/15 02:45:48 PM: Validating...
+12/15 02:45:49 PM: Best model found for mrpc.
+12/15 02:45:49 PM: Best model found for sst.
+12/15 02:45:49 PM: Best model found for micro.
+12/15 02:45:49 PM: Best model found for macro.
+12/15 02:45:49 PM: Advancing scheduler.
+12/15 02:45:49 PM: 	Best macro_avg: 0.731
+12/15 02:45:49 PM: 	# bad epochs: 0
+12/15 02:45:49 PM: Statistic: mrpc_loss
+12/15 02:45:49 PM: 	training: 0.694019
+12/15 02:45:49 PM: 	validation: 0.579721
+12/15 02:45:49 PM: Statistic: sst_loss
+12/15 02:45:49 PM: 	training: 0.523409
+12/15 02:45:49 PM: 	validation: 0.575726
+12/15 02:45:49 PM: Statistic: macro_avg
+12/15 02:45:49 PM: 	validation: 0.730526
+12/15 02:45:49 PM: Statistic: micro_avg
+12/15 02:45:49 PM: 	validation: 0.721373
+12/15 02:45:49 PM: Statistic: mrpc_acc_f1
+12/15 02:45:49 PM: 	training: 0.715340
+12/15 02:45:49 PM: 	validation: 0.755777
+12/15 02:45:49 PM: Statistic: mrpc_accuracy
+12/15 02:45:49 PM: 	training: 0.653125
+12/15 02:45:49 PM: 	validation: 0.696078
+12/15 02:45:49 PM: Statistic: mrpc_f1
+12/15 02:45:49 PM: 	training: 0.777555
+12/15 02:45:49 PM: 	validation: 0.815476
+12/15 02:45:49 PM: Statistic: mrpc_precision
+12/15 02:45:49 PM: 	training: 0.685512
+12/15 02:45:49 PM: 	validation: 0.697201
+12/15 02:45:49 PM: Statistic: mrpc_recall
+12/15 02:45:49 PM: 	training: 0.898148
+12/15 02:45:49 PM: 	validation: 0.982079
+12/15 02:45:49 PM: Statistic: sst_accuracy
+12/15 02:45:49 PM: 	training: 0.741667
+12/15 02:45:49 PM: 	validation: 0.705275
+12/15 02:45:49 PM: global_lr: 0.000100
+12/15 02:45:49 PM: Saved files to outputs/my_exp/foobar
+12/15 02:45:50 PM: ***** Pass 500 / Epoch 5 *****
+12/15 02:45:50 PM: mrpc: trained on 49 batches, 0.107 epochs
+12/15 02:45:50 PM: sst: trained on 51 batches, 0.006 epochs
+12/15 02:45:50 PM: Validating...
+12/15 02:45:52 PM: Best model found for mrpc.
+12/15 02:45:52 PM: Advancing scheduler.
+12/15 02:45:52 PM: 	Best macro_avg: 0.731
+12/15 02:45:52 PM: 	# bad epochs: 1
+12/15 02:45:52 PM: Statistic: mrpc_loss
+12/15 02:45:52 PM: 	training: 0.629113
+12/15 02:45:52 PM: 	validation: 0.576522
+12/15 02:45:52 PM: Statistic: sst_loss
+12/15 02:45:52 PM: 	training: 0.521644
+12/15 02:45:52 PM: 	validation: 0.565929
+12/15 02:45:52 PM: Statistic: macro_avg
+12/15 02:45:52 PM: 	validation: 0.728237
+12/15 02:45:52 PM: Statistic: micro_avg
+12/15 02:45:52 PM: 	validation: 0.717835
+12/15 02:45:52 PM: Statistic: mrpc_acc_f1
+12/15 02:45:52 PM: 	training: 0.739592
+12/15 02:45:52 PM: 	validation: 0.756932
+12/15 02:45:52 PM: Statistic: mrpc_accuracy
+12/15 02:45:52 PM: 	training: 0.681122
+12/15 02:45:52 PM: 	validation: 0.700980
+12/15 02:45:52 PM: Statistic: mrpc_f1
+12/15 02:45:52 PM: 	training: 0.798061
+12/15 02:45:52 PM: 	validation: 0.812883
+12/15 02:45:52 PM: Statistic: mrpc_precision
+12/15 02:45:52 PM: 	training: 0.697740
+12/15 02:45:52 PM: 	validation: 0.710456
+12/15 02:45:52 PM: Statistic: mrpc_recall
+12/15 02:45:52 PM: 	training: 0.932075
+12/15 02:45:52 PM: 	validation: 0.949821
+12/15 02:45:52 PM: Statistic: sst_accuracy
+12/15 02:45:52 PM: 	training: 0.740196
+12/15 02:45:52 PM: 	validation: 0.699541
+12/15 02:45:52 PM: global_lr: 0.000100
+12/15 02:45:52 PM: Saved files to outputs/my_exp/foobar
+12/15 02:45:53 PM: ***** Pass 600 / Epoch 6 *****
+12/15 02:45:53 PM: mrpc: trained on 47 batches, 0.102 epochs
+12/15 02:45:53 PM: sst: trained on 53 batches, 0.006 epochs
+12/15 02:45:53 PM: Validating...
+12/15 02:45:54 PM: Advancing scheduler.
+12/15 02:45:54 PM: 	Best macro_avg: 0.731
+12/15 02:45:54 PM: 	# bad epochs: 0
+12/15 02:45:54 PM: Statistic: mrpc_loss
+12/15 02:45:54 PM: 	training: 0.634636
+12/15 02:45:54 PM: 	validation: 0.577627
+12/15 02:45:54 PM: Statistic: sst_loss
+12/15 02:45:54 PM: 	training: 0.501759
+12/15 02:45:54 PM: 	validation: 0.634410
+12/15 02:45:54 PM: Statistic: macro_avg
+12/15 02:45:54 PM: 	validation: 0.718143
+12/15 02:45:54 PM: Statistic: micro_avg
+12/15 02:45:54 PM: 	validation: 0.705164
+12/15 02:45:54 PM: Statistic: mrpc_acc_f1
+12/15 02:45:54 PM: 	training: 0.721823
+12/15 02:45:54 PM: 	validation: 0.753946
+12/15 02:45:54 PM: Statistic: mrpc_accuracy
+12/15 02:45:54 PM: 	training: 0.662234
+12/15 02:45:54 PM: 	validation: 0.693627
+12/15 02:45:54 PM: Statistic: mrpc_f1
+12/15 02:45:54 PM: 	training: 0.781411
+12/15 02:45:54 PM: 	validation: 0.814264
+12/15 02:45:54 PM: Statistic: mrpc_precision
+12/15 02:45:54 PM: 	training: 0.700617
+12/15 02:45:54 PM: 	validation: 0.695431
+12/15 02:45:54 PM: Statistic: mrpc_recall
+12/15 02:45:54 PM: 	training: 0.883268
+12/15 02:45:54 PM: 	validation: 0.982079
+12/15 02:45:54 PM: Statistic: sst_accuracy
+12/15 02:45:54 PM: 	training: 0.745283
+12/15 02:45:54 PM: 	validation: 0.682339
+12/15 02:45:54 PM: global_lr: 0.000050
+12/15 02:45:54 PM: Saved files to outputs/my_exp/foobar
+12/15 02:45:56 PM: ***** Pass 700 / Epoch 7 *****
+12/15 02:45:56 PM: mrpc: trained on 56 batches, 0.122 epochs
+12/15 02:45:56 PM: sst: trained on 44 batches, 0.005 epochs
+12/15 02:45:56 PM: Validating...
+12/15 02:45:56 PM: Batch 37/51: acc_f1: 0.7634, accuracy: 0.7027, f1: 0.8240, precision: 0.7031, recall: 0.9952, mrpc_loss: 0.5837 ||
+12/15 02:45:56 PM: Batch 1/109: accuracy: 0.8750, sst_loss: 0.2283 ||
+12/15 02:45:57 PM: Best model found for sst.
+12/15 02:45:57 PM: Best model found for micro.
+12/15 02:45:57 PM: Best model found for macro.
+12/15 02:45:57 PM: Advancing scheduler.
+12/15 02:45:57 PM: 	Best macro_avg: 0.738
+12/15 02:45:57 PM: 	# bad epochs: 0
+12/15 02:45:57 PM: Statistic: mrpc_loss
+12/15 02:45:57 PM: 	training: 0.628386
+12/15 02:45:57 PM: 	validation: 0.592841
+12/15 02:45:57 PM: Statistic: sst_loss
+12/15 02:45:57 PM: 	training: 0.507262
+12/15 02:45:57 PM: 	validation: 0.568701
+12/15 02:45:57 PM: Statistic: macro_avg
+12/15 02:45:57 PM: 	validation: 0.738184
+12/15 02:45:57 PM: Statistic: micro_avg
+12/15 02:45:57 PM: 	validation: 0.732074
+12/15 02:45:57 PM: Statistic: mrpc_acc_f1
+12/15 02:45:57 PM: 	training: 0.712794
+12/15 02:45:57 PM: 	validation: 0.755037
+12/15 02:45:57 PM: Statistic: mrpc_accuracy
+12/15 02:45:57 PM: 	training: 0.649554
+12/15 02:45:57 PM: 	validation: 0.693627
+12/15 02:45:57 PM: Statistic: mrpc_f1
+12/15 02:45:57 PM: 	training: 0.776034
+12/15 02:45:57 PM: 	validation: 0.816446
+12/15 02:45:57 PM: Statistic: mrpc_precision
+12/15 02:45:57 PM: 	training: 0.669951
+12/15 02:45:57 PM: 	validation: 0.691542
+12/15 02:45:57 PM: Statistic: mrpc_recall
+12/15 02:45:57 PM: 	training: 0.922034
+12/15 02:45:57 PM: 	validation: 0.996416
+12/15 02:45:57 PM: Statistic: sst_accuracy
+12/15 02:45:57 PM: 	training: 0.769886
+12/15 02:45:57 PM: 	validation: 0.721330
+12/15 02:45:57 PM: global_lr: 0.000050
+12/15 02:45:57 PM: Saved files to outputs/my_exp/foobar
+12/15 02:45:59 PM: ***** Pass 800 / Epoch 8 *****
+12/15 02:45:59 PM: mrpc: trained on 56 batches, 0.122 epochs
+12/15 02:45:59 PM: sst: trained on 44 batches, 0.005 epochs
+12/15 02:45:59 PM: Validating...
+12/15 02:46:00 PM: Best model found for sst.
+12/15 02:46:00 PM: Best model found for micro.
+12/15 02:46:00 PM: Advancing scheduler.
+12/15 02:46:00 PM: 	Best macro_avg: 0.738
+12/15 02:46:00 PM: 	# bad epochs: 1
+12/15 02:46:00 PM: Statistic: mrpc_loss
+12/15 02:46:00 PM: 	training: 0.621915
+12/15 02:46:00 PM: 	validation: 0.574670
+12/15 02:46:00 PM: Statistic: sst_loss
+12/15 02:46:00 PM: 	training: 0.485391
+12/15 02:46:00 PM: 	validation: 0.579673
+12/15 02:46:00 PM: Statistic: macro_avg
+12/15 02:46:00 PM: 	validation: 0.737880
+12/15 02:46:00 PM: Statistic: micro_avg
+12/15 02:46:00 PM: 	validation: 0.733544
+12/15 02:46:00 PM: Statistic: mrpc_acc_f1
+12/15 02:46:00 PM: 	training: 0.728132
+12/15 02:46:00 PM: 	validation: 0.749844
+12/15 02:46:00 PM: Statistic: mrpc_accuracy
+12/15 02:46:00 PM: 	training: 0.665179
+12/15 02:46:00 PM: 	validation: 0.691176
+12/15 02:46:00 PM: Statistic: mrpc_f1
+12/15 02:46:00 PM: 	training: 0.791086
+12/15 02:46:00 PM: 	validation: 0.808511
+12/15 02:46:00 PM: Statistic: mrpc_precision
+12/15 02:46:00 PM: 	training: 0.671395
+12/15 02:46:00 PM: 	validation: 0.701847
+12/15 02:46:00 PM: Statistic: mrpc_recall
+12/15 02:46:00 PM: 	training: 0.962712
+12/15 02:46:00 PM: 	validation: 0.953405
+12/15 02:46:00 PM: Statistic: sst_accuracy
+12/15 02:46:00 PM: 	training: 0.761364
+12/15 02:46:00 PM: 	validation: 0.725917
+12/15 02:46:00 PM: global_lr: 0.000050
+12/15 02:46:00 PM: Saved files to outputs/my_exp/foobar
+12/15 02:46:01 PM: ***** Pass 900 / Epoch 9 *****
+12/15 02:46:01 PM: mrpc: trained on 42 batches, 0.092 epochs
+12/15 02:46:01 PM: sst: trained on 58 batches, 0.007 epochs
+12/15 02:46:01 PM: Validating...
+12/15 02:46:03 PM: Best model found for mrpc.
+12/15 02:46:03 PM: Advancing scheduler.
+12/15 02:46:03 PM: 	Best macro_avg: 0.738
+12/15 02:46:03 PM: 	# bad epochs: 0
+12/15 02:46:03 PM: Statistic: mrpc_loss
+12/15 02:46:03 PM: 	training: 0.590858
+12/15 02:46:03 PM: 	validation: 0.596794
+12/15 02:46:03 PM: Statistic: sst_loss
+12/15 02:46:03 PM: 	training: 0.474725
+12/15 02:46:03 PM: 	validation: 0.569743
+12/15 02:46:03 PM: Statistic: macro_avg
+12/15 02:46:03 PM: 	validation: 0.737510
+12/15 02:46:03 PM: Statistic: micro_avg
+12/15 02:46:03 PM: 	validation: 0.730398
+12/15 02:46:03 PM: Statistic: mrpc_acc_f1
+12/15 02:46:03 PM: 	training: 0.758940
+12/15 02:46:03 PM: 	validation: 0.757130
+12/15 02:46:03 PM: Statistic: mrpc_accuracy
+12/15 02:46:03 PM: 	training: 0.702381
+12/15 02:46:03 PM: 	validation: 0.696078
+12/15 02:46:03 PM: Statistic: mrpc_f1
+12/15 02:46:03 PM: 	training: 0.815498
+12/15 02:46:03 PM: 	validation: 0.818182
+12/15 02:46:03 PM: Statistic: mrpc_precision
+12/15 02:46:03 PM: 	training: 0.710611
+12/15 02:46:03 PM: 	validation: 0.692308
+12/15 02:46:03 PM: Statistic: mrpc_recall
+12/15 02:46:03 PM: 	training: 0.956710
+12/15 02:46:03 PM: 	validation: 1.000000
+12/15 02:46:03 PM: Statistic: sst_accuracy
+12/15 02:46:03 PM: 	training: 0.784483
+12/15 02:46:03 PM: 	validation: 0.717890
+12/15 02:46:03 PM: global_lr: 0.000025
+12/15 02:46:03 PM: Saved files to outputs/my_exp/foobar
+12/15 02:46:05 PM: ***** Pass 1000 / Epoch 10 *****
+12/15 02:46:05 PM: mrpc: trained on 55 batches, 0.120 epochs
+12/15 02:46:05 PM: sst: trained on 45 batches, 0.005 epochs
+12/15 02:46:05 PM: Validating...
+12/15 02:46:06 PM: Best model found for micro.
+12/15 02:46:06 PM: Best model found for macro.
+12/15 02:46:06 PM: Advancing scheduler.
+12/15 02:46:06 PM: 	Best macro_avg: 0.739
+12/15 02:46:06 PM: 	# bad epochs: 0
+12/15 02:46:06 PM: Maximum number of validations hit. Stopping training.
+12/15 02:46:06 PM: Statistic: mrpc_loss
+12/15 02:46:06 PM: 	training: 0.586793
+12/15 02:46:06 PM: 	validation: 0.578564
+12/15 02:46:06 PM: Statistic: sst_loss
+12/15 02:46:06 PM: 	training: 0.432322
+12/15 02:46:06 PM: 	validation: 0.567828
+12/15 02:46:06 PM: Statistic: macro_avg
+12/15 02:46:06 PM: 	validation: 0.738878
+12/15 02:46:06 PM: Statistic: micro_avg
+12/15 02:46:06 PM: 	validation: 0.734180
+12/15 02:46:06 PM: Statistic: mrpc_acc_f1
+12/15 02:46:06 PM: 	training: 0.754607
+12/15 02:46:06 PM: 	validation: 0.751838
+12/15 02:46:06 PM: Statistic: mrpc_accuracy
+12/15 02:46:06 PM: 	training: 0.697248
+12/15 02:46:06 PM: 	validation: 0.691176
+12/15 02:46:06 PM: Statistic: mrpc_f1
+12/15 02:46:06 PM: 	training: 0.811966
+12/15 02:46:06 PM: 	validation: 0.812500
+12/15 02:46:06 PM: Statistic: mrpc_precision
+12/15 02:46:06 PM: 	training: 0.700246
+12/15 02:46:06 PM: 	validation: 0.694656
+12/15 02:46:06 PM: Statistic: mrpc_recall
+12/15 02:46:06 PM: 	training: 0.966102
+12/15 02:46:06 PM: 	validation: 0.978495
+12/15 02:46:06 PM: Statistic: sst_accuracy
+12/15 02:46:06 PM: 	training: 0.800000
+12/15 02:46:06 PM: 	validation: 0.725917
+12/15 02:46:06 PM: global_lr: 0.000025
+12/15 02:46:07 PM: Saved files to outputs/my_exp/foobar
+12/15 02:46:07 PM: Stopped training after 10 validation checks
+12/15 02:46:07 PM: Trained mrpc for 496 batches or 1.081 epochs
+12/15 02:46:07 PM: Trained sst for 504 batches or 0.060 epochs
+12/15 02:46:07 PM: ***** VALIDATION RESULTS *****
+12/15 02:46:07 PM: mrpc_acc_f1, 9, mrpc_loss: 0.59679, sst_loss: 0.56974, macro_avg: 0.73751, micro_avg: 0.73040, mrpc_acc_f1: 0.75713, mrpc_accuracy: 0.69608, mrpc_f1: 0.81818, mrpc_precision: 0.69231, mrpc_recall: 1.00000, sst_accuracy: 0.71789
+12/15 02:46:07 PM: sst_accuracy, 8, mrpc_loss: 0.57467, sst_loss: 0.57967, macro_avg: 0.73788, micro_avg: 0.73354, mrpc_acc_f1: 0.74984, mrpc_accuracy: 0.69118, mrpc_f1: 0.80851, mrpc_precision: 0.70185, mrpc_recall: 0.95341, sst_accuracy: 0.72592
+12/15 02:46:07 PM: micro_avg, 10, mrpc_loss: 0.57856, sst_loss: 0.56783, macro_avg: 0.73888, micro_avg: 0.73418, mrpc_acc_f1: 0.75184, mrpc_accuracy: 0.69118, mrpc_f1: 0.81250, mrpc_precision: 0.69466, mrpc_recall: 0.97849, sst_accuracy: 0.72592
+12/15 02:46:07 PM: macro_avg, 10, mrpc_loss: 0.57856, sst_loss: 0.56783, macro_avg: 0.73888, micro_avg: 0.73418, mrpc_acc_f1: 0.75184, mrpc_accuracy: 0.69118, mrpc_f1: 0.81250, mrpc_precision: 0.69466, mrpc_recall: 0.97849, sst_accuracy: 0.72592
+12/15 02:46:07 PM: Skipping task-specific parameters for task: sts-b
+12/15 02:46:07 PM: Skipping task-specific parameters for task: wnli
+12/15 02:46:07 PM: Loaded model state from outputs/my_exp/foobar/model_state_main_epoch_10.best_macro.th
+12/15 02:46:07 PM: 	Using ReduceLROnPlateau scheduler!
+12/15 02:46:07 PM: patience = 5
+12/15 02:46:07 PM: val_interval = 100
+12/15 02:46:07 PM: max_vals = 16
+12/15 02:46:07 PM: cuda_device = 0
+12/15 02:46:07 PM: grad_norm = 5.0
+12/15 02:46:07 PM: grad_clipping = None
+12/15 02:46:07 PM: lr_decay = 0.99
+12/15 02:46:07 PM: min_lr = 1e-06
+12/15 02:46:07 PM: keep_all_checkpoints = 0
+12/15 02:46:07 PM: val_data_limit = 5000
+12/15 02:46:07 PM: dec_val_scale = 250
+12/15 02:46:07 PM: training_data_fraction = 1
+12/15 02:46:07 PM: type = adam
+12/15 02:46:07 PM: parameter_groups = None
+12/15 02:46:07 PM: Converting Params object to dict; logging of default values will not occur when dictionary parameters are used subsequently.
+12/15 02:46:07 PM: CURRENTLY DEFINED PARAMETERS: 
+12/15 02:46:07 PM: lr = 0.0003
+12/15 02:46:07 PM: weight_decay = 0
+12/15 02:46:07 PM: amsgrad = True
+12/15 02:46:07 PM: type = reduce_on_plateau
+12/15 02:46:07 PM: Converting Params object to dict; logging of default values will not occur when dictionary parameters are used subsequently.
+12/15 02:46:07 PM: CURRENTLY DEFINED PARAMETERS: 
+12/15 02:46:07 PM: mode = max
+12/15 02:46:07 PM: factor = 0.5
+12/15 02:46:07 PM: patience = 1
+12/15 02:46:07 PM: threshold = 0.0001
+12/15 02:46:07 PM: threshold_mode = abs
+12/15 02:46:07 PM: verbose = True
+12/15 02:46:07 PM: type = adam
+12/15 02:46:07 PM: parameter_groups = None
+12/15 02:46:07 PM: Converting Params object to dict; logging of default values will not occur when dictionary parameters are used subsequently.
+12/15 02:46:07 PM: CURRENTLY DEFINED PARAMETERS: 
+12/15 02:46:07 PM: lr = 0.0003
+12/15 02:46:07 PM: weight_decay = 0
+12/15 02:46:07 PM: amsgrad = True
+12/15 02:46:07 PM: type = reduce_on_plateau
+12/15 02:46:07 PM: Converting Params object to dict; logging of default values will not occur when dictionary parameters are used subsequently.
+12/15 02:46:07 PM: CURRENTLY DEFINED PARAMETERS: 
+12/15 02:46:07 PM: mode = max
+12/15 02:46:07 PM: factor = 0.5
+12/15 02:46:07 PM: patience = 1
+12/15 02:46:07 PM: threshold = 0.0001
+12/15 02:46:07 PM: threshold_mode = abs
+12/15 02:46:07 PM: verbose = True
+12/15 02:46:07 PM: Training examples per task: {'sts-b': 5749}
+12/15 02:46:07 PM: Sampling tasks uniformly.
+12/15 02:46:07 PM: Using weighting method: uniform, with normalized sample weights [1.] 
+12/15 02:46:07 PM: Using loss scaling method: uniform, with weights {'sts-b': 1.0}
+12/15 02:46:07 PM: Beginning training. Stopping metric: sts-b_corr
+12/15 02:46:07 PM: Beginning training. Stopping metric: sts-b_corr
+12/15 02:46:09 PM: ***** Pass 100 / Epoch 1 *****
+12/15 02:46:09 PM: sts-b: trained on 100 batches, 0.139 epochs
+12/15 02:46:09 PM: Validating...
+12/15 02:46:12 PM: Best model found for sts-b.
+12/15 02:46:12 PM: Best model found for micro.
+12/15 02:46:12 PM: Best model found for macro.
+12/15 02:46:12 PM: Advancing scheduler.
+12/15 02:46:12 PM: 	Best macro_avg: 0.500
+12/15 02:46:12 PM: 	# bad epochs: 0
+12/15 02:46:12 PM: Statistic: sts-b_loss
+12/15 02:46:12 PM: 	training: 1.420850
+12/15 02:46:12 PM: 	validation: 0.116923
+12/15 02:46:12 PM: Statistic: macro_avg
+12/15 02:46:12 PM: 	validation: 0.499807
+12/15 02:46:12 PM: Statistic: micro_avg
+12/15 02:46:12 PM: 	validation: 0.499807
+12/15 02:46:12 PM: Statistic: sts-b_corr
+12/15 02:46:12 PM: 	training: 0.054110
+12/15 02:46:12 PM: 	validation: 0.499807
+12/15 02:46:12 PM: Statistic: sts-b_pearsonr
+12/15 02:46:12 PM: 	training: 0.049236
+12/15 02:46:12 PM: 	validation: 0.496877
+12/15 02:46:12 PM: Statistic: sts-b_spearmanr
+12/15 02:46:12 PM: 	training: 0.058985
+12/15 02:46:12 PM: 	validation: 0.502737
+12/15 02:46:12 PM: global_lr: 0.000300
+12/15 02:46:12 PM: Saved files to outputs/my_exp/foobar
+12/15 02:46:13 PM: ***** Pass 200 / Epoch 2 *****
+12/15 02:46:13 PM: sts-b: trained on 100 batches, 0.139 epochs
+12/15 02:46:13 PM: Validating...
+12/15 02:46:16 PM: Best model found for sts-b.
+12/15 02:46:16 PM: Best model found for micro.
+12/15 02:46:16 PM: Best model found for macro.
+12/15 02:46:16 PM: Advancing scheduler.
+12/15 02:46:16 PM: 	Best macro_avg: 0.595
+12/15 02:46:16 PM: 	# bad epochs: 0
+12/15 02:46:16 PM: Statistic: sts-b_loss
+12/15 02:46:16 PM: 	training: 0.152896
+12/15 02:46:16 PM: 	validation: 0.072487
+12/15 02:46:16 PM: Statistic: macro_avg
+12/15 02:46:16 PM: 	validation: 0.594511
+12/15 02:46:16 PM: Statistic: micro_avg
+12/15 02:46:16 PM: 	validation: 0.594511
+12/15 02:46:16 PM: Statistic: sts-b_corr
+12/15 02:46:16 PM: 	training: 0.195210
+12/15 02:46:16 PM: 	validation: 0.594511
+12/15 02:46:16 PM: Statistic: sts-b_pearsonr
+12/15 02:46:16 PM: 	training: 0.198185
+12/15 02:46:16 PM: 	validation: 0.588963
+12/15 02:46:16 PM: Statistic: sts-b_spearmanr
+12/15 02:46:16 PM: 	training: 0.192234
+12/15 02:46:16 PM: 	validation: 0.600058
+12/15 02:46:16 PM: global_lr: 0.000300
+12/15 02:46:16 PM: Saved files to outputs/my_exp/foobar
+12/15 02:46:17 PM: Update 264: task sts-b, batch 64 (264): corr: 0.1868, pearsonr: 0.1986, spearmanr: 0.1750, sts-b_loss: 0.1343 ||
+12/15 02:46:17 PM: ***** Pass 300 / Epoch 3 *****
+12/15 02:46:17 PM: sts-b: trained on 100 batches, 0.139 epochs
+12/15 02:46:17 PM: Validating...
+12/15 02:46:20 PM: Best model found for sts-b.
+12/15 02:46:20 PM: Best model found for micro.
+12/15 02:46:20 PM: Best model found for macro.
+12/15 02:46:20 PM: Advancing scheduler.
+12/15 02:46:20 PM: 	Best macro_avg: 0.613
+12/15 02:46:20 PM: 	# bad epochs: 0
+12/15 02:46:20 PM: Statistic: sts-b_loss
+12/15 02:46:20 PM: 	training: 0.133341
+12/15 02:46:20 PM: 	validation: 0.094945
+12/15 02:46:20 PM: Statistic: macro_avg
+12/15 02:46:20 PM: 	validation: 0.613362
+12/15 02:46:20 PM: Statistic: micro_avg
+12/15 02:46:20 PM: 	validation: 0.613362
+12/15 02:46:20 PM: Statistic: sts-b_corr
+12/15 02:46:20 PM: 	training: 0.217299
+12/15 02:46:20 PM: 	validation: 0.613362
+12/15 02:46:20 PM: Statistic: sts-b_pearsonr
+12/15 02:46:20 PM: 	training: 0.222886
+12/15 02:46:20 PM: 	validation: 0.607947
+12/15 02:46:20 PM: Statistic: sts-b_spearmanr
+12/15 02:46:20 PM: 	training: 0.211711
+12/15 02:46:20 PM: 	validation: 0.618776
+12/15 02:46:20 PM: global_lr: 0.000300
+12/15 02:46:20 PM: Saved files to outputs/my_exp/foobar
+12/15 02:46:21 PM: ***** Pass 400 / Epoch 4 *****
+12/15 02:46:21 PM: sts-b: trained on 100 batches, 0.139 epochs
+12/15 02:46:21 PM: Validating...
+12/15 02:46:24 PM: Best model found for sts-b.
+12/15 02:46:24 PM: Best model found for micro.
+12/15 02:46:24 PM: Best model found for macro.
+12/15 02:46:24 PM: Advancing scheduler.
+12/15 02:46:24 PM: 	Best macro_avg: 0.631
+12/15 02:46:24 PM: 	# bad epochs: 0
+12/15 02:46:24 PM: Statistic: sts-b_loss
+12/15 02:46:24 PM: 	training: 0.124695
+12/15 02:46:24 PM: 	validation: 0.073870
+12/15 02:46:24 PM: Statistic: macro_avg
+12/15 02:46:24 PM: 	validation: 0.630652
+12/15 02:46:24 PM: Statistic: micro_avg
+12/15 02:46:24 PM: 	validation: 0.630652
+12/15 02:46:24 PM: Statistic: sts-b_corr
+12/15 02:46:24 PM: 	training: 0.284975
+12/15 02:46:24 PM: 	validation: 0.630652
+12/15 02:46:24 PM: Statistic: sts-b_pearsonr
+12/15 02:46:24 PM: 	training: 0.288583
+12/15 02:46:24 PM: 	validation: 0.626380
+12/15 02:46:24 PM: Statistic: sts-b_spearmanr
+12/15 02:46:24 PM: 	training: 0.281367
+12/15 02:46:24 PM: 	validation: 0.634925
+12/15 02:46:24 PM: global_lr: 0.000300
+12/15 02:46:24 PM: Saved files to outputs/my_exp/foobar
+12/15 02:46:25 PM: ***** Pass 500 / Epoch 5 *****
+12/15 02:46:25 PM: sts-b: trained on 100 batches, 0.139 epochs
+12/15 02:46:25 PM: Validating...
+12/15 02:46:27 PM: Batch 114/188: corr: 0.6864, pearsonr: 0.6920, spearmanr: 0.6809, sts-b_loss: 0.0623 ||
+12/15 02:46:28 PM: Best model found for sts-b.
+12/15 02:46:28 PM: Best model found for micro.
+12/15 02:46:28 PM: Best model found for macro.
+12/15 02:46:28 PM: Advancing scheduler.
+12/15 02:46:28 PM: 	Best macro_avg: 0.643
+12/15 02:46:28 PM: 	# bad epochs: 0
+12/15 02:46:28 PM: Statistic: sts-b_loss
+12/15 02:46:28 PM: 	training: 0.115663
+12/15 02:46:28 PM: 	validation: 0.075386
+12/15 02:46:28 PM: Statistic: macro_avg
+12/15 02:46:28 PM: 	validation: 0.643142
+12/15 02:46:28 PM: Statistic: micro_avg
+12/15 02:46:28 PM: 	validation: 0.643142
+12/15 02:46:28 PM: Statistic: sts-b_corr
+12/15 02:46:28 PM: 	training: 0.332798
+12/15 02:46:28 PM: 	validation: 0.643142
+12/15 02:46:28 PM: Statistic: sts-b_pearsonr
+12/15 02:46:28 PM: 	training: 0.341712
+12/15 02:46:28 PM: 	validation: 0.637745
+12/15 02:46:28 PM: Statistic: sts-b_spearmanr
+12/15 02:46:28 PM: 	training: 0.323884
+12/15 02:46:28 PM: 	validation: 0.648538
+12/15 02:46:28 PM: global_lr: 0.000300
+12/15 02:46:28 PM: Saved files to outputs/my_exp/foobar
+12/15 02:46:29 PM: ***** Pass 600 / Epoch 6 *****
+12/15 02:46:29 PM: sts-b: trained on 100 batches, 0.139 epochs
+12/15 02:46:29 PM: Validating...
+12/15 02:46:32 PM: Advancing scheduler.
+12/15 02:46:32 PM: 	Best macro_avg: 0.643
+12/15 02:46:32 PM: 	# bad epochs: 1
+12/15 02:46:32 PM: Statistic: sts-b_loss
+12/15 02:46:32 PM: 	training: 0.097459
+12/15 02:46:32 PM: 	validation: 0.092835
+12/15 02:46:32 PM: Statistic: macro_avg
+12/15 02:46:32 PM: 	validation: 0.639266
+12/15 02:46:32 PM: Statistic: micro_avg
+12/15 02:46:32 PM: 	validation: 0.639266
+12/15 02:46:32 PM: Statistic: sts-b_corr
+12/15 02:46:32 PM: 	training: 0.342173
+12/15 02:46:32 PM: 	validation: 0.639266
+12/15 02:46:32 PM: Statistic: sts-b_pearsonr
+12/15 02:46:32 PM: 	training: 0.361006
+12/15 02:46:32 PM: 	validation: 0.633428
+12/15 02:46:32 PM: Statistic: sts-b_spearmanr
+12/15 02:46:32 PM: 	training: 0.323341
+12/15 02:46:32 PM: 	validation: 0.645105
+12/15 02:46:32 PM: global_lr: 0.000300
+12/15 02:46:33 PM: ***** Pass 700 / Epoch 7 *****
+12/15 02:46:33 PM: sts-b: trained on 100 batches, 0.139 epochs
+12/15 02:46:33 PM: Validating...
+12/15 02:46:36 PM: Advancing scheduler.
+12/15 02:46:36 PM: 	Best macro_avg: 0.643
+12/15 02:46:36 PM: 	# bad epochs: 0
+12/15 02:46:36 PM: Statistic: sts-b_loss
+12/15 02:46:36 PM: 	training: 0.088996
+12/15 02:46:36 PM: 	validation: 0.060972
+12/15 02:46:36 PM: Statistic: macro_avg
+12/15 02:46:36 PM: 	validation: 0.641535
+12/15 02:46:36 PM: Statistic: micro_avg
+12/15 02:46:36 PM: 	validation: 0.641535
+12/15 02:46:36 PM: Statistic: sts-b_corr
+12/15 02:46:36 PM: 	training: 0.428786
+12/15 02:46:36 PM: 	validation: 0.641535
+12/15 02:46:36 PM: Statistic: sts-b_pearsonr
+12/15 02:46:36 PM: 	training: 0.443700
+12/15 02:46:36 PM: 	validation: 0.635416
+12/15 02:46:36 PM: Statistic: sts-b_spearmanr
+12/15 02:46:36 PM: 	training: 0.413873
+12/15 02:46:36 PM: 	validation: 0.647654
+12/15 02:46:36 PM: global_lr: 0.000150
+12/15 02:46:37 PM: Update 720: task sts-b, batch 20 (720): corr: 0.4726, pearsonr: 0.4779, spearmanr: 0.4673, sts-b_loss: 0.0767 ||
+12/15 02:46:38 PM: ***** Pass 800 / Epoch 8 *****
+12/15 02:46:38 PM: sts-b: trained on 100 batches, 0.139 epochs
+12/15 02:46:38 PM: Validating...
+12/15 02:46:40 PM: Best model found for sts-b.
+12/15 02:46:40 PM: Best model found for micro.
+12/15 02:46:40 PM: Best model found for macro.
+12/15 02:46:40 PM: Advancing scheduler.
+12/15 02:46:40 PM: 	Best macro_avg: 0.661
+12/15 02:46:40 PM: 	# bad epochs: 0
+12/15 02:46:40 PM: Statistic: sts-b_loss
+12/15 02:46:40 PM: 	training: 0.074561
+12/15 02:46:40 PM: 	validation: 0.120576
+12/15 02:46:40 PM: Statistic: macro_avg
+12/15 02:46:40 PM: 	validation: 0.660686
+12/15 02:46:40 PM: Statistic: micro_avg
+12/15 02:46:40 PM: 	validation: 0.660686
+12/15 02:46:40 PM: Statistic: sts-b_corr
+12/15 02:46:40 PM: 	training: 0.485032
+12/15 02:46:40 PM: 	validation: 0.660686
+12/15 02:46:40 PM: Statistic: sts-b_pearsonr
+12/15 02:46:40 PM: 	training: 0.501975
+12/15 02:46:40 PM: 	validation: 0.655337
+12/15 02:46:40 PM: Statistic: sts-b_spearmanr
+12/15 02:46:40 PM: 	training: 0.468090
+12/15 02:46:40 PM: 	validation: 0.666034
+12/15 02:46:40 PM: global_lr: 0.000150
+12/15 02:46:40 PM: Saved files to outputs/my_exp/foobar
+12/15 02:46:42 PM: ***** Pass 900 / Epoch 9 *****
+12/15 02:46:42 PM: sts-b: trained on 100 batches, 0.139 epochs
+12/15 02:46:42 PM: Validating...
+12/15 02:46:44 PM: Best model found for sts-b.
+12/15 02:46:44 PM: Best model found for micro.
+12/15 02:46:44 PM: Best model found for macro.
+12/15 02:46:44 PM: Advancing scheduler.
+12/15 02:46:44 PM: 	Best macro_avg: 0.667
+12/15 02:46:44 PM: 	# bad epochs: 0
+12/15 02:46:44 PM: Statistic: sts-b_loss
+12/15 02:46:44 PM: 	training: 0.061750
+12/15 02:46:44 PM: 	validation: 0.098458
+12/15 02:46:44 PM: Statistic: macro_avg
+12/15 02:46:44 PM: 	validation: 0.667336
+12/15 02:46:44 PM: Statistic: micro_avg
+12/15 02:46:44 PM: 	validation: 0.667336
+12/15 02:46:44 PM: Statistic: sts-b_corr
+12/15 02:46:44 PM: 	training: 0.582222
+12/15 02:46:44 PM: 	validation: 0.667336
+12/15 02:46:44 PM: Statistic: sts-b_pearsonr
+12/15 02:46:44 PM: 	training: 0.593416
+12/15 02:46:44 PM: 	validation: 0.660531
+12/15 02:46:44 PM: Statistic: sts-b_spearmanr
+12/15 02:46:44 PM: 	training: 0.571028
+12/15 02:46:44 PM: 	validation: 0.674142
+12/15 02:46:44 PM: global_lr: 0.000150
+12/15 02:46:44 PM: Saved files to outputs/my_exp/foobar
+12/15 02:46:46 PM: ***** Pass 1000 / Epoch 10 *****
+12/15 02:46:46 PM: sts-b: trained on 100 batches, 0.139 epochs
+12/15 02:46:46 PM: Validating...
+12/15 02:46:47 PM: Batch 64/188: corr: 0.7677, pearsonr: 0.7666, spearmanr: 0.7688, sts-b_loss: 0.0812 ||
+12/15 02:46:48 PM: Advancing scheduler.
+12/15 02:46:48 PM: 	Best macro_avg: 0.667
+12/15 02:46:48 PM: 	# bad epochs: 1
+12/15 02:46:48 PM: Statistic: sts-b_loss
+12/15 02:46:48 PM: 	training: 0.066945
+12/15 02:46:48 PM: 	validation: 0.102355
+12/15 02:46:48 PM: Statistic: macro_avg
+12/15 02:46:48 PM: 	validation: 0.660145
+12/15 02:46:48 PM: Statistic: micro_avg
+12/15 02:46:48 PM: 	validation: 0.660145
+12/15 02:46:48 PM: Statistic: sts-b_corr
+12/15 02:46:48 PM: 	training: 0.529551
+12/15 02:46:48 PM: 	validation: 0.660145
+12/15 02:46:48 PM: Statistic: sts-b_pearsonr
+12/15 02:46:48 PM: 	training: 0.547660
+12/15 02:46:48 PM: 	validation: 0.654528
+12/15 02:46:48 PM: Statistic: sts-b_spearmanr
+12/15 02:46:48 PM: 	training: 0.511441
+12/15 02:46:48 PM: 	validation: 0.665762
+12/15 02:46:48 PM: global_lr: 0.000150
+12/15 02:46:50 PM: ***** Pass 1100 / Epoch 11 *****
+12/15 02:46:50 PM: sts-b: trained on 100 batches, 0.139 epochs
+12/15 02:46:50 PM: Validating...
+12/15 02:46:52 PM: Best model found for sts-b.
+12/15 02:46:52 PM: Best model found for micro.
+12/15 02:46:52 PM: Best model found for macro.
+12/15 02:46:52 PM: Advancing scheduler.
+12/15 02:46:52 PM: 	Best macro_avg: 0.670
+12/15 02:46:52 PM: 	# bad epochs: 0
+12/15 02:46:52 PM: Statistic: sts-b_loss
+12/15 02:46:52 PM: 	training: 0.063885
+12/15 02:46:52 PM: 	validation: 0.098567
+12/15 02:46:52 PM: Statistic: macro_avg
+12/15 02:46:52 PM: 	validation: 0.669977
+12/15 02:46:52 PM: Statistic: micro_avg
+12/15 02:46:52 PM: 	validation: 0.669977
+12/15 02:46:52 PM: Statistic: sts-b_corr
+12/15 02:46:52 PM: 	training: 0.545138
+12/15 02:46:52 PM: 	validation: 0.669977
+12/15 02:46:52 PM: Statistic: sts-b_pearsonr
+12/15 02:46:52 PM: 	training: 0.564290
+12/15 02:46:52 PM: 	validation: 0.664201
+12/15 02:46:52 PM: Statistic: sts-b_spearmanr
+12/15 02:46:52 PM: 	training: 0.525986
+12/15 02:46:52 PM: 	validation: 0.675752
+12/15 02:46:52 PM: global_lr: 0.000150
+12/15 02:46:52 PM: Saved files to outputs/my_exp/foobar
+12/15 02:46:54 PM: ***** Pass 1200 / Epoch 12 *****
+12/15 02:46:54 PM: sts-b: trained on 100 batches, 0.139 epochs
+12/15 02:46:54 PM: Validating...
+12/15 02:46:56 PM: Advancing scheduler.
+12/15 02:46:56 PM: 	Best macro_avg: 0.670
+12/15 02:46:56 PM: 	# bad epochs: 1
+12/15 02:46:56 PM: Statistic: sts-b_loss
+12/15 02:46:56 PM: 	training: 0.057091
+12/15 02:46:56 PM: 	validation: 0.094013
+12/15 02:46:56 PM: Statistic: macro_avg
+12/15 02:46:56 PM: 	validation: 0.663228
+12/15 02:46:56 PM: Statistic: micro_avg
+12/15 02:46:56 PM: 	validation: 0.663228
+12/15 02:46:56 PM: Statistic: sts-b_corr
+12/15 02:46:56 PM: 	training: 0.611514
+12/15 02:46:56 PM: 	validation: 0.663228
+12/15 02:46:56 PM: Statistic: sts-b_pearsonr
+12/15 02:46:56 PM: 	training: 0.621952
+12/15 02:46:56 PM: 	validation: 0.660623
+12/15 02:46:56 PM: Statistic: sts-b_spearmanr
+12/15 02:46:56 PM: 	training: 0.601075
+12/15 02:46:56 PM: 	validation: 0.665833
+12/15 02:46:56 PM: global_lr: 0.000150
+12/15 02:46:57 PM: Update 1227: task sts-b, batch 27 (1227): corr: 0.5800, pearsonr: 0.6240, spearmanr: 0.5360, sts-b_loss: 0.0560 ||
+12/15 02:46:58 PM: ***** Pass 1300 / Epoch 13 *****
+12/15 02:46:58 PM: sts-b: trained on 100 batches, 0.139 epochs
+12/15 02:46:58 PM: Validating...
+12/15 02:47:00 PM: Advancing scheduler.
+12/15 02:47:00 PM: 	Best macro_avg: 0.670
+12/15 02:47:00 PM: 	# bad epochs: 0
+12/15 02:47:00 PM: Statistic: sts-b_loss
+12/15 02:47:00 PM: 	training: 0.053984
+12/15 02:47:00 PM: 	validation: 0.107335
+12/15 02:47:00 PM: Statistic: macro_avg
+12/15 02:47:00 PM: 	validation: 0.668361
+12/15 02:47:00 PM: Statistic: micro_avg
+12/15 02:47:00 PM: 	validation: 0.668361
+12/15 02:47:00 PM: Statistic: sts-b_corr
+12/15 02:47:00 PM: 	training: 0.636320
+12/15 02:47:00 PM: 	validation: 0.668361
+12/15 02:47:00 PM: Statistic: sts-b_pearsonr
+12/15 02:47:00 PM: 	training: 0.651218
+12/15 02:47:00 PM: 	validation: 0.665209
+12/15 02:47:00 PM: Statistic: sts-b_spearmanr
+12/15 02:47:00 PM: 	training: 0.621422
+12/15 02:47:00 PM: 	validation: 0.671514
+12/15 02:47:00 PM: global_lr: 0.000075
+12/15 02:47:02 PM: ***** Pass 1400 / Epoch 14 *****
+12/15 02:47:02 PM: sts-b: trained on 100 batches, 0.139 epochs
+12/15 02:47:02 PM: Validating...
+12/15 02:47:04 PM: Best model found for sts-b.
+12/15 02:47:04 PM: Best model found for micro.
+12/15 02:47:04 PM: Best model found for macro.
+12/15 02:47:04 PM: Advancing scheduler.
+12/15 02:47:04 PM: 	Best macro_avg: 0.672
+12/15 02:47:04 PM: 	# bad epochs: 0
+12/15 02:47:04 PM: Statistic: sts-b_loss
+12/15 02:47:04 PM: 	training: 0.053534
+12/15 02:47:04 PM: 	validation: 0.081644
+12/15 02:47:04 PM: Statistic: macro_avg
+12/15 02:47:04 PM: 	validation: 0.672063
+12/15 02:47:04 PM: Statistic: micro_avg
+12/15 02:47:04 PM: 	validation: 0.672063
+12/15 02:47:04 PM: Statistic: sts-b_corr
+12/15 02:47:04 PM: 	training: 0.630879
+12/15 02:47:04 PM: 	validation: 0.672063
+12/15 02:47:04 PM: Statistic: sts-b_pearsonr
+12/15 02:47:04 PM: 	training: 0.644198
+12/15 02:47:04 PM: 	validation: 0.668637
+12/15 02:47:04 PM: Statistic: sts-b_spearmanr
+12/15 02:47:04 PM: 	training: 0.617561
+12/15 02:47:04 PM: 	validation: 0.675488
+12/15 02:47:04 PM: global_lr: 0.000075
+12/15 02:47:04 PM: Saved files to outputs/my_exp/foobar
+12/15 02:47:07 PM: Update 1482: task sts-b, batch 82 (1482): corr: 0.6530, pearsonr: 0.6788, spearmanr: 0.6272, sts-b_loss: 0.0453 ||
+12/15 02:47:07 PM: ***** Pass 1500 / Epoch 15 *****
+12/15 02:47:07 PM: sts-b: trained on 100 batches, 0.139 epochs
+12/15 02:47:07 PM: Validating...
+12/15 02:47:09 PM: Advancing scheduler.
+12/15 02:47:09 PM: 	Best macro_avg: 0.672
+12/15 02:47:09 PM: 	# bad epochs: 1
+12/15 02:47:09 PM: Statistic: sts-b_loss
+12/15 02:47:09 PM: 	training: 0.045517
+12/15 02:47:09 PM: 	validation: 0.064486
+12/15 02:47:09 PM: Statistic: macro_avg
+12/15 02:47:09 PM: 	validation: 0.669404
+12/15 02:47:09 PM: Statistic: micro_avg
+12/15 02:47:09 PM: 	validation: 0.669404
+12/15 02:47:09 PM: Statistic: sts-b_corr
+12/15 02:47:09 PM: 	training: 0.676331
+12/15 02:47:09 PM: 	validation: 0.669404
+12/15 02:47:09 PM: Statistic: sts-b_pearsonr
+12/15 02:47:09 PM: 	training: 0.694498
+12/15 02:47:09 PM: 	validation: 0.666315
+12/15 02:47:09 PM: Statistic: sts-b_spearmanr
+12/15 02:47:09 PM: 	training: 0.658165
+12/15 02:47:09 PM: 	validation: 0.672493
+12/15 02:47:09 PM: global_lr: 0.000075
+12/15 02:47:11 PM: ***** Pass 1600 / Epoch 16 *****
+12/15 02:47:11 PM: sts-b: trained on 100 batches, 0.139 epochs
+12/15 02:47:11 PM: Validating...
+12/15 02:47:13 PM: Advancing scheduler.
+12/15 02:47:13 PM: 	Best macro_avg: 0.672
+12/15 02:47:13 PM: 	# bad epochs: 0
+12/15 02:47:13 PM: Maximum number of validations hit. Stopping training.
+12/15 02:47:13 PM: Statistic: sts-b_loss
+12/15 02:47:13 PM: 	training: 0.041506
+12/15 02:47:13 PM: 	validation: 0.070756
+12/15 02:47:13 PM: Statistic: macro_avg
+12/15 02:47:13 PM: 	validation: 0.670719
+12/15 02:47:13 PM: Statistic: micro_avg
+12/15 02:47:13 PM: 	validation: 0.670719
+12/15 02:47:13 PM: Statistic: sts-b_corr
+12/15 02:47:13 PM: 	training: 0.700433
+12/15 02:47:13 PM: 	validation: 0.670719
+12/15 02:47:13 PM: Statistic: sts-b_pearsonr
+12/15 02:47:13 PM: 	training: 0.710876
+12/15 02:47:13 PM: 	validation: 0.667654
+12/15 02:47:13 PM: Statistic: sts-b_spearmanr
+12/15 02:47:13 PM: 	training: 0.689990
+12/15 02:47:13 PM: 	validation: 0.673785
+12/15 02:47:13 PM: global_lr: 0.000037
+12/15 02:47:13 PM: Stopped training after 16 validation checks
+12/15 02:47:13 PM: Trained sts-b for 1600 batches or 2.225 epochs
+12/15 02:47:13 PM: ***** VALIDATION RESULTS *****
+12/15 02:47:13 PM: sts-b_corr, 14, sts-b_loss: 0.08164, macro_avg: 0.67206, micro_avg: 0.67206, sts-b_corr: 0.67206, sts-b_pearsonr: 0.66864, sts-b_spearmanr: 0.67549
+12/15 02:47:13 PM: micro_avg, 14, sts-b_loss: 0.08164, macro_avg: 0.67206, micro_avg: 0.67206, sts-b_corr: 0.67206, sts-b_pearsonr: 0.66864, sts-b_spearmanr: 0.67549
+12/15 02:47:13 PM: macro_avg, 14, sts-b_loss: 0.08164, macro_avg: 0.67206, micro_avg: 0.67206, sts-b_corr: 0.67206, sts-b_pearsonr: 0.66864, sts-b_spearmanr: 0.67549
+12/15 02:47:13 PM: Skipping task-specific parameters for task: wnli
+12/15 02:47:13 PM: Loaded model state from outputs/my_exp/foobar/model_state_eval_best.th
+12/15 02:47:13 PM: 	Using ReduceLROnPlateau scheduler!
+12/15 02:47:13 PM: patience = 5
+12/15 02:47:13 PM: val_interval = 100
+12/15 02:47:13 PM: max_vals = 10
+12/15 02:47:13 PM: cuda_device = 0
+12/15 02:47:13 PM: grad_norm = 5.0
+12/15 02:47:13 PM: grad_clipping = None
+12/15 02:47:13 PM: lr_decay = 0.99
+12/15 02:47:13 PM: min_lr = 1e-06
+12/15 02:47:13 PM: keep_all_checkpoints = 0
+12/15 02:47:13 PM: val_data_limit = 5000
+12/15 02:47:13 PM: dec_val_scale = 250
+12/15 02:47:13 PM: training_data_fraction = 1
+12/15 02:47:14 PM: type = adam
+12/15 02:47:14 PM: parameter_groups = None
+12/15 02:47:14 PM: Converting Params object to dict; logging of default values will not occur when dictionary parameters are used subsequently.
+12/15 02:47:14 PM: CURRENTLY DEFINED PARAMETERS: 
+12/15 02:47:14 PM: lr = 0.0003
+12/15 02:47:14 PM: weight_decay = 0
+12/15 02:47:14 PM: amsgrad = True
+12/15 02:47:14 PM: type = reduce_on_plateau
+12/15 02:47:14 PM: Converting Params object to dict; logging of default values will not occur when dictionary parameters are used subsequently.
+12/15 02:47:14 PM: CURRENTLY DEFINED PARAMETERS: 
+12/15 02:47:14 PM: mode = max
+12/15 02:47:14 PM: factor = 0.5
+12/15 02:47:14 PM: patience = 1
+12/15 02:47:14 PM: threshold = 0.0001
+12/15 02:47:14 PM: threshold_mode = abs
+12/15 02:47:14 PM: verbose = True
+12/15 02:47:14 PM: type = adam
+12/15 02:47:14 PM: parameter_groups = None
+12/15 02:47:14 PM: Converting Params object to dict; logging of default values will not occur when dictionary parameters are used subsequently.
+12/15 02:47:14 PM: CURRENTLY DEFINED PARAMETERS: 
+12/15 02:47:14 PM: lr = 0.0003
+12/15 02:47:14 PM: weight_decay = 0
+12/15 02:47:14 PM: amsgrad = True
+12/15 02:47:14 PM: type = reduce_on_plateau
+12/15 02:47:14 PM: Converting Params object to dict; logging of default values will not occur when dictionary parameters are used subsequently.
+12/15 02:47:14 PM: CURRENTLY DEFINED PARAMETERS: 
+12/15 02:47:14 PM: mode = max
+12/15 02:47:14 PM: factor = 0.5
+12/15 02:47:14 PM: patience = 1
+12/15 02:47:14 PM: threshold = 0.0001
+12/15 02:47:14 PM: threshold_mode = abs
+12/15 02:47:14 PM: verbose = True
+12/15 02:47:14 PM: Training examples per task: {'wnli': 635}
+12/15 02:47:14 PM: Sampling tasks uniformly.
+12/15 02:47:14 PM: Using weighting method: uniform, with normalized sample weights [1.] 
+12/15 02:47:14 PM: Using loss scaling method: uniform, with weights {'wnli': 1.0}
+12/15 02:47:14 PM: Beginning training. Stopping metric: wnli_accuracy
+12/15 02:47:14 PM: Beginning training. Stopping metric: wnli_accuracy
+12/15 02:47:15 PM: ***** Pass 100 / Epoch 1 *****
+12/15 02:47:15 PM: wnli: trained on 100 batches, 1.250 epochs
+12/15 02:47:15 PM: Validating...
+12/15 02:47:15 PM: Best model found for wnli.
+12/15 02:47:15 PM: Best model found for micro.
+12/15 02:47:15 PM: Best model found for macro.
+12/15 02:47:15 PM: Advancing scheduler.
+12/15 02:47:15 PM: 	Best macro_avg: 0.352
+12/15 02:47:15 PM: 	# bad epochs: 0
+12/15 02:47:15 PM: Statistic: wnli_loss
+12/15 02:47:15 PM: 	training: 0.778670
+12/15 02:47:15 PM: 	validation: 0.732849
+12/15 02:47:15 PM: Statistic: macro_avg
+12/15 02:47:15 PM: 	validation: 0.352113
+12/15 02:47:15 PM: Statistic: micro_avg
+12/15 02:47:15 PM: 	validation: 0.352113
+12/15 02:47:15 PM: Statistic: wnli_accuracy
+12/15 02:47:15 PM: 	training: 0.470886
+12/15 02:47:15 PM: 	validation: 0.352113
+12/15 02:47:15 PM: global_lr: 0.000300
+12/15 02:47:16 PM: Saved files to outputs/my_exp/foobar
+12/15 02:47:17 PM: ***** Pass 200 / Epoch 2 *****
+12/15 02:47:17 PM: wnli: trained on 100 batches, 1.250 epochs
+12/15 02:47:17 PM: Validating...
+12/15 02:47:17 PM: Best model found for wnli.
+12/15 02:47:17 PM: Best model found for micro.
+12/15 02:47:17 PM: Best model found for macro.
+12/15 02:47:17 PM: Advancing scheduler.
+12/15 02:47:17 PM: 	Best macro_avg: 0.563
+12/15 02:47:17 PM: 	# bad epochs: 0
+12/15 02:47:17 PM: Statistic: wnli_loss
+12/15 02:47:17 PM: 	training: 0.741810
+12/15 02:47:17 PM: 	validation: 0.726029
+12/15 02:47:17 PM: Statistic: macro_avg
+12/15 02:47:17 PM: 	validation: 0.563380
+12/15 02:47:17 PM: Statistic: micro_avg
+12/15 02:47:17 PM: 	validation: 0.563380
+12/15 02:47:17 PM: Statistic: wnli_accuracy
+12/15 02:47:17 PM: 	training: 0.483019
+12/15 02:47:17 PM: 	validation: 0.563380
+12/15 02:47:17 PM: global_lr: 0.000300
+12/15 02:47:17 PM: Saved files to outputs/my_exp/foobar
+12/15 02:47:19 PM: ***** Pass 300 / Epoch 3 *****
+12/15 02:47:19 PM: wnli: trained on 100 batches, 1.250 epochs
+12/15 02:47:19 PM: Validating...
+12/15 02:47:19 PM: Advancing scheduler.
+12/15 02:47:19 PM: 	Best macro_avg: 0.563
+12/15 02:47:19 PM: 	# bad epochs: 1
+12/15 02:47:19 PM: Statistic: wnli_loss
+12/15 02:47:19 PM: 	training: 0.726278
+12/15 02:47:19 PM: 	validation: 0.735485
+12/15 02:47:19 PM: Statistic: macro_avg
+12/15 02:47:19 PM: 	validation: 0.183099
+12/15 02:47:19 PM: Statistic: micro_avg
+12/15 02:47:19 PM: 	validation: 0.183099
+12/15 02:47:19 PM: Statistic: wnli_accuracy
+12/15 02:47:19 PM: 	training: 0.466667
+12/15 02:47:19 PM: 	validation: 0.183099
+12/15 02:47:19 PM: global_lr: 0.000300
+12/15 02:47:21 PM: ***** Pass 400 / Epoch 4 *****
+12/15 02:47:21 PM: wnli: trained on 100 batches, 1.250 epochs
+12/15 02:47:21 PM: Validating...
+12/15 02:47:21 PM: Advancing scheduler.
+12/15 02:47:21 PM: 	Best macro_avg: 0.563
+12/15 02:47:21 PM: 	# bad epochs: 0
+12/15 02:47:21 PM: Statistic: wnli_loss
+12/15 02:47:21 PM: 	training: 0.718030
+12/15 02:47:21 PM: 	validation: 0.759917
+12/15 02:47:21 PM: Statistic: macro_avg
+12/15 02:47:21 PM: 	validation: 0.169014
+12/15 02:47:21 PM: Statistic: micro_avg
+12/15 02:47:21 PM: 	validation: 0.169014
+12/15 02:47:21 PM: Statistic: wnli_accuracy
+12/15 02:47:21 PM: 	training: 0.500629
+12/15 02:47:21 PM: 	validation: 0.169014
+12/15 02:47:21 PM: global_lr: 0.000150
+12/15 02:47:23 PM: ***** Pass 500 / Epoch 5 *****
+12/15 02:47:23 PM: wnli: trained on 100 batches, 1.250 epochs
+12/15 02:47:23 PM: Validating...
+12/15 02:47:23 PM: Advancing scheduler.
+12/15 02:47:23 PM: 	Best macro_avg: 0.563
+12/15 02:47:23 PM: 	# bad epochs: 1
+12/15 02:47:23 PM: Statistic: wnli_loss
+12/15 02:47:23 PM: 	training: 0.697465
+12/15 02:47:23 PM: 	validation: 0.777547
+12/15 02:47:23 PM: Statistic: macro_avg
+12/15 02:47:23 PM: 	validation: 0.211268
+12/15 02:47:23 PM: Statistic: micro_avg
+12/15 02:47:23 PM: 	validation: 0.211268
+12/15 02:47:23 PM: Statistic: wnli_accuracy
+12/15 02:47:23 PM: 	training: 0.531646
+12/15 02:47:23 PM: 	validation: 0.211268
+12/15 02:47:23 PM: global_lr: 0.000150
+12/15 02:47:24 PM: Update 517: task wnli, batch 17 (517): accuracy: 0.5662, wnli_loss: 0.6841 ||
+12/15 02:47:25 PM: ***** Pass 600 / Epoch 6 *****
+12/15 02:47:25 PM: wnli: trained on 100 batches, 1.250 epochs
+12/15 02:47:25 PM: Validating...
+12/15 02:47:25 PM: Advancing scheduler.
+12/15 02:47:25 PM: 	Best macro_avg: 0.563
+12/15 02:47:25 PM: 	# bad epochs: 0
+12/15 02:47:25 PM: Statistic: wnli_loss
+12/15 02:47:25 PM: 	training: 0.710703
+12/15 02:47:25 PM: 	validation: 0.792847
+12/15 02:47:25 PM: Statistic: macro_avg
+12/15 02:47:25 PM: 	validation: 0.225352
+12/15 02:47:25 PM: Statistic: micro_avg
+12/15 02:47:25 PM: 	validation: 0.225352
+12/15 02:47:25 PM: Statistic: wnli_accuracy
+12/15 02:47:25 PM: 	training: 0.506918
+12/15 02:47:25 PM: 	validation: 0.225352
+12/15 02:47:25 PM: global_lr: 0.000075
+12/15 02:47:27 PM: ***** Pass 700 / Epoch 7 *****
+12/15 02:47:27 PM: wnli: trained on 100 batches, 1.250 epochs
+12/15 02:47:27 PM: Validating...
+12/15 02:47:27 PM: Advancing scheduler.
+12/15 02:47:27 PM: 	Best macro_avg: 0.563
+12/15 02:47:27 PM: 	# bad epochs: 1
+12/15 02:47:27 PM: Statistic: wnli_loss
+12/15 02:47:27 PM: 	training: 0.695137
+12/15 02:47:27 PM: 	validation: 0.814162
+12/15 02:47:27 PM: Statistic: macro_avg
+12/15 02:47:27 PM: 	validation: 0.140845
+12/15 02:47:27 PM: Statistic: micro_avg
+12/15 02:47:27 PM: 	validation: 0.140845
+12/15 02:47:27 PM: Statistic: wnli_accuracy
+12/15 02:47:27 PM: 	training: 0.543396
+12/15 02:47:27 PM: 	validation: 0.140845
+12/15 02:47:27 PM: global_lr: 0.000075
+12/15 02:47:29 PM: ***** Pass 800 / Epoch 8 *****
+12/15 02:47:29 PM: wnli: trained on 100 batches, 1.250 epochs
+12/15 02:47:29 PM: Validating...
+12/15 02:47:29 PM: Out of patience. Stopped tracking wnli
+12/15 02:47:29 PM: Out of patience. Stopped tracking micro
+12/15 02:47:29 PM: Out of patience. Stopped tracking macro
+12/15 02:47:29 PM: Advancing scheduler.
+12/15 02:47:29 PM: 	Best macro_avg: 0.563
+12/15 02:47:29 PM: 	# bad epochs: 0
+12/15 02:47:29 PM: All metrics ran out of patience. Stopping training.
+12/15 02:47:29 PM: Statistic: wnli_loss
+12/15 02:47:29 PM: 	training: 0.683566
+12/15 02:47:29 PM: 	validation: 0.827998
+12/15 02:47:29 PM: Statistic: macro_avg
+12/15 02:47:29 PM: 	validation: 0.183099
+12/15 02:47:29 PM: Statistic: micro_avg
+12/15 02:47:29 PM: 	validation: 0.183099
+12/15 02:47:29 PM: Statistic: wnli_accuracy
+12/15 02:47:29 PM: 	training: 0.542138
+12/15 02:47:29 PM: 	validation: 0.183099
+12/15 02:47:29 PM: global_lr: 0.000037
+12/15 02:47:29 PM: Stopped training after 8 validation checks
+12/15 02:47:29 PM: Trained wnli for 800 batches or 10.000 epochs
+12/15 02:47:29 PM: ***** VALIDATION RESULTS *****
+12/15 02:47:29 PM: wnli_accuracy, 2, wnli_loss: 0.72603, macro_avg: 0.56338, micro_avg: 0.56338, wnli_accuracy: 0.56338
+12/15 02:47:29 PM: micro_avg, 2, wnli_loss: 0.72603, macro_avg: 0.56338, micro_avg: 0.56338, wnli_accuracy: 0.56338
+12/15 02:47:29 PM: macro_avg, 2, wnli_loss: 0.72603, macro_avg: 0.56338, micro_avg: 0.56338, wnli_accuracy: 0.56338
+12/15 02:47:29 PM: Loaded model state from outputs/my_exp/foobar/model_state_eval_best.th
+12/15 02:47:29 PM: Evaluating...
+12/15 02:47:29 PM: Evaluating on: sts-b, split: val
+12/15 02:47:31 PM: Task 'sts-b': sorting predictions by 'idx'
+12/15 02:47:31 PM: Finished evaluating on: sts-b
+12/15 02:47:31 PM: Evaluating on: wnli, split: val
+12/15 02:47:32 PM: Task 'wnli': sorting predictions by 'idx'
+12/15 02:47:32 PM: Finished evaluating on: wnli
+12/15 02:47:32 PM: Writing results for split 'val' to outputs/my_exp/results.tsv
+12/15 02:47:32 PM: micro_avg: 0.667, macro_avg: 0.618, sts-b_corr: 0.672, sts-b_pearsonr: 0.669, sts-b_spearmanr: 0.675, wnli_accuracy: 0.563
+12/15 02:47:32 PM: Done!
+Epoch     6: reducing learning rate of group 0 to 5.0000e-05.
+Epoch     9: reducing learning rate of group 0 to 2.5000e-05.
+Epoch     7: reducing learning rate of group 0 to 1.5000e-04.
+Epoch    13: reducing learning rate of group 0 to 7.5000e-05.
+Epoch    16: reducing learning rate of group 0 to 3.7500e-05.
+Epoch     4: reducing learning rate of group 0 to 1.5000e-04.
+Epoch     6: reducing learning rate of group 0 to 7.5000e-05.
+Epoch     8: reducing learning rate of group 0 to 3.7500e-05.

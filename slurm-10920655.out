@@ -1,0 +1,29 @@
+Traceback (most recent call last):
+  File "main.py", line 24, in <module>
+    from src.utils.utils import assert_for_log, maybe_make_dir, load_model_state, check_arg_name
+  File "/scratch/pm2758/StatNLP/jiant/src/utils/utils.py", line 14, in <module>
+    from nltk.tokenize.moses import MosesTokenizer, MosesDetokenizer
+  File "/home/pm2758/anaconda3/envs/pytorch_env/lib/python3.6/site-packages/nltk/__init__.py", line 114, in <module>
+    from nltk.collocations import *
+  File "/home/pm2758/anaconda3/envs/pytorch_env/lib/python3.6/site-packages/nltk/collocations.py", line 39, in <module>
+    from nltk.metrics import ContingencyMeasures, BigramAssocMeasures, TrigramAssocMeasures
+  File "/home/pm2758/anaconda3/envs/pytorch_env/lib/python3.6/site-packages/nltk/metrics/__init__.py", line 26, in <module>
+    from nltk.metrics.association     import (NgramAssocMeasures, BigramAssocMeasures,
+  File "/home/pm2758/anaconda3/envs/pytorch_env/lib/python3.6/site-packages/nltk/metrics/association.py", line 27, in <module>
+    from scipy.stats import fisher_exact
+  File "/home/pm2758/anaconda3/envs/pytorch_env/lib/python3.6/site-packages/scipy/stats/__init__.py", line 345, in <module>
+    from .stats import *
+  File "/home/pm2758/anaconda3/envs/pytorch_env/lib/python3.6/site-packages/scipy/stats/stats.py", line 171, in <module>
+    from . import distributions
+  File "/home/pm2758/anaconda3/envs/pytorch_env/lib/python3.6/site-packages/scipy/stats/distributions.py", line 10, in <module>
+    from ._distn_infrastructure import (entropy, rv_discrete, rv_continuous,
+  File "/home/pm2758/anaconda3/envs/pytorch_env/lib/python3.6/site-packages/scipy/stats/_distn_infrastructure.py", line 16, in <module>
+    from scipy.misc import doccer
+  File "/home/pm2758/anaconda3/envs/pytorch_env/lib/python3.6/site-packages/scipy/misc/__init__.py", line 68, in <module>
+    from scipy.interpolate._pade import pade as _pade
+  File "/home/pm2758/anaconda3/envs/pytorch_env/lib/python3.6/site-packages/scipy/interpolate/__init__.py", line 175, in <module>
+    from .interpolate import *
+  File "/home/pm2758/anaconda3/envs/pytorch_env/lib/python3.6/site-packages/scipy/interpolate/interpolate.py", line 32, in <module>
+    from .interpnd import _ndim_coords_from_arrays
+  File "stringsource", line 104, in init scipy.interpolate.interpnd
+AttributeError: type object 'scipy.interpolate.interpnd.array' has no attribute '__reduce_cython__'
