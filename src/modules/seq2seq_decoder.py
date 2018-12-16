@@ -198,11 +198,12 @@ class Seq2SeqDecoder(Model):
 
         # pdb.set_trace()
 
-        context = decoder_context
-        hidden = decoder_hidden
-        last_enc = encoder_outputs[:,-1,:]
-        inp = torch.cat([context, hidden, last_enc], 1)
-        self._actor_hx, self._actor_cx = self._actor2(inp, (self._actor_hx, self._actor_cx))
+        if batch_size == 8:
+            context = decoder_context
+            hidden = decoder_hidden
+            last_enc = encoder_outputs[:,-1,:]
+            inp = torch.cat([context, hidden, last_enc], 1)
+            self._actor_hx, self._actor_cx = self._actor2(inp, (self._actor_hx, self._actor_cx))
 
         output_dict = {"logits": logits}
 
