@@ -9,4 +9,4 @@
 
 # Quick-start: run this
 #python main.py --config_file config/demo.conf
-python main.py --config_file config/iwslt.conf  --overrides "exp_name = iwslt, run_name = iwslt, d_hid = 256"
+python main.py --config_file config/iwslt.conf  --overrides "exp_name = iwslt, run_name = iwslt, d_hid = 256, load_model = 1"

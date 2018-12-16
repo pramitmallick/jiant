@@ -285,7 +285,10 @@ def main(cl_arguments):
             # "is_probing_task is global flag specific to a run, not to a task.
             if task.name == 'mnli-diagnostic':
                 continue
-            pred_module = getattr(model, "%s_mdl" % task.name)
+            if task.name == 'iwslt':
+                pred_module = getattr(model, "%s_decoder" % task.name)
+            else:
+                pred_module = getattr(model, "%s_mdl" % task.name)
             to_train = elmo_scalars + [(n, p)
                                        for n, p in pred_module.named_parameters() if p.requires_grad]
             # Look for <task_name>_<param_name>, then eval_<param_name>

@@ -7,6 +7,7 @@ import numpy
 from overrides import overrides
 
 import torch
+import torch.nn as nn
 from torch.nn.modules.rnn import LSTMCell
 from torch.nn.modules.linear import Linear
 import torch.nn.functional as F
@@ -26,8 +27,8 @@ from .modules import Pooler
 import pdb
 
 class Actor(Model):
-    def __init__(self, hidden_size: int, attn_size: int) -> None:
-        super(Actor, self).__init__()
+    def __init__(self, vocab: Vocabulary, hidden_size: int, attn_size: int) -> None:
+        super(Actor, self).__init__(vocab)
         self._hidden_size = hidden_size
         self._attn_size = attn_size
         self._gru = nn.GRU(hidden_size + attn_size, hidden_size)
@@ -114,7 +115,7 @@ class Seq2SeqDecoder(Model):
         self._output_projection_layer = Linear(self._output_proj_input_dim, num_classes)
         self._dropout = torch.nn.Dropout(p=dropout)
 
-        self._actor1 = Actor(decoder_hidden_size, self._decoder_input_dim)
+        self._actor1 = Actor(vocab, decoder_hidden_size, self._decoder_input_dim)
         self._actor2 = LSTMCell(self._decoder_hidden_dim, self._decoder_input_dim)
         # self._actor_hidden = 
 

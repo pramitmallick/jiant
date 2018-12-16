@@ -9,4 +9,4 @@
 
 # Quick-start: run this
 #python main.py --config_file config/demo.conf
-python main.py --config_file config/demo.conf  --overrides "exp_name = wmt, run_name = foobar, d_hid = 256"
+python main.py --config_file config/demo.conf  --overrides "exp_name = wmt, run_name = foobar, d_hid = 256, load_model = 1"
