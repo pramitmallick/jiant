@@ -23,6 +23,26 @@ from allennlp.nn.util import get_text_field_mask, sequence_cross_entropy_with_lo
 
 from .modules import Pooler
 
+import pdb
+
+class Actor(Model):
+    def __init__(self, hidden_size: int, attn_size: int) -> None:
+        super(Actor, self).__init__()
+        self._hidden_size = hidden_size
+        self._attn_size = attn_size
+        self._gru = nn.GRU(hidden_size + attn_size, hidden_size)
+        self._fc = nn.Linear(hidden_size, hidden_size)
+        self._softmax = nn.LogSoftmax(dim=1)
+    def forward(self, hidden, seq_hidden, attn):
+        # inp = torch.cat((hidden, attn), 1)
+        # pdb.set_trace()
+        # inp = torch.cat((hidden, attn.transpose(1, 0)), 1)
+        # inp = torch.unsqueeze(inp, 0)
+        inp = torch.cat((seq_hidden, attn.transpose(1, 0)), 2)
+        output, hidden = self.gru(inp, hidden)
+        output = self.softmax(self.fc(output[0]))
+        return output, hidden
+
 
 class Seq2SeqDecoder(Model):
     """
@@ -93,6 +113,10 @@ class Seq2SeqDecoder(Model):
             self._projection_bottleneck = lambda x: x
         self._output_projection_layer = Linear(self._output_proj_input_dim, num_classes)
         self._dropout = torch.nn.Dropout(p=dropout)
+
+        self._actor1 = Actor(decoder_hidden_size, self._decoder_input_dim)
+        self._actor2 = LSTMCell(self._decoder_hidden_dim, self._decoder_input_dim)
+        # self._actor_hidden = 
 
     def _initalize_hidden_context_states(self, encoder_outputs, encoder_outputs_mask):
         """
@@ -166,6 +190,8 @@ class Seq2SeqDecoder(Model):
 
         # (batch_size, num_decoding_steps, num_classes)
         logits = torch.cat(step_logits, 1)
+
+        pdb.set_trace()
 
         output_dict = {"logits": logits}
 
