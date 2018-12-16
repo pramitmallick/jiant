@@ -115,9 +115,12 @@ class Seq2SeqDecoder(Model):
         self._output_projection_layer = Linear(self._output_proj_input_dim, num_classes)
         self._dropout = torch.nn.Dropout(p=dropout)
 
-        self._actor1 = Actor(vocab, decoder_hidden_size, self._decoder_input_dim)
-        self._actor2 = LSTMCell(self._decoder_hidden_dim, self._decoder_input_dim)
-        # self._actor_hidden = 
+        self._actor1 = Actor(decoder_hidden_size, self._decoder_input_dim)
+        self._actor2 = LSTMCell(self._decoder_hidden_dim * 3, self._decoder_hidden_dim)
+        # self._actor_hx = torch.zeros(batch_size, self._decoder_hidden_dim)
+        self._actor_hx =  Variable(torch.randn(8, 1024), requires_grad=True).cuda()
+        # self._actor_cx = torch.zeros(batch_size, self._decoder_hidden_dim)
+        self._actor_hx =  Variable(torch.randn(8, 1024), requires_grad=True).cuda()
 
     def _initalize_hidden_context_states(self, encoder_outputs, encoder_outputs_mask):
         """
@@ -192,7 +195,13 @@ class Seq2SeqDecoder(Model):
         # (batch_size, num_decoding_steps, num_classes)
         logits = torch.cat(step_logits, 1)
 
-        pdb.set_trace()
+        # pdb.set_trace()
+
+        context = decoder_context
+        hidden = decoder_hidden
+        last_enc = encoder_outputs[:,-1,:]
+        inp = torch.cat([context, hidden, last_enc], 1)
+        self._actor_hx, self._actor_cx = self._actor2(inp, (self._actor_hx, self._actor_cx))
 
         output_dict = {"logits": logits}
 
